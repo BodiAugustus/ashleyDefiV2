@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <body className={`${lato.className} antialiased`}>{children}</body>
+      <body className={`${lato.className} antialiased bg-[#000033]`}>
+        {children}
+      </body>
     </html>
   );
 }

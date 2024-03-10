@@ -9,18 +9,18 @@ export default function Layout({ children }) {
       className={`w-[100vw] h-[12vh] px-4 flex navbar items-center justify-between ${lato.className} max-w-[2200px] text-white`}
     >
       <div className="flex items-center justify-between ">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 text-2xl">
           <span>Ashley</span>
           <GiDrakkar />
           <span>DeFi</span>
         </div>
       </div>
 
-      <ul className="flex gap-22 ">
+      <ul className="flex gap-10 text-2xl">
         <li>
           <Link
             href="/"
-            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100 w-[10rem] "
+            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Home
           </Link>
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         <li>
           <Link
             href="/pages/services"
-            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100 w-[10rem] "
+            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Services
           </Link>
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         <li>
           <Link
             href="/pages/subscribe"
-            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100 w-[10rem] "
+            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Member
           </Link>
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
         <li>
           <Link
             href="/pages/contact"
-            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100 w-[10rem] "
+            className="cursor-pointer active:text-indigo-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Contact
           </Link>
