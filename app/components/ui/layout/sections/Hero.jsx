@@ -58,8 +58,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    To teach you how to make your own well informed investing
-                    decisions.
+                    To get you onboarded so you can make your own well informed
+                    investing decisions.
                   </p>
                 </div>
 

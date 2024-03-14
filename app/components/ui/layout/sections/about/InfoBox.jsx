@@ -18,7 +18,7 @@ const Info = () => {
       </h2>
       <div className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism">
         <div className="  col-span-2 white-glassmorphism">
-          <div className="relative h-full">
+          <div className="relative h-full ">
             <Image
               src={header2}
               layout="fill"
@@ -67,6 +67,7 @@ const Info = () => {
               covered!
             </p>
           </div>
+
           <Image
             src={logo}
             layout="fill"

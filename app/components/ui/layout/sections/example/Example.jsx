@@ -116,7 +116,7 @@ const Example = () => {
                     <p
                       className="my-auto flex text-2xl
                       xs:xl
-                      md:text-3xl
+                      md:text-2xl
                     4xl:text-4xl
                     "
                     >

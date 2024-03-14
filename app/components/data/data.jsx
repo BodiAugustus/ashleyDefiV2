@@ -56,7 +56,7 @@ export const skills = [
     title: "Staking",
     experience: "Farm Yields",
     stack: [
-      "1) Stake FTM on Beethoven X to receive sFTMx at 4.17% APR",
+      "1) Stake FTM on Beethoven DEX to receive sFTMx at 4.17% APR",
       "2) Deposit sFTMx into Polter Finance for 22.55% APR",
       "3) Borrow 30% of your sFTMx for 3.93% interest and 89.42% APR",
       ,
