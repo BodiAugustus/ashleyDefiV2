@@ -21,7 +21,7 @@ export default function Hero() {
               Crypto Consulting and Wealth Management
             </h2>
             <h4 className={`text-2xl  font-thin font-sans text-sky-300`}>
-              Where whales are made.
+              Where whales are born.
             </h4>
           </div>
           <div>

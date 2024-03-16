@@ -5,39 +5,43 @@ import React, { useState, useEffect } from "react";
 // Dummy stock data should be defined outside the component
 // if it's not going to change or will be fetched from an API
 const dummyStockData = [
-  { symbol: "AAPL", price: "$150.10" },
-  { symbol: "GOOGL", price: "$99.50" },
-  { symbol: "MSFT", price: "$280.30" },
-  { symbol: "AMZN", price: "$110.00" },
-  { symbol: "FB", price: "$200.65" },
-  { symbol: "TSLA", price: "$250.75" },
+  { symbol: "1AAPL", price: "$150.10" },
+  { symbol: "2GOOGL", price: "$99.50" },
+  { symbol: "3MSFT", price: "$280.30" },
+  { symbol: "4AMZN", price: "$110.00" },
+  { symbol: "5FB", price: "$200.65" },
+  { symbol: "6TSLA", price: "$250.75" },
+  { symbol: "7AAPL", price: "$150.10" },
+  { symbol: "8GOOGL", price: "$99.50" },
+  { symbol: "9MSFT", price: "$280.30" },
+  { symbol: "0AMZN", price: "$110.00" },
+  { symbol: "11FB", price: "$200.65" },
+  { symbol: "12TSLA", price: "$250.75" },
+  { symbol: "13AAPL", price: "$150.10" },
+  { symbol: "14GOOGL", price: "$99.50" },
+  { symbol: "15MSFT", price: "$280.30" },
+  { symbol: "16AMZN", price: "$110.00" },
+  { symbol: "17FB", price: "$200.65" },
+  { symbol: "18TSLA", price: "$250.75" },
+  { symbol: "19AAPL", price: "$150.10" },
+  { symbol: "20GOOGL", price: "$99.50" },
+  { symbol: "21MSFT", price: "$280.30" },
+  { symbol: "22AMZN", price: "$110.00" },
+  { symbol: "23FB", price: "$200.65" },
+  { symbol: "24TSLA", price: "$250.75" },
 ];
 
-const Ticker = ({ stocks, speed = 10 }) => {
-  const [tickerKey, setTickerKey] = useState(0);
-
-  useEffect(() => {
-    // Restart the animation by changing the key
-    const interval = setInterval(() => {
-      setTickerKey((prevKey) => prevKey + 1);
-    }, 30000); // Adjust time as needed
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Ticker = ({ stocks, speed = 60 }) => {
   return (
     <div
-      className="overflow-hidden relative h-10"
+      className="overflow-hidden relative h-10 mt-10"
       style={{ whiteSpace: "nowrap" }}
     >
       <div
-        key={tickerKey}
-        className="animate-ticker"
+        className="ticker"
         style={{
           display: "inline-block",
-          animationDuration: `${speed}s`,
-          animationTimingFunction: "linear",
-          animationIterationCount: "infinite",
+          animation: `tickerMove ${speed}s linear infinite`,
         }}
       >
         {stocks.map((stock, index) => (
@@ -45,18 +49,24 @@ const Ticker = ({ stocks, speed = 10 }) => {
             {stock.symbol}: {stock.price}
           </span>
         ))}
+        {/* Repeat stocks to ensure smooth looping */}
+        {stocks.map((stock, index) => (
+          <span key={`repeat-${index}`} className="mx-4">
+            {stock.symbol}: {stock.price}
+          </span>
+        ))}
       </div>
 
       <style>{`
         @keyframes tickerMove {
-          from {
-            transform: translateX(100%);
+          0% {
+            transform: translateX(0%);
           }
-          to {
-            transform: translateX(-100%);
+          100% {
+            transform: translateX(-50%);
           }
         }
-        .animate-ticker {
+        .ticker {
           animation-name: tickerMove;
         }
       `}</style>
@@ -66,9 +76,8 @@ const Ticker = ({ stocks, speed = 10 }) => {
 
 const App = () => {
   return (
-    <div>
-      <h1>Stock Ticker Demo</h1>
-      <Ticker stocks={dummyStockData} speed={20} />
+    <div className="col-span-2 text-white ">
+      <Ticker stocks={dummyStockData} speed={60} />
     </div>
   );
 };
