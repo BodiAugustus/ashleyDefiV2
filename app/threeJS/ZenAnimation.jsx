@@ -118,7 +118,7 @@ const ZenAnimation = () => {
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} />
       <Plankton />
-      <WhaleModel path="/scene.gltf" scale={3.5} position={whalePosition} />
+      <WhaleModel path="/scene.gltf" scale={3.7} position={whalePosition} />
     </Canvas>
   );
 };

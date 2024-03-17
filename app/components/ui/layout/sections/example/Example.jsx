@@ -83,7 +83,7 @@ const Example = () => {
               >
                 <div className="flex-col">
                   <h3 className="mt-1 mb-2 ">{title}</h3>
-                  <h4 className="mt-1 bg-[#00bfff] text-[#01011d] px-3 rounded-full py-[8px] text-center">
+                  <h4 className="mt-1 bg-[#00bfff] text-[#c] px-3 rounded-full py-[8px] text-center">
                     {label}
                   </h4>
                   <p

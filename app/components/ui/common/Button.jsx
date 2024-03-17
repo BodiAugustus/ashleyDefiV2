@@ -3,7 +3,7 @@ import clsx from "clsx";
 const SIZE = {
   sm: "p-2 text-base xs:px-4",
   md: "p-3 text-base xs:px-4",
-  lg: "p-3 text-lg xs:px-8",
+  lg: "p-3 text-xl xs:px-4",
 };
 
 export function Button({
@@ -17,7 +17,7 @@ export function Button({
   const sizeClass = SIZE[size];
   const variants = {
     white: ` text-black bg-white ${
-      hoverable && "hover:bg-[#ffe400]"
+      hoverable && "hover:bg-[rgba(31,38,135,0.77)]  hover:text-white"
     } active:scale-90  transition-all `,
     blue: `text-white bg-blue-600 shadow-blue-600/75 ${
       hoverable && "hover:bg-indigo-700"

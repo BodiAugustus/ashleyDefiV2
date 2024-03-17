@@ -12,13 +12,13 @@ import header6 from "./../../../../../../public/ashley-defi-pic-3.jpg";
 const About = () => {
   return (
     <div
-      className=" text-white text-center
+      className=" text-white text-center max-w-[800px]
       
        
         "
     >
       <h2
-        className="text-4xl pt-4 mb-2
+        className="text-4xl pt-4 mb-2 font-bold
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -32,13 +32,13 @@ const About = () => {
             
             "
       >
-        <div className=" rounded-lg col-span-2 white-glassmorphism">
-          <div className="relative h-full">
+        <div className="  col-span-2 white-glassmorphism">
+          <div className="relative h-full ">
             <Image
               src={header2}
               layout="fill"
               alt="Venice, Italy"
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
@@ -79,7 +79,7 @@ const About = () => {
               src={header4}
               layout="fill"
               alt="Stockbrokers arguing about crypto"
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
@@ -101,7 +101,7 @@ const About = () => {
                     "
                 />{" "}
               </span>{" "}
-              know DeFi.
+              don't know DeFi.
             </h2>
           </div>
         </div>
@@ -112,7 +112,7 @@ const About = () => {
               src={header6}
               layout="fill"
               alt="Clueless hedgefund manager"
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
@@ -137,7 +137,7 @@ const About = () => {
               src={header3}
               layout="fill"
               alt="Regretful and depressed lady."
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
@@ -177,7 +177,7 @@ const About = () => {
               layout="fill"
               sizes="300px"
               alt="Roulette wheel"
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
@@ -191,7 +191,7 @@ const About = () => {
                     "
             >
               Your gut&apos;s <span className="tracking-wider">FOMO</span> only
-              leads to losses.
+              leads to more losses.
             </h2>
           </div>
         </div>

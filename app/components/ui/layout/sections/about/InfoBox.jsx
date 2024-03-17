@@ -6,9 +6,9 @@ import logo from "./../../../../../../public/Ashley-capital-logo.png";
 
 const Info = () => {
   return (
-    <div className=" text-white text-center">
+    <div className=" text-white text-center max-w-[800px]">
       <h2
-        className="text-4xl pt-4 mb-2
+        className="text-4xl pt-4 mb-2 font-bold
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -23,48 +23,37 @@ const Info = () => {
               src={header2}
               layout="fill"
               alt="Venice, Italy"
-              className="relative brightness-50 rounded-xl"
+              className="relative brightness-50 rounded-2xl"
             />
           </div>
         </div>
         <div className="col-span-2 row-span-2 p-2 rounded-md  h-full relative">
           <div className="abstract text-white z-50 indent-3 first-letter:text-2xl">
             <p className="pb-4">
-              Ashley Capital & DeFi was founded and built by{" "}
-              <span className="hover:scale-105 active:scale-100 transition-all duration-300">
-                {" "}
-                <a
-                  href="https://www.tristannettles.com"
-                  target="_blank"
-                  className="font-bold text-green-500 cursor-pointer 
-              "
-                >
-                  Tristan Nettles
-                </a>
-              </span>
-              , a full-stack web3 developer, DeFi consultant and published
-              author who has been working in the crypto space since 2017. Ashley
-              DeFi differentiate's ourselves from the competition by offering a
-              niche approach that is tailor-fitted to each one of our clients
-              wants and needs.
+              Ashley Capital & DeFi was founded in order to help professionally
+              onboard people into Decenteralized Finance, the future of money.
+              We accomplish our mission via our client-based consulting services
+              and a series of high yields staking vaults that offer consistent
+              APR's far above the traditional finance industry average.
             </p>
+
             <p className="pb-4">
-              Whether or not you are just looking for a learning source to
-              become your own DeFi master, or if you rather prefer to sit back
-              and let us do all the heavy lifting for you, we've got you
-              covered! Whether or not you are just looking for a learning source
-              to become your own DeFi master, or if you rather prefer to sit
-              back and let us do all the heavy lifting for you, we've got you
-              covered!
+              Whether you're seeking a temporary learning resource to eventually
+              become your own DeFi master, looking for long-term crypto advisor,
+              or simply interested in staking in our vaults to farm rewards,
+              we've got you covered! Our consultants are professional coders and
+              blockchain engineers who utilize and build upon DeFi protocols
+              everyday using the most advanced technologies and analytics
+              available, including AI.
             </p>
             <p>
-              Whether or not you are just looking for a learning source to
-              become your own DeFi master, or if you rather prefer to sit back
-              and let us do all the heavy lifting for you, we've got you
-              covered! Whether or not you are just looking for a learning source
-              to become your own DeFi master, or if you rather prefer to sit
-              back and let us do all the heavy lifting for you, we've got you
-              covered!
+              We spend all the hours sifting through forums, posts, and data in
+              order to find and test the many constantly evolving narratives so
+              that you don't have to. We engage our years of learned experience
+              to find legitimate protocols, figure out their dynamics and
+              utility cases and then leverage them either together or apart in
+              order to develop highly profitable strategies within a fast-paced,
+              constantly shifting enviornment.
             </p>
           </div>
 

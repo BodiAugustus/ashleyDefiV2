@@ -5,4 +5,4 @@ export const playfair = Playfair_Display({
   weight: ["400"],
 });
 
-export const lato = Lato({ subsets: ["latin"], weight: ["400"] });
+export const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });

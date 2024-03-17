@@ -20,7 +20,9 @@ export default function Hero() {
             <h2 className="text-4xl mb-14 ">
               Crypto Consulting and Wealth Management
             </h2>
-            <h4 className={`text-2xl  font-thin font-sans text-sky-300`}>
+            <h4
+              className={`text-2xl  font-extrabold tracking-wide text-sky-300 {playfair.className}`}
+            >
               Where whales are born.
             </h4>
           </div>
@@ -42,8 +44,8 @@ export default function Hero() {
                     2xl:w[-32%]
                     "
                 >
-                  <div className="flex justify-between p-2 items-center">
-                    <h4>Our Job</h4>
+                  <div className="flex justify-between px-4 py-2 items-center">
+                    <h4>Our Purpose</h4>
                     <GiAbstract070
                       className="fill-blue-500 text-2xl
                                     md:text-3xl
@@ -52,14 +54,14 @@ export default function Hero() {
                     />
                   </div>
                   <p
-                    className="text-center px-[0.2px]
+                    className="text-center px-[.2px]
                             md:mt-4
                             lg:mt-0
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    To get you onboarded so you can make your own well informed
-                    investing decisions.
+                    Onboarding you into DeFi so that you can find and make
+                    profitable investing decisions.
                   </p>
                 </div>
 
@@ -74,10 +76,10 @@ export default function Hero() {
                     2xl:w[-32%]
                     "
                 >
-                  <div className="flex justify-between p-2 items-center">
+                  <div className="flex justify-between px-4 py-2  items-center">
                     <h4>Why Us?</h4>
                     <GiConcentricCrescents
-                      className="fill-purple-600 text-2xl
+                      className="fill-indigo-500 text-2xl
                                     md:text-3xl
                                     xl:text-5xl
                                     "
@@ -90,8 +92,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We are actual blockchain developers with years of DeFi
-                    experience.
+                    We have more than 4 years of blockchain development and DeFi
+                    investing experience.
                   </p>
                 </div>
 
@@ -106,10 +108,10 @@ export default function Hero() {
                     2xl:w[-32%]
                     "
                 >
-                  <div className="flex justify-between p-2 items-center">
-                    <h4>Services</h4>
+                  <div className="flex justify-between px-4 py-2 items-center">
+                    <h4>Offered Services</h4>
                     <GiHalfTornado
-                      className="fill-red-400 text-2xl 
+                      className="fill-sky-500 text-2xl 
                                     md:text-4xl
                                     xl:text-5xl"
                     />
@@ -121,8 +123,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We offer both custodial and non-custodial support
-                    strategies.
+                    We provide direct consulting in addition to multiple high
+                    APR permissionless staking vaults.
                   </p>
                 </div>
               </div>
