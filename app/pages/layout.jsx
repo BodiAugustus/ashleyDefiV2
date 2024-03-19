@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         </li>
         <li>
           <Link
-            href="/pages/services"
+            href="/consulting"
             className="cursor-pointer active:text-sky-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Consulting
@@ -39,15 +39,15 @@ export default function Layout({ children }) {
         </li>
         <li>
           <Link
-            href="/pages/subscribe"
+            href="/vaults"
             className="cursor-pointer active:text-sky-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
-            Staking
+            Vaults
           </Link>
         </li>
         <li>
           <Link
-            href="/pages/contact"
+            href="/members"
             className="cursor-pointer active:text-sky-400 transition-all duration-300 inline-block transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline"
           >
             Members

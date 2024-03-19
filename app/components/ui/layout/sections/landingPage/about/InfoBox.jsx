@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 
-import header2 from "./../../../../../../public/ashley-defi-header-2.jpg";
-import logo from "./../../../../../../public/Ashley-capital-logo.png";
+import header2 from "./../../../../../../../public/ashley-defi-header-2.jpg";
+import logo from "./../../../../../../../public/Ashley-capital-logo.png";
 
 const Info = () => {
   return (
@@ -16,7 +16,7 @@ const Info = () => {
       >
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
-      <div className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism">
+      <div className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism shadow-xl shadow-indigo-700">
         <div className="  col-span-2 white-glassmorphism">
           <div className="relative h-full ">
             <Image
@@ -49,11 +49,11 @@ const Info = () => {
             <p>
               We spend all the hours sifting through forums, posts, and data in
               order to find and test the many constantly evolving narratives so
-              that you don't have to. We engage our years of learned experience
-              to find legitimate protocols, figure out their dynamics and
-              utility cases and then leverage them either together or apart in
-              order to develop highly profitable strategies within a fast-paced,
-              constantly shifting enviornment.
+              that you don't have to. Our years of learned experience are
+              engaged to find legitimate protocols, figure out their dynamics
+              and utility cases and then leverage them either together or apart
+              in order to develop highly profitable strategies within a
+              fast-paced, constantly changing enviornment.
             </p>
           </div>
 

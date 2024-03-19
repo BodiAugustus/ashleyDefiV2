@@ -1,6 +1,6 @@
 "use client";
 import ZenAnimation from "@/app/threeJS/ZenAnimation";
-import { playfair, lato } from "../../fonts/font.js";
+import { playfair, lato } from "../../../fonts/font.js";
 import {
   GiAbstract070,
   GiConcentricCrescents,
@@ -34,7 +34,7 @@ export default function Hero() {
                 "
               >
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism
+                  className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism 
                     xs:h-[19vh]
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
@@ -66,7 +66,7 @@ export default function Hero() {
                 </div>
 
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism
+                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism 
                     xs:h-[19vh]
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
@@ -98,7 +98,7 @@ export default function Hero() {
                 </div>
 
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism 
+                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism  
                     xs:h-[19vh]
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]

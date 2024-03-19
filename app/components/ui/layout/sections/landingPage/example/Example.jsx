@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { skills } from "./../../../../data/data";
+import { skills } from "../../../../../data/data";
 import { FiChevronsRight } from "react-icons/fi";
 import { FaVoteYea, FaHandshake } from "react-icons/fa";
 import { GiFarmer } from "react-icons/gi";
@@ -28,7 +28,7 @@ const Example = () => {
     md:h-[40vh]
     lg:h-[80vh]
     
-    xl:h-[100vh]
+    xl:h-[90vh]
     
     "
     >
@@ -37,7 +37,7 @@ const Example = () => {
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
-            2xl:mb-6 text-center text-white
+            2xl:mb-6 text-center text-white font-bold
       
       "
       >

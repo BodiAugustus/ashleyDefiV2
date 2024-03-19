@@ -1,4 +1,4 @@
-import Ticker from "../../../common/Ticker";
+import Ticker from "../../../../common/Ticker";
 import AtAGlance from "./AtAGlance";
 import MemberBenefits from "./MemberBenefits";
 

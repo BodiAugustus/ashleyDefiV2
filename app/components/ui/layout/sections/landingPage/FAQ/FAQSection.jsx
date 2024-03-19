@@ -6,14 +6,13 @@ import FAQItem from "./FAQItem"; // Adjust the import path as necessary
 const FAQsSection = () => {
   const faqs = [
     {
-      question: "How do I sign up?",
+      question: "Do I have to be a member to utilize the vaults?",
       answer:
-        "You can sign up by clicking the sign up button on the top right corner.",
+        "No, all of our auto-compounding vaults are permissionless and open to anyone at anytime.",
     },
     {
-      question: "Can I cancel my subscription?",
-      answer:
-        "Yes, you can cancel your subscription at any time from your account settings.",
+      question: "How long does a subscription last?",
+      answer: "All subscriptions are monthly based and can be auto-renewed.",
     },
     {
       question: "Do you offer refunds?",
@@ -34,7 +33,7 @@ const FAQsSection = () => {
 
   return (
     <div className="py-8 px-4 text-white max-w-[2200px] w-[70vw] mx-auto">
-      <h2 className="text-2xl font-bold text-center mb-6">
+      <h2 className="text-4xl font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">

@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { MdDoNotDisturb } from "react-icons/md";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import header2 from "./../../../../../../public/ashley-defi-header-2.jpg";
-import header4 from "./../../../../../../public/ashley-defi-pic-4.jpg";
-import header3 from "./../../../../../../public/ashley-defi-pic-5.jpg";
+import header2 from "./../../../../../../../public/ashley-defi-header-2.jpg";
+import header4 from "./../../../../../../../public/ashley-defi-pic-4.jpg";
+import header3 from "./../../../../../../../public/ashley-defi-pic-5.jpg";
 
-import header1 from "./../../../../../../public/ashley-defi-pic-1.jpg";
-import header6 from "./../../../../../../public/ashley-defi-pic-3.jpg";
+import header1 from "./../../../../../../../public/ashley-defi-pic-1.jpg";
+import header6 from "./../../../../../../../public/ashley-defi-pic-3.jpg";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
         <span className="text-red-500">Stop</span> Taking the Bait
       </h2>
       <div
-        className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2 rounded-lg white-glassmorphism
+        className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2 rounded-lg white-glassmorphism shadow-xl shadow-indigo-700
             
             "
       >

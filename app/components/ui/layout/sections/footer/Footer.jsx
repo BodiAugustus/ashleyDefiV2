@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" text-white mt-28">
-      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className=" text-white mt-28 max-w-[2200px] ">
+      <div className="max-w-[1400px]  px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-auto justify-items-center">
         {/* Column 1 */}
-        <div>
+        <div className="">
           <h5 className="font-bold text-lg mb-4">Company</h5>
           <ul>
             <li>

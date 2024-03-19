@@ -72,7 +72,7 @@ export const skills = [
     stack: [
       "1) Acquire EQUAL tokens via staking or market",
       "2) Create a max-locked veNFT on Equalizer DEX",
-      "3) Vote weekly on LP pool rewards to earn a portion of the total fees",
+      "3) Vote weekly on LP pool rewards to earn a portion of that pools total fees",
     ],
     label: "veNFT's",
   },

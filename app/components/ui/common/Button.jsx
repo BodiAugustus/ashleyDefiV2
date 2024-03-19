@@ -19,8 +19,8 @@ export function Button({
     white: ` text-black bg-white ${
       hoverable && "hover:bg-[rgba(31,38,135,0.77)]  hover:text-white"
     } active:scale-90  transition-all `,
-    blue: `text-white bg-blue-600 shadow-blue-600/75 ${
-      hoverable && "hover:bg-indigo-700"
+    blue: `text-white bg-[rgba(31,38,135,0.77)]  shadow-blue-600/75 ${
+      hoverable && "hover:bg-white hover:text-black"
     } active:scale-90  transition-all`,
     red: `text-red-200 bg-red-600 shadow-red-600/75 ${
       hoverable && "hover:bg-red-300 hover:text-red-700"
