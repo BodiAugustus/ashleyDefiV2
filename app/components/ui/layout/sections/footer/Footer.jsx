@@ -127,8 +127,8 @@ const Footer = () => {
       </div>
       <div className="text-center text-gray-400 pt-20">
         <p>
-          &copy; {new Date().getFullYear()} Ashley Capital & DeFi. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Ashley Capital & DeFi. Where whales
+          are born.
         </p>
       </div>
     </footer>

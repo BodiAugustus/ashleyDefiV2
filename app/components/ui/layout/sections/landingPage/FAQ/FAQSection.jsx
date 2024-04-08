@@ -6,6 +6,16 @@ import FAQItem from "./FAQItem"; // Adjust the import path as necessary
 const FAQsSection = () => {
   const faqs = [
     {
+      question: "What is DeFi?",
+      answer:
+        "We offer a 30-day money-back guarantee if you're not satisfied with our service.",
+    },
+    {
+      question: "Why should I invest in DeFi?",
+      answer:
+        "We update our resources monthly to ensure you have the latest information.",
+    },
+    {
       question: "Do I have to be a member to utilize the vaults?",
       answer:
         "No, all of our auto-compounding vaults are permissionless and open to anyone at anytime.",
@@ -13,16 +23,6 @@ const FAQsSection = () => {
     {
       question: "How long does a subscription last?",
       answer: "All subscriptions are monthly based and can be auto-renewed.",
-    },
-    {
-      question: "Do you offer refunds?",
-      answer:
-        "We offer a 30-day money-back guarantee if you're not satisfied with our service.",
-    },
-    {
-      question: "How often do you update your resources?",
-      answer:
-        "We update our resources monthly to ensure you have the latest information.",
     },
     {
       question: "Can I share my account with others?",

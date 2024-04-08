@@ -10,35 +10,39 @@ export default function Plans() {
       <div className="flex gap-10">
         <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
           <div className="h-[35vh] relative">
-            <Image src="/earth.jpg" fill className="rounded-t-2xl" />
+            <Image src="/cnslt.jpg" fill className="rounded-t-2xl" />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
-            <h3 className="text-3xl font-bold">Ashley Capital Consulting</h3>
+            <h3 className="text-3xl font-bold">Membership Consulting</h3>
             <p className="text-lg text-[#B0C7EF]">
-              We offer real-life, face-to-face consulting with real people using
-              the most sophisticated tools and technology available to
-              successfully manage our clients portfolios. This service caters to
-              individuals seeking a very active, hands-on type of approach to
-              individuals seeking a very active, hands-on type of approach to
-              investing.
+              Our DeFi experts provide full-service Consulting solutions to
+              assist you with anything related to DeFi. From questions about
+              technical aspects to protocol explanations and walkthroughs to
+              individual project tokenomics, our experts provide you with the
+              right information to help you make well-informed investing
+              decisions.
             </p>
-            <Link href="/" className="text-sky-400">
-              Learn More About Ashley DeFi Consulting
+            <Link
+              href="/"
+              className="text-sky-400 hover:underline hover: underline-offset-4 transition-all duration-300"
+            >
+              Learn More About Our DeFi Consulting
             </Link>
           </div>
         </div>
         <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
           <div className="h-[35vh] relative">
-            <Image src="/earth.jpg" fill className="rounded-t-2xl" />
+            <Image src="/vault1.jpg" fill className="rounded-t-2xl" />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
-            <h3 className="text-3xl font-bold">Ashley DeFi Staking</h3>
+            <h3 className="text-3xl font-bold">Staking Vaults </h3>
             <p className="text-lg text-[#B0C7EF]">
-              We offer a fully-custodialized vault that runs on the Fantom Sonic
-              blockchain which allows for users to deposit their FTM tokens for
-              a variable APR of between 0.00% and 0.00%. Staked assets accrue
-              rewards paid out in ### to the user on a per second basis. User
-              funds can be added or removed permisionlessly.
+              We offer a series of fully-custodialized and permissionless
+              staking vaults that run on the Fantom Sonic blockchain. These
+              vaults allow for users to deposit their FTM tokens to receive a
+              variable APR that is significantly above the traditional finance's
+              average. Staked assets accrue rewards paid out in FTM to the user
+              on a per second basis.
             </p>
             <Link href="/" className="text-sky-400">
               Learn More About High Yield Staking

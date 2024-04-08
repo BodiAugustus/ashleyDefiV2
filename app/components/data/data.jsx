@@ -49,16 +49,16 @@ export const socials = [
   },
 ];
 
-export const skills = [
+export const skillsk = [
   {
     id: "1bxb",
     order: 1,
     title: "Staking",
     experience: "Farm Yields",
     stack: [
-      "1) Stake FTM on Beethoven DEX to receive sFTMx at 4.17% APR",
-      "2) Deposit sFTMx into Polter Finance for 22.55% APR",
-      "3) Borrow 30% of your sFTMx for 3.93% interest and 89.42% APR",
+      "1) Stake FTM on Beethoven DEX to receive sFTMx",
+      "2) Deposit sFTMx into Polter Finance to earn APR",
+      "3) Borrow against your sFTMx to extend your position",
       ,
       ,
     ],
@@ -83,8 +83,8 @@ export const skills = [
     experience: "Increase Capital",
     stack: [
       "1) Take out a low interest FTM/axlUSDC loan on Debita Finance",
-      "2) Use the newly acquired axlUSDC to buy 50/50 fBUX/WFTM",
-      "3) Deposit fBUX/WFTM in Equalizer LP for 340% APR",
+      "2) Use the newly acquired axlUSDC to buy PLUS",
+      "3) Deposit PLUS/WFTM in Equalizer LP to earn EQUAL",
     ],
     label: "Peer-2-Peer",
   },

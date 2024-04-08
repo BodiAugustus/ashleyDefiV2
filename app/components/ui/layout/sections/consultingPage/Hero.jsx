@@ -9,22 +9,26 @@ export default function Hero() {
         <h1
           className={`text-5xl text-white font-bold tracking-tight ${lato.className}`}
         >
-          Ashley Consulting: Your Partners in Crypto
+          Ashley Consulting: Your Partners in DeFi
         </h1>
-        <h3 className="text-[#B0C7EF] text-2xl w-[60%] text-center">
-          Our advisory spans across technology assessment reports, token
-          advisory, asset intellifence, education, and design services.
+        <h3 className="text-[#d3dcf0] text-2xl w-[60%] text-center">
+          Our advisory spans across the Fantom and Monero ecosystems including
+          protocol assessments, trading strategies, tokenomics, education, and
+          investing services.
         </h3>
         <div className="flex gap-5 w-[100%] items-center justify-center ">
-          <Button variant="blue" className="w-[20%] flex justify-center">
+          <Button
+            variant="blue"
+            className="w-[20%] flex justify-center shadow-md"
+          >
             Get in touch
           </Button>
           <Button variant="white" className="w-[20%] flex justify-center">
-            Get in touch
+            Learn more
           </Button>
         </div>
-        <h4 className="mt-16 uppercase text-[#B0C7EF] font-bold text-xl">
-          Making people money since 2019
+        <h4 className="mt-16 uppercase text-[#d3dcf0] font-bold text-xl">
+          Helping people make more money since 2019
         </h4>
       </div>
       <div className="text-white">

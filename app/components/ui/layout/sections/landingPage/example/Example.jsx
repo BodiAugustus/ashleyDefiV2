@@ -1,13 +1,80 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-import { skills } from "../../../../../data/data";
+import { skillsk } from "../../../../../data/data";
 import { FiChevronsRight } from "react-icons/fi";
 import { FaVoteYea, FaHandshake } from "react-icons/fa";
 import { GiFarmer } from "react-icons/gi";
 
 const Example = () => {
   const [value, setValue] = useState(0);
+  const [skills, setSkills] = useState(skillsk); // Initialize state with imported data
+  const [stakingApr, setStakingApr] = useState(null); // State to store the staking APR value
+
+  // Function to fetch staking APR from the GraphQL API
+  const fetchStakingApr = async () => {
+    const query = JSON.stringify({
+      query: `
+        query {
+          sftmxGetStakingData {
+            stakingApr
+          }
+        }
+      `,
+    });
+
+    try {
+      const response = await fetch("https://backend-v3.beets-ftm-node.com/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: query,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      if (result.data && result.data.sftmxGetStakingData) {
+        // Set the staking APR from the response into the component's state
+        setStakingApr(result.data.sftmxGetStakingData.stakingApr);
+      } else {
+        console.log("No data returned from the query");
+      }
+    } catch (error) {
+      console.log("Error fetching data:", error);
+    }
+    setStakingApr("0.04589");
+  };
+
+  // Fetch the staking APR when the component mounts
+  useEffect(() => {
+    fetchStakingApr();
+  }, []);
+
+  useEffect(() => {
+    if (stakingApr !== null) {
+      const updatedSkills = skills.map((skill) => {
+        if (skill.title === "Staking") {
+          return {
+            ...skill,
+            stack: skill.stack.map((item, index) => {
+              if (index === 0) {
+                // Assuming you want to update the first item of the stack array
+                return `1) Stake FTM on Beethoven DEX to receive sFTMx at ${(
+                  parseFloat(stakingApr) * 100
+                ).toFixed(3)}% APR`;
+              }
+              return item;
+            }),
+          };
+        }
+        return skill;
+      });
+
+      setSkills(updatedSkills);
+    }
+  }, [stakingApr, skills]);
 
   const { id, order, title, experience, stack, label } = skills[value];
 
