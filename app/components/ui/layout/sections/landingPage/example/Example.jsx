@@ -44,7 +44,6 @@ const Example = () => {
     } catch (error) {
       console.log("Error fetching data:", error);
     }
-    setStakingApr("0.04589");
   };
 
   // Fetch the staking APR when the component mounts
@@ -53,7 +52,8 @@ const Example = () => {
   }, []);
 
   useEffect(() => {
-    if (stakingApr !== null) {
+    if (stakingApr !== null && skills) {
+      // Add a check for skills to ensure it's not null or undefined
       const updatedSkills = skills.map((skill) => {
         if (skill.title === "Staking") {
           return {
@@ -74,13 +74,14 @@ const Example = () => {
 
       setSkills(updatedSkills);
     }
-  }, [stakingApr, skills]);
+  }, [stakingApr]); // Add skills as a dependency
 
   const { id, order, title, experience, stack, label } = skills[value];
 
   return (
     <section
       className=" mx-auto w-[100vw] h-[70vh] max-w-[1800px] pt-4
+      xs:h-[110vh]
       custom-xs-448-skillsSecyion
       custom-xs-640-skillsSecyion 
       custom-xs3-680-skillsSecyion
@@ -101,6 +102,7 @@ const Example = () => {
     >
       <h2
         className="text-4xl pt-4 mb-2
+        xs:text-2xl xs:mb-1
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -116,7 +118,7 @@ const Example = () => {
         <div className=" relative md:w-[90%]  mx-auto">
           <div
             className="flex px-2 py-2 justify-center   text-white -mt-4 
-            xs:text-2xl xs:w-[95%]
+            xs:text-xl xs:w-[95%]
             md:gap-10
             md:text-3xl
             4xl:text-5xl
@@ -139,11 +141,14 @@ const Example = () => {
               );
             })}
           </div>
-          <div className="w-[80%] mx-auto max-w-screen-xl ">
+          <div
+            className="w-[80%] mx-auto max-w-screen-xl 
+          xs:w-[95%]"
+          >
             <article className="relative basis-4 pt-2 pb-4 text-white ">
               <div
                 className="flex justify-between text-2xl
-                xs:text-2xl
+                xs:text-xl
                 md:text-3xl
               4xl:text-4xl
               "
@@ -154,7 +159,7 @@ const Example = () => {
                     {label}
                   </h4>
                   <p
-                    className="mt-2 xs:text-2xl
+                    className="mt-2 xs:text-xl
                     md:text-3xl
                   4xl:text-3xl
                   "
@@ -163,13 +168,13 @@ const Example = () => {
                   </p>
                 </div>
                 {value === 0 && (
-                  <GiFarmer className="mr-6 text-[#00bfff] xs:text-8xl sm:text-8xl lg:text-9xl" />
+                  <GiFarmer className="mr-6 text-[#00bfff] xs:text-7xl sm:text-8xl lg:text-9xl" />
                 )}
                 {value === 1 && (
-                  <FaVoteYea className="mr-6 text-[#00bfff] xs:text-8xl sm:text-8xl lg:text-9xl" />
+                  <FaVoteYea className="mr-6 text-[#00bfff] xs:text-7xl sm:text-8xl lg:text-9xl" />
                 )}
                 {value === 2 && (
-                  <FaHandshake className="mr-6 text-[#00bfff] xs:text-8xl sm:text-8xl lg:text-9xl " />
+                  <FaHandshake className="mr-6 text-[#00bfff] xs:text-7xl sm:text-8xl lg:text-9xl " />
                 )}
               </div>
               {skills.map((_, i = 0) => {
@@ -182,7 +187,7 @@ const Example = () => {
                   >
                     <p
                       className="my-auto flex text-2xl
-                      xs:xl
+                      xs:text-sm
                       md:text-2xl
                     4xl:text-4xl
                     "
@@ -195,7 +200,11 @@ const Example = () => {
                 );
               })}
             </article>
-            <hr className="mt-7 " />
+            <hr
+              className="
+            xs:mt-2
+            mt-7 "
+            />
           </div>
         </div>
       </>

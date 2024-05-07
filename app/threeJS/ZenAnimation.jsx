@@ -109,7 +109,18 @@ const WhaleModel = ({ path, scale, position }) => {
   return <primitive object={scene} dispose={null} />;
 };
 
-const ZenAnimation = () => {
+const ZenAnimation = ({ viewport }) => {
+  // Receive viewport as props
+  const { width, height } = viewport;
+  const scaleFactor = useMemo(() => {
+    // Adjust the base scale for smaller devices
+    const baseScale = width < 768 ? 0.5 : 1;
+    // Calculate scale factor based on viewport dimensions
+    const aspectRatio = width / height;
+    const scaleFactor = aspectRatio > 1 ? 1 : aspectRatio; // Limit scaling for landscape orientations
+    return baseScale * scaleFactor;
+  }, [width, height]);
+
   // Example: Moving the whale model down by -2 units along the Y axis
   const whalePosition = [0, 0, 0]; // Adjust this vector to change the whale's position
 
@@ -118,7 +129,12 @@ const ZenAnimation = () => {
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} />
       <Plankton />
-      <WhaleModel path="/scene.gltf" scale={3.7} position={whalePosition} />
+      <WhaleModel
+        path="/scene.gltf"
+        scale={3.7 * scaleFactor}
+        position={whalePosition}
+      />{" "}
+      {/* Apply scale factor */}
     </Canvas>
   );
 };

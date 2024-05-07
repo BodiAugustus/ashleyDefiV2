@@ -49,7 +49,7 @@ const ContactForm = () => {
       <h2 className="text-white text-4xl font-bold text-center p-4">
         Reach Out
       </h2>
-      <div className="bg-[#292941] w-[50vw] mx-auto min-h-[70vh] rounded-2xl mb-8 pb-8">
+      <div className="bg-[#292941] w-[50vw] mx-auto min-h-[70vh] rounded-2xl mb-16 pb-8">
         <h3 className="text-white text-2xl font-bold text-center p-4">
           Contact Form
         </h3>

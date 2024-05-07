@@ -72,7 +72,7 @@ const CryptoTickerTable = () => {
 
   return (
     <div
-      className="overflow-hidden relative h-10 mt-10 col-span-2"
+      className="overflow-hidden relative h-10 mt-10 col-span-2 xs:row-span-3 md:row-span-2 "
       style={{ whiteSpace: "nowrap" }}
     >
       <div

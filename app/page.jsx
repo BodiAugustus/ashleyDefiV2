@@ -10,7 +10,7 @@ import Plans from "./components/ui/layout/sections/plans/Plans";
 import Layout from "./pages/layout";
 export default function Home() {
   return (
-    <main className="overflow-hidden max-w-[2200px]">
+    <main className="overflow-hidden max-w-[2200px] min-h-screen">
       <Layout />
       <Hero />
       <About />

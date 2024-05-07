@@ -42,7 +42,7 @@ export default function ServicesItem({
       </div>
       <div
         className={`transition-height bg-[#292941] px-4 duration-500 ease-in-out pb-1 ${
-          isOpen ? "max-h-[600px]" : "max-h-0"
+          isOpen ? "max-h-[800px]" : "max-h-0"
         } overflow-hidden`}
         style={{
           transitionProperty: "max-height",

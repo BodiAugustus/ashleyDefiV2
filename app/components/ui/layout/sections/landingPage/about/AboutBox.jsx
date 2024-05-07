@@ -19,6 +19,7 @@ const About = () => {
     >
       <h2
         className="text-4xl pt-4 mb-2 font-bold
+        xs:text-2xl xs:mb-1
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -42,8 +43,8 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
-                    xxs:text-lg
-                    xs:text-xl
+                 
+                    xs:text-sm xs:mt-3 xs:leading-[0.95rem]
                     sm:text-2xl sm:w-[90%] sm:left-[5%] sm:mt-6
                     md:text-3xl md:mt-10
                     lg:text-xl lg:mt-3 lg:w-[60%] lg:left-[20%] lg:leading-5
@@ -58,8 +59,8 @@ const About = () => {
             <h2
               className="absolute top-[40%] w-[80%] left-[10%] mt-4 
                     text-lg 
-                    xxs:text-lg
-                    xs:text-lg
+                  
+                    xs:text-sm xs:mt-3 xs:leading-[0.95rem]
                     sm:text-xl sm:mt-6
                     md:text-2xl md:mt-8 md:w-[60%] md:left-[20%]
                     lg:text-lg lg:mt-4 lg:leading-tight lg:w-[80%] lg:left-[9%]
@@ -83,8 +84,8 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
-                    xxs:text-lg
-                    xs:text-xl
+                    
+              xs:text-sm xs:-mt-2 xs:leading-[0.85rem]
                     sm:text-2xl sm:w-[90%] sm:left-[6%] sm:mt-8
                     md:text-3xl md:mt-14
                     lg:text-lg lg:-mt-0 lg:leading-2
@@ -93,14 +94,18 @@ const About = () => {
                     "
             >
               Stock brokers{" "}
-              <span className="text-red-600 text-4xl r-[20%]">
+              <span
+                className="text-red-600 text-4xl 
+              xs:text-3xl"
+              >
                 <MdDoNotDisturb
                   className="mx-auto mt-3
+                  xs:mt-0
                     md:text-5xl
                     lg:text-5xl lg:-mb-1
                     "
                 />{" "}
-              </span>{" "}
+              </span>
               don't know DeFi.
             </h2>
           </div>
@@ -116,8 +121,7 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-                    xxs:text-lg
-                    xs:text-xl
+              xs:text-sm xs:mt-4 
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:leading-6 lg:mt-8
@@ -141,8 +145,7 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-                    xxs:text-lg
-                    xs:text-xl
+              xs:text-sm xs:mt-2 
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:mt-7 lg:leading-5
@@ -160,6 +163,7 @@ const About = () => {
               />
               <hr
                 className="border-red-500 border-2 w-[35%] absolute rotate-45 left-10 bottom-4 
+                xs:left-8
                     sm:w-[30%] sm:left-12
                     md:left-[35%] md:bottom-[16%]
                     lg:bottom-[20%]
@@ -181,8 +185,7 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-                    xxs:text-lg
-                    xs:text-xl
+              xs:text-sm xs:mt-2 
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:leading-relaxed md:mt-16
                     lg:text-xl lg:mt-7
@@ -199,6 +202,7 @@ const About = () => {
         <div className="border-4  col-span-2 border-black rounded-xl white-glassmorphism">
           <h2
             className="text-2xl 
+            xs:text-lg
                 sm:w-[90%] sm:mx-auto
                 md:text-4xl md:w-[97%] md:p-2
                 lg:text-2xl

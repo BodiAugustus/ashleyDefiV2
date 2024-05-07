@@ -1,12 +1,20 @@
 const BenefitItem = ({ children }) => (
-  <div className="hover:bg-slate-100 hover:text-black text-2xl text-center transition-all p-3 cursor-pointer relative sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl">
+  <div
+    className="hover:bg-slate-100 rounded-2xl hover:text-black text-2xl text-center transition-all p-3 cursor-pointer relative 
+  xs:text-sm xs:p-2
+  sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl"
+  >
     <h2 className="mt-3 sm:mt-8 md:mt-10 lg:mt-3 xl:mt-3">{children}</h2>
   </div>
 );
 const MemberBenefits = () => {
   return (
-    <div className="col-span-1 row-span-1 text-white font max-w-[800px] p-2 lg:pt-2">
-      <h2 className="text-4xl text-center pt-0 mb-1 md:text-5xl lg:text-4xl xl:text-4xl 2xl:mb-2 font-bold">
+    <div className="md:col-span-1 row-span-1 text-white font max-w-[800px] p-2 lg:pt-2 xs:col-span-2">
+      <h2
+        className="text-4xl text-center pt-0 mb-1 
+       xs:text-2xl xs:mb-1
+      md:text-5xl lg:text-4xl xl:text-4xl 2xl:mb-2 font-bold"
+      >
         Members Only Benefits
       </h2>
       <div className="p-2 rounded-2xl white-glassmorphism shadow-xl shadow-indigo-700">
@@ -17,7 +25,7 @@ const MemberBenefits = () => {
           <BenefitItem>Weekly Half-Hour 1-on-1 Consultations</BenefitItem>
           <BenefitItem>Members-Only Telegram Chat</BenefitItem>
           <BenefitItem>In-Depth Projects Outlooks & Analysis</BenefitItem>
-          <BenefitItem>Members-Only Learning Resources & Materials</BenefitItem>
+          <BenefitItem>Members-Only Learning Resources</BenefitItem>
           <BenefitItem>First Access for All Alpha News Drops</BenefitItem>
         </div>
       </div>

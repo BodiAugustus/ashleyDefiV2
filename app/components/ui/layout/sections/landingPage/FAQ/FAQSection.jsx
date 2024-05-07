@@ -8,17 +8,17 @@ const FAQsSection = () => {
     {
       question: "What is DeFi?",
       answer:
-        "We offer a 30-day money-back guarantee if you're not satisfied with our service.",
+        "Decentralized finance, often abbreviated as DeFi, refers to a financial system built on blockchain technology that operates without the need for traditional centralized intermediaries such as banks, brokers, or exchanges. DeFi platforms enable users to lend, borrow, trade, earn interest, and access a wide range of financial services directly from their digital wallets using smart contracts. These contracts are self-executing agreements, with the terms directly written into code, which provide transparency, security, and reduced risk of manipulation. This ecosystem is designed to be open, inclusive, and interoperable, offering a global, permissionless, and more democratized alternative to conventional financial systems.",
     },
     {
       question: "Why should I invest in DeFi?",
       answer:
-        "We update our resources monthly to ensure you have the latest information.",
+        "The future is digital and the DeFi industry is projected to reach trillion dollar TVL's before 2030. DeFi platforms boast significantly higher interest rates on savings and deposits compared to traditional banks. This is due to the efficiency of blockchain technology and the elimination of intermediaries, which lowers operational costs. DeFi also makes financial services accessible to anyone with an internet connection, regardless of geography or economic background. This democratizes access to financial tools that were previously available only to a subset of the population while also vastle increasing the amount of easily accessible liquidity. DeFi as an industry is at the forefront of financial innovation, offering novel investment products and services that are not available in traditional finance. This allows for greater diversification of your investment portfolio. In addition, blockchain technology provides unparalleled transparency. All transactions are recorded on a public ledger, making them easily verifiable and reducing the risk of fraud. Furthermore, DeFi gives you full control over your assets without the need for intermediaries. DeFi protocols are designed to work seamlessly with one another, creating a connected and integrated financial ecosystem. This interoperability opens up a range of investment strategies and opportunities that are both fluid and flexible.",
     },
     {
       question: "Do I have to be a member to utilize the vaults?",
       answer:
-        "No, all of our auto-compounding vaults are permissionless and open to anyone at anytime.",
+        "No, our auto-compounding vault is permissionless and open to anyone at anytime.",
     },
     {
       question: "How long does a subscription last?",
@@ -27,7 +27,7 @@ const FAQsSection = () => {
     {
       question: "Can I share my account with others?",
       answer:
-        "No, each account is for individual use only and should not be shared.",
+        "No, each account is for individual use only and member-services may not be shared.",
     },
   ];
 

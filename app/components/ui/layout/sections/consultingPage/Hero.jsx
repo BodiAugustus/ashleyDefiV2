@@ -28,7 +28,7 @@ export default function Hero() {
           </Button>
         </div>
         <h4 className="mt-16 uppercase text-[#d3dcf0] font-bold text-xl">
-          Helping people make more money since 2019
+          Helping people make money since 2019
         </h4>
       </div>
       <div className="text-white">
