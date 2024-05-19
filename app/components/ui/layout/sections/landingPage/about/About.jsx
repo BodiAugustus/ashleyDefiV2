@@ -7,7 +7,7 @@ export default function About() {
     <div
       className={`grid xs:grid-cols-1 md:grid-cols-2 
       h-[100vh] max-w-[2200px] ${lato.className}
-      xs:h-[260vh]
+      xs:h-auto
       `}
     >
       <AboutBox />

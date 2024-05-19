@@ -26,7 +26,7 @@ function VaultModal({ isOpen, onClose, pool }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-[#292941]  p-4 rounded-lg max-w-md w-full">
+      <div className="bg-[#292941]  p-4 rounded-lg max-w-md xs:w-[95%} md:w-full xs:px-1">
         <h2 className="text-white text-lg font-bold text-center">
           {pool.pair}
         </h2>
@@ -71,7 +71,7 @@ function VaultModal({ isOpen, onClose, pool }) {
           </div>
         </div>
 
-        <div className="flex justify-between mt-4">
+        <div className="flex xs:gap-1 justify-between mt-4 xs:text-xs md:text-base">
           <button
             className="bg-blue-500 text-white py-2 px-4 rounded"
             onClick={handleDepositClick}

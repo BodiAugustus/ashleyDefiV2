@@ -6,6 +6,7 @@ import { AiOutlineStop } from "react-icons/ai";
 const HoverableSection = ({ content }) => (
   <div
     className="col-span-1  md:row-span-1 max-w-[800px] bg-[#1D3461] text-center hover:bg-[#4C5175] font-thin cursor-pointer p-3 xs:pt-4 xs:text-sm
+    xs3:text-base
   sm:pt-4 md:text-2xl md:p-3 lg:text-base  xl:text-xl xl:p-4 xl:pt-3"
   >
     <h2>{content}</h2>
@@ -24,16 +25,17 @@ const AtAGlance = () => {
   ];
 
   return (
-    <div className="text-white lg:pt-2 col-span-1 row-span-1 px-4">
+    <div className="text-white lg:pt-2 col-span-1 row-span-1 xs:px-2 md:px-4">
       <h2
         className="text-4xl text-center text-white pt-0 mb-1 font-bold 
       xs:text-2xl xs:mb-1
+      xs4:text-3xl
       md:text-5xl lg:text-4xl xl:text-4xl 2xl:mb-2 "
       >
         What We Offer
       </h2>
       <div
-        className="grid grid-cols-2 md:grid-rows-5 white-glassmorphism mx-auto  lg:h-[72vh] shadow-xl shadow-indigo-700
+        className="grid grid-cols-2 md:grid-rows-5 white-glassmorphism mx-auto lg:h-[72vh] shadow-xl shadow-indigo-700
       xs:grid-rows-[0.5fr_1fr_1fr_1fr_.5fr]
       "
       >
@@ -52,6 +54,7 @@ const AtAGlance = () => {
             <h3
               className="mx-auto text-4xl
             xs:text-xl
+            xs5:text-2xl
             "
             >
               No Tier systems!

@@ -19,6 +19,7 @@ export default function FingerTwo() {
         <h2
           className="font-bold 
         xs:text-xl
+        xs5:text-2xl
         text-3xl"
         >
           Staking
@@ -33,7 +34,10 @@ export default function FingerTwo() {
             style={{ width: "100%", height: "100%" }}
           />
         </div>
-        <p className=" xs:text-sm md:text-xl w-[100%] xs:indent-5 xs:mb-1 md:indent-0 xs:px-2 text-[#B0C7EF]">
+        <p
+          className=" xs:text-sm
+        xs3:text-base md:text-xl w-[100%] xs:indent-5 xs:mb-1 md:indent-0 xs:px-2 text-[#B0C7EF]"
+        >
           Our high APY vault works as a Yield Aggregators, maximizing yield
           potentials from liquidity pools via auto-compounding and other
           strategies. A yield aggregator is a service that helps investors earn

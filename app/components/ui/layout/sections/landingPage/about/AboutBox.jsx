@@ -20,6 +20,7 @@ const About = () => {
       <h2
         className="text-4xl pt-4 mb-2 font-bold
         xs:text-2xl xs:mb-1
+        xs4:text-3xl
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -28,11 +29,7 @@ const About = () => {
       >
         <span className="text-red-500">Stop</span> Taking the Bait
       </h2>
-      <div
-        className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2 rounded-lg white-glassmorphism shadow-xl shadow-indigo-700
-            
-            "
-      >
+      <div className="xs:w-[95%] md:w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2 rounded-lg white-glassmorphism shadow-xl shadow-indigo-700">
         <div className="  col-span-2 white-glassmorphism">
           <div className="relative h-full ">
             <Image
@@ -44,7 +41,11 @@ const About = () => {
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
                  
-                    xs:text-sm xs:mt-3 xs:leading-[0.95rem]
+                
+                    custom-xs-448-aboutbox-1
+                    custom-xs-640-aboutbox-1
+                     xs:leading-[0.95rem]
+                     xs3:text-lg xs3:leading-5
                     sm:text-2xl sm:w-[90%] sm:left-[5%] sm:mt-6
                     md:text-3xl md:mt-10
                     lg:text-xl lg:mt-3 lg:w-[60%] lg:left-[20%] lg:leading-5
@@ -60,7 +61,11 @@ const About = () => {
               className="absolute top-[40%] w-[80%] left-[10%] mt-4 
                     text-lg 
                   
-                    xs:text-sm xs:mt-3 xs:leading-[0.95rem]
+                 
+                    custom-xs-448-aboutbox-1
+                    custom-xs-640-aboutbox-1
+                     xs:leading-[0.95rem]
+                     xs3:text-lg xs3:leading-5
                     sm:text-xl sm:mt-6
                     md:text-2xl md:mt-8 md:w-[60%] md:left-[20%]
                     lg:text-lg lg:mt-4 lg:leading-tight lg:w-[80%] lg:left-[9%]
@@ -85,7 +90,12 @@ const About = () => {
             <h2
               className="absolute w-[80%] left-[10%] mt-4 text-xl 
                     
-              xs:text-sm xs:-mt-2 xs:leading-[0.85rem]
+              custom-xs-448-aboutbox-2
+                    custom-xs-640-aboutbox-2
+                     xs:leading-[0.85rem]
+                     xs3:text-lg
+                     custom-xs-660-aboutbox-2 
+                     custom-xs-850-aboutbox-2
                     sm:text-2xl sm:w-[90%] sm:left-[6%] sm:mt-8
                     md:text-3xl md:mt-14
                     lg:text-lg lg:-mt-0 lg:leading-2
@@ -121,7 +131,12 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-              xs:text-sm xs:mt-4 
+              custom-xs-448-aboutbox-3
+                    custom-xs-640-aboutbox-3
+                    xs3:text-lg
+                    custom-xs-550-aboutbox-3 
+                    custom-xs-660-aboutbox-3
+                    custom-xs-850-aboutbox-3
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:leading-6 lg:mt-8
@@ -145,8 +160,17 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-              xs:text-sm xs:mt-2 
+              custom-xs-448-aboutbox-5
+                    custom-xs-640-aboutbox-5
                     sm:text-2xl sm:mt-10
+                    xs3:text-lg custom-xs-360-aboutbox-5 
+                    custom-xs-550-aboutbox-5
+                    custom-xs-660-aboutbox-5
+                    custom-xs-670-aboutbox-5
+                    custom-xs-850-aboutbox-5
+                    custom-xs-390-650-aboutbox-5
+
+                  
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:mt-7 lg:leading-5
                     xl:text-2xl xl:mt-5
@@ -164,6 +188,7 @@ const About = () => {
               <hr
                 className="border-red-500 border-2 w-[35%] absolute rotate-45 left-10 bottom-4 
                 xs:left-8
+                xs3:left-10
                     sm:w-[30%] sm:left-12
                     md:left-[35%] md:bottom-[16%]
                     lg:bottom-[20%]
@@ -185,7 +210,15 @@ const About = () => {
             />
             <h2
               className="absolute w-[80%] left-[10%] mt-8 text-xl 
-              xs:text-sm xs:mt-2 
+              custom-xs-448-aboutbox-6
+                    custom-xs-640-aboutbox-6
+                    xs3:text-lg custom-xs-360-aboutbox-6
+                    custom-xs-660-aboutbox-6
+                    custom-xs-850-aboutbox-6
+                    custom-xs-860-aboutbox-6 
+
+                    custom-xs-390-650-aboutbox-6 
+
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:leading-relaxed md:mt-16
                     lg:text-xl lg:mt-7
@@ -202,7 +235,8 @@ const About = () => {
         <div className="border-4  col-span-2 border-black rounded-xl white-glassmorphism">
           <h2
             className="text-2xl 
-            xs:text-lg
+            xs:text-base
+            xs3:text-lg
                 sm:w-[90%] sm:mx-auto
                 md:text-4xl md:w-[97%] md:p-2
                 lg:text-2xl

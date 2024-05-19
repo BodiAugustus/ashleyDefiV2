@@ -26,6 +26,7 @@ const Info = () => {
       <h2
         className="text-4xl pt-4 mb-2 font-bold
         xs:text-2xl xs:mb-1 xs:mt-2
+        xs4:text-3xl
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -34,8 +35,14 @@ const Info = () => {
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
       <div
-        className="w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism shadow-xl shadow-indigo-700
-      xs:h-[140vh]"
+        className="xs:w-[95%] md:w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism shadow-xl shadow-indigo-700
+        custom-xs-448-about-infobox
+        custom-xs-640-about-infobox
+        custom-xs-360-about-infobox
+        custom-xs-550-about-infobox
+        custom-xs-670-about-infobox
+        custom-xs-850-about-infobox 
+        "
       >
         <div className="  col-span-2 white-glassmorphism">
           <div className="relative h-full ">
@@ -48,8 +55,8 @@ const Info = () => {
           </div>
 
           <div className="col-span-2 row-span-2 p-2 rounded-md  h-full relative">
-            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl">
-              <p className="pb-1 xs:pt-2 ">
+            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base">
+              <p className="pb-1 xs:pt-0 ">
                 Ashley Capital & DeFi was founded in order to help
                 professionally onboard people into Decentralized Finance, the
                 future of money. We accomplish our mission via our client-based

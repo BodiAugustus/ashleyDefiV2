@@ -8,6 +8,7 @@ export default function FingerOne() {
         <h2
           className="font-bold
         xs:text-xl xs:pb-2
+        xs5:text-2xl
          md:text-3xl"
         >
           Consulting
@@ -25,6 +26,7 @@ export default function FingerOne() {
         <p
           className="
         xs:text-sm xs:w-[100%] xs:indent-5 xs:pb-4 xs:px-2
+        xs3:text-base
         md:indent-0
         md:text-xl md:w-[80%] text-[#B0C7EF]"
         >
@@ -37,7 +39,14 @@ export default function FingerOne() {
         </p>
         <Button
           variant="white"
-          className="xs:mx-auto xs:mb-2 md:w-[28%]"
+          className="xs:mx-auto xs:mb-2 md:w-[28%] md:hidden xs5:text-xl"
+          size="md"
+        >
+          Learn More &#8594;
+        </Button>
+        <Button
+          variant="white"
+          className="xs:hidden md:visible md:w-[28%]"
           size="lg"
         >
           Learn More &#8594;

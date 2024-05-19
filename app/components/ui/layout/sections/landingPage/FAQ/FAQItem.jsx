@@ -20,7 +20,7 @@ export default function FAQItem({ question, answer }) {
       <div
         className={`transition-height duration-500 ease-in-out ${
           isOpen ? "max-h-96" : "max-h-0"
-        } overflow-hidden`}
+        } overflow-scroll`}
         style={{
           transitionProperty: "max-height",
           transitionDuration: "500ms",

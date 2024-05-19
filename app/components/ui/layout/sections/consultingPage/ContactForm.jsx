@@ -46,11 +46,15 @@ const ContactForm = () => {
 
   return (
     <>
-      <h2 className="text-white text-4xl font-bold text-center p-4">
+      <h2
+        className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0
+      xs4:text-3xl
+      "
+      >
         Reach Out
       </h2>
-      <div className="bg-[#292941] w-[50vw] mx-auto min-h-[70vh] rounded-2xl mb-16 pb-8">
-        <h3 className="text-white text-2xl font-bold text-center p-4">
+      <div className="bg-[#292941]  xs:w-[95%] md:w-[50vw] mx-auto min-h-[60vh] rounded-2xl mb-16 pb-8">
+        <h3 className="text-white xs:text-xl xs4:text-2xl md:text-2xl font-bold text-center p-4">
           Contact Form
         </h3>
         <form className="space-y-4 w-[90%] mx-auto" onSubmit={handleSubmit}>

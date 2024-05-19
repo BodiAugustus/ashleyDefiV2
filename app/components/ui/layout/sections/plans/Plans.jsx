@@ -3,18 +3,39 @@ import Link from "next/link";
 
 export default function Plans() {
   return (
-    <div className="h-[100vh] max-w-[2200px] flex flex-col items-center gap-y-10 text-white w-[90vw] mx-auto">
-      <div className="text-center text-4xl font-bold">
+    <div
+      className="custom-xs-448-plans
+    custom-xs-640-plans
+    custom-xs-660-plans 
+    custom-xs-850-plans
+     md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-10 text-white md:w-[90vw] mx-auto"
+    >
+      <div
+        className="text-center md:text-4xl font-bold xs:text-2xl xs:mb-1
+      xs4:text-3xl"
+      >
         <h2>Our Services</h2>
       </div>
-      <div className="flex gap-10">
-        <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
+      <div className="flex md:gap-10 xs:flex-col xs:gap-7 md:flex-row">
+        <div
+          className="xs:w-[95%] md:w-[40vw] custom-xs-448-plans-box
+         custom-xs-640-plans-box
+         custom-xs-660-plans-box
+         custom-xs-850-plans-box
+         md:h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700 xs:mx-auto"
+        >
           <div className="h-[35vh] relative">
             <Image src="/cnslt.jpg" fill className="rounded-t-2xl" />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
-            <h3 className="text-3xl font-bold">Membership Consulting</h3>
-            <p className="text-lg text-[#B0C7EF]">
+            <h3
+              className="xs:text-xl md:text-3xl font-bold xs:text-center
+            xs5:text-2xl
+             md:text-left xs:-mb-2 md:mb-0"
+            >
+              Membership Consulting
+            </h3>
+            <p className="xs:text-sm xs3:text-base xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
               Our DeFi experts provide full-service Consulting solutions to
               assist you with anything related to decentralized finance. From
               questions about technical aspects to protocol explanations and
@@ -24,19 +45,28 @@ export default function Plans() {
             </p>
             <Link
               href="/consulting"
-              className="text-sky-400 transition-all duration-300 inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline  w-[50%] hover:pl-3"
+              className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
+              xs5:text-lg"
             >
               Learn More About Ashley Consulting
             </Link>
           </div>
         </div>
-        <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
+        <div
+          className="xs:w-[95%] md:w-[40vw] custom-xs-448-plans-box
+        custom-xs-640-plans-box 
+        custom-xs-660-plans-box
+        custom-xs-850-plans-box
+        md:h-[75vh] mx-auto rounded-xl white-glassmorphism shadow-xl shadow-indigo-700"
+        >
           <div className="h-[35vh] relative">
             <Image src="/vault1.jpg" fill className="rounded-t-2xl" />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
-            <h3 className="text-3xl font-bold">Staking Vault </h3>
-            <p className="text-lg text-[#B0C7EF]">
+            <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold xs:text-center md:text-left xs:-mb-2 md:mb-0">
+              Staking Vault{" "}
+            </h3>
+            <p className="xs:text-sm xs3:text-base xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
               We offer a fully-custodialized and permissionless staking vault
               that runs on the Fantom Sonic blockchain. This vaults allow for
               users to deposit their FTM tokens to receive a variable APR that
@@ -46,9 +76,9 @@ export default function Plans() {
             </p>
             <Link
               href="/vaults"
-              className=" text-sky-400 transition-all duration-300 inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline  w-[55%] hover:pl-3"
+              className=" text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:block xs:w-[100%]  md:w-[55%] hover:pl-3 xs:text-sm xs3:text-base xs5:text-lg"
             >
-              Learn More About Our High Yield Staking
+              Learn More About High Yield Staking
             </Link>
           </div>
         </div>

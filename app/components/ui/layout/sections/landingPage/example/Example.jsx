@@ -81,18 +81,8 @@ const Example = () => {
   return (
     <section
       className=" mx-auto w-[100vw] h-[70vh] max-w-[1800px] pt-4
-      xs:h-[110vh]
-      custom-xs-448-skillsSecyion
-      custom-xs-640-skillsSecyion 
-      custom-xs3-680-skillsSecyion
-      custom-xs4-660-skillsSecyion
-      custom-xs4-550-skillsSecyion 
-      custom-xs5-670-skillsSecyion
-      custom-xs5-850-skillsSecyion
-      custom-xs6-650-skillsSecyion
-      custom-xs6-780-skillsSecyion
-      custom-xs8-715-skillsSecyion
-      custom-xs8-810-skillsSecyion
+      xs:h-auto
+    
     md:h-[40vh]
     lg:h-[80vh]
     
@@ -103,6 +93,8 @@ const Example = () => {
       <h2
         className="text-4xl pt-4 mb-2
         xs:text-2xl xs:mb-1
+        xs4:text-3xl
+        xs5:px-2
             md:text-5xl md:mb-3
             lg:text-4xl lg:mb-2
             xl:text-4xl xl:mb-2
@@ -119,6 +111,7 @@ const Example = () => {
           <div
             className="flex px-2 py-2 justify-center   text-white -mt-4 
             xs:text-xl xs:w-[95%]
+xs5:text-2xl
             md:gap-10
             md:text-3xl
             4xl:text-5xl
@@ -188,6 +181,7 @@ const Example = () => {
                     <p
                       className="my-auto flex text-2xl
                       xs:text-sm
+                      xs4:text-base
                       md:text-2xl
                     4xl:text-4xl
                     "

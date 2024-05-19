@@ -7,7 +7,7 @@ function ActionModal({ isOpen, onClose, actionType, poolDetails }) {
     switch (actionType) {
       case "deposit":
         return (
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 ">
             <span>Current Wallet Balance: {poolDetails.walletTotal}</span>
             <div className="flex gap-4">
               <input
@@ -21,7 +21,7 @@ function ActionModal({ isOpen, onClose, actionType, poolDetails }) {
         );
       case "withdraw":
         return (
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <span>Deposited: {poolDetails.walletTotal}</span>
             <label className="pb-2">
               <input type="checkbox" /> Max
@@ -74,7 +74,7 @@ function ActionModal({ isOpen, onClose, actionType, poolDetails }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-green-500 p-4 rounded-lg max-w-2xl w-full">
+      <div className="bg-green-500 p-4 rounded-lg max-w-2xl  xs:w-[95%] md:w-full">
         <div className="flex justify-between">
           <span>{poolDetails.tokenPair}</span>
           <img src={poolDetails.tokenLogo} alt="Token Logo" />

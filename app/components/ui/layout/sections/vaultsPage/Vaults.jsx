@@ -59,25 +59,30 @@ export default function Vaults() {
     setSelectedVault(null);
   };
   return (
-    <div className="min-h-[20vh]] bg-midnight-blue p-4 text-white">
+    <div className="min-h-[20vh]] bg-midnight-blue xs:p-2 md:p-4 text-white">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold mb-4 pt-4">
+        <h1
+          className="text-2xl font-bold  md:mb-4 pt-4 
+        xs4:text-3xl"
+        >
           High Yield Staking Vaults -{" "}
-          <span className="font-sans font-thin">
+          <span className="font-sans font-thin xs:text-base md:text-xl ">
             Please read the docs before staking.
           </span>
         </h1>
         <div className="overflow-x-auto">
           <div className="mb-0">
-            <div className="flex justify-between bg-dark-blue p-4 rounded-lg text-sm font-bold">
-              <span>Pair</span>
-              <span>Deposit APR</span>
-              <span>TVL / Tokens</span>
-              <span>Wallet / Pair</span>
-              <span>Staked % / Proportion</span>
-              <span>Borrowed</span>
-              <span>Borrowed APR</span>
-              <span>Actions</span>
+            <div className="flex justify-between bg-dark-blue xs:p-2 md:p-4 rounded-lg text-sm font-bold xs:text-xs md:text-base">
+              <span className="xs:text-xs md:text-base">Pair</span>
+              <span className="xs:text-xs md:text-base"> APR</span>
+              <span className="xs:hidden md:visible">TVL / Tokens</span>
+              <span className="xs:hidden md:visible">Wallet / Pair</span>
+              <span className="xs:hidden md:visible">
+                Staked % / Proportion
+              </span>
+              <span className="xs:text-xs md:text-base">Borrowed</span>
+              <span className="xs:text-xs md:text-base">Borrowed APR</span>
+              <span className="xs:text-xs md:text-base">Actions</span>
             </div>
           </div>
           {liquidityPools.map((pool) => (
@@ -86,19 +91,23 @@ export default function Vaults() {
               onClick={() => handleRowClick(pool)}
               className="flex justify-between bg-[#292941]  p-4 rounded-lg mb-2"
             >
-              <span>{pool.pair}</span>
-              <span>{pool.depositAPR}</span>
-              <span>
+              <span className="xs:text-xs md:text-base">{pool.pair}</span>
+              <span className="xs:text-xs md:text-base">{pool.depositAPR}</span>
+              <span className="xs:hidden md:visible">
                 {pool.tvlTotal} / {pool.tvlTokens}
               </span>
-              <span>
+              <span className="xs:hidden md:visible">
                 {pool.walletTotal} / {pool.walletPair}
               </span>
-              <span>
+              <span className="xs:hidden md:visible">
                 {pool.stakedPercentage} / {pool.stakedProportion}
               </span>
-              <span>{pool.borrowedAmount}</span>
-              <span>{pool.borrowedAPR}</span>
+              <span className="xs:text-xs md:text-base">
+                {pool.borrowedAmount}
+              </span>
+              <span className="xs:text-xs md:text-base">
+                {pool.borrowedAPR}
+              </span>
               <span>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded text-xs">
                   Deposit

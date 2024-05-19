@@ -108,15 +108,18 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-8 px-4 text-white max-w-[2200px] w-[70vw] mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-6">
+    <div className="py-8 md:px-4 text-white max-w-[2200px] xs:h-auto xs:w-[95%] md:w-[70vw] mx-auto">
+      <h2
+        className="xs:text-2xl md:text-4xl font-bold text-center xs:mb-1 md:mb-6
+      xs4:text-3xl"
+      >
         Consulting Services
       </h2>
-      <p className="text-xl  text-center mb-6 w-[45%] mx-auto text-[#B0C7EF]">
+      <p className="xs:text-sm md:text-xl  text-center xs:mb-4 md:mb-6 xs:w-[95%] md:w-[45%] mx-auto text-[#B0C7EF] xs5:text-base">
         Our full-suite of DeFi consulting services are designed to cater to
         every level of our clients needs, regardless of their portfolio sizes
       </p>
-      <div className="space-y-10">
+      <div className="xs:space-y-5 md:space-y-10">
         {faqs.map((faq, index) => (
           <ServicesItem
             key={index}
@@ -136,7 +139,7 @@ const Services = () => {
           />
         ))}
       </div>
-      <p className="mt-16 text-center">
+      <p className="xs:mt-8 md:mt-16 text-center xs5:text-lg">
         Have any more questions?{" "}
         <span className="font-bold">
           Please write to us using the contact form below:

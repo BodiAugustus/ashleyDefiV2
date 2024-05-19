@@ -30,11 +30,14 @@ export default function Layout({ children }) {
               height={40}
               className="opacity-90 rounded-lg xs:visible xs2:hidden"
             />
+
             <Image
               src="/android-chrome-192x1922.png"
               width={60}
               height={60}
-              className="opacity-90 rounded-lg xs:hidden xs2:inline"
+              className="opacity-90 rounded-lg xs:hidden xs2:inline 
+              
+              "
             />
           </Link>
           <button
@@ -107,6 +110,8 @@ export default function Layout({ children }) {
           <div
             className=" z-30 flex flex-col  p-2 relative w-full h-full
           custom-xs-448-mobile-gap
+          custom-xs-640-mobile-gap
+          custom-xs-860-mobile-gap
           "
           >
             <div className="flex items-center justify-between">
@@ -121,7 +126,7 @@ export default function Layout({ children }) {
                 src="/android-chrome-192x1922.png"
                 width={90}
                 height={90}
-                className="opacity-90 rounded-lg mb-5 xs:hidden xs2:visible"
+                className="opacity-90 rounded-lg mb-5 xs:hidden xs2:block"
               />
               <button
                 onClick={closeMenu}
@@ -133,7 +138,14 @@ export default function Layout({ children }) {
             </div>
             <ul
               className={`text-center text-2xl text-white flex flex-col gap-10 mb-8
+
               custom-xs-448-mobile-gap-list
+              custom-xs-640-mobile-gap-list
+              custom-xs-360-mobile-gap-list
+              custom-xs-550-mobile-gap-list
+              custom-xs-660-mobile-gap-list
+              custom-xs-850-mobile-gap-list
+              xs4:text-3xl
               `}
             >
               {/* Mobile Navigation Links */}
@@ -144,7 +156,7 @@ export default function Layout({ children }) {
                 <Link href="/consulting">Consulting</Link>
               </li>
               <li>
-                <Link href="/vault">Vaults</Link>
+                <Link href="/vaults">Vaults</Link>
               </li>
               <li>
                 <Link href="/manage">Manage</Link>
@@ -152,7 +164,7 @@ export default function Layout({ children }) {
             </ul>
             <div
               className="flex gap-24 text-white mx-auto mb-1 text-4xl
-            xs:text-3xl
+            xs:text-3xl xs3:text-4xl xs4:text-5xl
             "
             >
               <FaTelegram />

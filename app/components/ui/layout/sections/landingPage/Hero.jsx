@@ -17,20 +17,34 @@ export default function Hero() {
       <div
         className="
       
-      lg:w-[100vw] h-[82vh] mx-auto overflow-visible relative"
+      lg:w-[100vw] med:h-[82vh] xs:h-[88vh] mx-auto overflow-visible relative"
       >
         <ParentComponent />
         <div
-          className={`absolute top-0 text-center h-[82vh] ${playfair.className} w-[100vw]`}
+          className={`absolute top-0 text-center xs:h-[88vh] md:h-[82vh] ${playfair.className} w-[100vw]`}
         >
           <div
             className="
-          xs:pb-14
+      
+            custom-xs-448-hero-cards
+            custom-xs-640-hero-cards
+            custom-xs-340-hero-cards
+            custom-xs-550-hero-cards
+          
           lg:pb-16"
           >
             <h1
               className="
-            xs:text-3xl xs:pt-3
+            xs:text-3xl 
+            custom-xs-448-hero-title
+            custom-xs-640-hero-title 
+            custom-xs-340-hero-title
+            xs4:text-4xl
+            custom-xs-550-hero-title
+            custom-xs-660-hero-title
+            custom-xs-850-hero-title
+            custom-xs-650-hero-title
+           
             lg:text-8xl"
             >
               Ashley Capital & DeFi
@@ -38,6 +52,8 @@ export default function Hero() {
             <h2
               className="
             xs:text-2xl
+            xs2:mb-4
+            
             lg:text-4xl lg:mb-14 "
             >
               Crypto Consulting and Wealth Management
@@ -45,13 +61,19 @@ export default function Hero() {
             <h4
               className={`
               xs:text-lg
+              xs3:text-xl
+              xs4:text-2xl
+              custom-xs-640-snd-title
               lg:text-2xl  tracking-wide  text-sky-400 ${playfair.className}`}
             >
               Where whales are born.
             </h4>
           </div>
           <div>
-            <div className="text-white mt-3">
+            <div
+              className="text-white mt-3
+            custom-xs-550-hero-cards"
+            >
               <div
                 className="flex md:justify-between xs:gap-[0.6rem]
                 
@@ -60,7 +82,11 @@ export default function Hero() {
               >
                 <div
                   className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism 
-                    xs:h-[35vh] 
+                  custom-xs-448-hero-cards2 
+                  custom-xs-640-hero-cards2 
+                  xs3:text-sm custom-xs-360-hero-cards-height
+                  custom-xs-550-hero-cards-height
+                  custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
@@ -96,7 +122,11 @@ export default function Hero() {
 
                 <div
                   className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism 
-                  xs:h-[35vh]
+                  custom-xs-448-hero-cards2 
+                  custom-xs-640-hero-cards2 
+                  xs3:text-sm custom-xs-360-hero-cards-height
+                  custom-xs-550-hero-cards-height
+                  custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
@@ -131,7 +161,11 @@ export default function Hero() {
 
                 <div
                   className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism  
-                  xs:h-[35vh]
+                  custom-xs-448-hero-cards2 
+                  custom-xs-640-hero-cards2 
+                  xs3:text-sm custom-xs-360-hero-cards-height
+                  custom-xs-550-hero-cards-height 
+                  custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
@@ -141,10 +175,10 @@ export default function Hero() {
                     "
                 >
                   <div
-                    className="flex justify-between px-4 py-2 items-center
+                    className="flex justify-around md:px-4 py-2 items-center
                   xs:px-1"
                   >
-                    <h4>Offered Services</h4>
+                    <h4>Services</h4>
                     <GiHalfTornado
                       className="fill-sky-500 text-2xl 
                                     md:text-4xl
@@ -153,13 +187,14 @@ export default function Hero() {
                   </div>
                   <p
                     className="text-center
+                    xs:px-[0.2rem]
                             md:mt-4
                             lg:mt-0
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We provide direct consulting along with a high APR
-                    permissionless staking vault.
+                    We provide direct consulting with a high APR permissionless
+                    staking vault.
                   </p>
                 </div>
               </div>

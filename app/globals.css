@@ -133,6 +133,41 @@
 }
 
 @media (min-width: 320px) and (min-height: 448px) {
+  .custom-xs-448-hero-title {
+    padding-top: 0.75rem;
+  }
+  .custom-xs-448-hero-cards {
+    padding-bottom: 4.5rem;
+  }
+  .custom-xs-448-hero-cards2 {
+    height: 35vh;
+  }
+  .custom-xs-448-aboutbox-1 {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-448-aboutbox-2 {
+    margin-top: -0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-448-aboutbox-3 {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-448-aboutbox-5 {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-448-aboutbox-6 {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .custom-xs-448-mobile-gap {
     /* Custom styles */
     row-gap: 1rem;
@@ -142,16 +177,472 @@
     gap: 1rem;
     margin-bottom: 0rem;
   }
+
+  .custom-xs-640-about-infobox {
+    height: 100vh;
+  }
+  .custom-xs-448-benefits {
+    height: 265vh;
+  }
+  .custom-xs-448-plans {
+    height: 213vh;
+  }
+  .custom-xs-448-plans-box {
+    height: 95vh;
+  }
+  .custom-xs-448-call2 {
+    height: 80vh;
+  }
+
+  .custom-xs-448-mobile-consulting-hero {
+    /* Custom styles */
+    gap: 0.75rem;
+  }
+
+  .custom-xs-448-mobile-vaults-hero {
+    /* Custom styles */
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    gap: 1.25rem;
+  }
+  .custom-xs-448-mobile-vaults-hero-title {
+    /* Custom styles */
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 320px) and (min-height: 640px) {
-  .custom-xs-448-mobile-gap {
+  .custom-xs-640-hero-title {
     /* Custom styles */
-    row-gap: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
   }
-  .custom-xs-448-mobile-gap-list {
+  .custom-xs-640-hero-cards {
+    padding-bottom: 10rem;
+  }
+  .custom-xs-640-hero-cards2 {
+    height: 25vh;
+  }
+  .custom-xs-640-snd-title {
     /* Custom styles */
-    gap: 3rem;
+    padding-top: 1rem;
+  }
+  .custom-xs-640-aboutbox-1 {
+    margin-top: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-640-aboutbox-2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-640-aboutbox-3 {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .custom-xs-640-aboutbox-5 {
+    margin-top: 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-640-aboutbox-6 {
+    margin-top: 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .custom-xs-640-about-infobox {
+    height: 81vh;
+  }
+  .custom-xs-640-benefits {
+    height: 210vh;
+  }
+  .custom-xs-640-plans {
+    height: 177vh;
+  }
+  .custom-xs-640-plans-box {
+    height: 80vh;
+  }
+  .custom-xs-640-call2 {
+    height: 55vh;
+  }
+  .custom-xs-640-mobile-gap {
+    /* Custom styles */
+    row-gap: 4rem;
+  }
+  .custom-xs-640-mobile-gap-list {
+    /* Custom styles */
+    gap: 2rem;
     margin-bottom: 0rem;
+  }
+  .custom-xs-640-mobile-consulting-hero {
+    /* Custom styles */
+    gap: 4rem;
+  }
+  .custom-xs-640-mobile-vaults-hero-title {
+    /* Custom styles */
+    padding-top: 2rem;
+  }
+  .custom-xs-640-mobile-vaults-hero {
+    /* Custom styles */
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+    gap: 1.25rem;
+  }
+}
+@media (min-width: 340px) {
+  .custom-xs-340-hero-cards {
+    padding-bottom: 12rem;
+  }
+  .custom-xs-340-hero-title {
+    padding-bottom: 0;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 360px) {
+  .custom-xs-360-hero-cards-height {
+    height: 27vh;
+  }
+
+  .custom-xs-360-about-infobox {
+    height: 95vh;
+  }
+
+  .custom-xs-360-mobile-gap-list {
+    gap: 3rem;
+    margin-top: -2.25rem;
+  }
+  .custom-xs-360-aboutbox-5 {
+    margin-top: 1.75rem;
+  }
+}
+.custom-xs-360-mobile-consulting-hero {
+  gap: 5rem;
+}
+
+.custom-xs-360-aboutbox-6 {
+  padding-top: -0.5rem;
+}
+
+@media (min-width: 370px) and (min-height: 550px) {
+  .custom-xs-550-hero-title {
+    margin-top: 1rem;
+  }
+  .custom-xs-550-hero-cards {
+    margin-top: -2.7rem;
+  }
+  .custom-xs-550-hero-cards-height {
+    height: 30vh;
+  }
+
+  .custom-xs-550-about-infobox {
+    height: 95vh;
+  }
+
+  .custom-xs-550-benefits {
+    height: 235vh;
+  }
+
+  .custom-xs-550-mobile-gap-list {
+    gap: 2.5rem;
+    margin-top: -1rem;
+  }
+  .custom-xs-550-mobile-consulting-hero {
+    gap: 3.5rem;
+  }
+  .custom-xs-550-aboutbox-2 {
+    margin-top: 0;
+  }
+
+  .custom-xs-550-aboutbox-3 {
+    margin-top: 1.5rem;
+  }
+
+  .custom-xs-550-aboutbox-5 {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 370px) and (min-height: 660px) {
+  .custom-xs-660-hero-title {
+    margin-top: 3.5rem;
+  }
+  .custom-xs-660-hero-cards {
+    margin-top: -2.7rem;
+  }
+  .custom-xs-660-hero-cards-height {
+    height: 25vh;
+  }
+
+  .custom-xs-660-about-infobox {
+    height: 95vh;
+  }
+
+  .custom-xs-660-benefits {
+    height: 210vh;
+  }
+
+  .custom-xs-660-mobile-gap-list {
+    gap: 2rem;
+    margin-top: -3rem;
+  }
+  .custom-xs-660-mobile-consulting-hero {
+    gap: 3.5rem;
+  }
+
+  .custom-xs-660-aboutbox-2 {
+    margin-top: 1rem;
+  }
+  .custom-xs-660-aboutbox-3 {
+    margin-top: 2.3rem;
+  }
+
+  .custom-xs-660-aboutbox-5 {
+    margin-top: 1.5rem;
+  }
+
+  .custom-xs-660-aboutbox-6 {
+    margin-top: 1.7rem;
+  }
+
+  .custom-xs-660-plans {
+    height: 190vh;
+  }
+
+  .custom-xs-660-plans-box {
+    height: 85vh;
+  }
+
+  .custom-xs-660-call2 {
+    height: 65vh;
+  }
+}
+@media (min-width: 380px) and (min-height: 670px) {
+  .custom-xs-670-aboutbox-5 {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-670-aboutbox-6 {
+    margin-top: 1.7rem;
+  }
+
+  .custom-xs-670-plans {
+    height: 190vh;
+  }
+
+  .custom-xs-670-plans-box {
+    height: 85vh;
+  }
+
+  .custom-xs-670-call2 {
+    height: 60vh;
+  }
+
+  .custom-xs-670-about-infobox {
+    height: 90vh;
+  }
+}
+@media (min-width: 380px) and (min-height: 850px) {
+  .custom-xs-850-hero-title {
+    margin-top: 8rem;
+  }
+  .custom-xs-850-aboutbox-5 {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-850-aboutbox-6 {
+    margin-top: 1.7rem;
+  }
+
+  .custom-xs-850-plans {
+    height: 165vh;
+  }
+
+  .custom-xs-850-plans-box {
+    height: 75vh;
+  }
+
+  .custom-xs-850-call2 {
+    height: 50vh;
+  }
+
+  .custom-xs-850-about-infobox {
+    height: 80vh;
+  }
+
+  .custom-xs-850-aboutbox-2 {
+    margin-top: 3rem;
+  }
+
+  .custom-xs-850-aboutbox-3 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-850-aboutbox-5 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-850-aboutbox-6 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-850-benefits {
+    height: 180vh;
+  }
+
+  .custom-xs-850-mobile-gap-list {
+    gap: 5rem;
+    margin-top: -1rem;
+  }
+
+  .custom-xs-850-mobile-vaults-hero-title {
+    padding-top: 3rem;
+  }
+
+  .custom-xs-850-mobile-vaults-hero {
+    /* Custom styles */
+    padding-top: 10rem;
+    padding-bottom: 3.5rem;
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 390px) and (min-height: 650px) {
+  .custom-xs-650-hero-title {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-390-650-aboutbox-5 {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-390-650-aboutbox-6 {
+    margin-top: 2rem !important;
+  }
+
+  .custom-xs-860-plans {
+    height: 165vh;
+  }
+
+  .custom-xs-860-plans-box {
+    height: 75vh;
+  }
+
+  .custom-xs-860-call2 {
+    height: 60vh;
+  }
+
+  .custom-xs-860-about-infobox {
+    height: 80vh;
+  }
+
+  .custom-xs-860-aboutbox-2 {
+    margin-top: 3rem;
+  }
+
+  .custom-xs-860-aboutbox-3 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-aboutbox-5 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-aboutbox-6 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-benefits {
+    height: 210vh;
+  }
+
+  .custom-xs-860-mobile-gap {
+    /* Custom styles */
+    row-gap: 2.5rem;
+  }
+  .custom-xs-860-mobile-gap-list {
+    gap: 5rem;
+    margin-top: -1rem;
+  }
+
+  .custom-xs-860-mobile-vaults-hero-title {
+    padding-top: 3rem;
+  }
+
+  .custom-xs-860-mobile-vaults-hero {
+    /* Custom styles */
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    gap: 1.25rem;
+  }
+}
+@media (min-width: 390px) and (min-height: 780px) {
+  .custom-xs-650-hero-title {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-390-650-aboutbox-5 {
+    margin-top: 2rem;
+  }
+
+  .custom-xs-390-650-aboutbox-6 {
+    margin-top: 2rem !important;
+  }
+
+  .custom-xs-860-plans {
+    height: 165vh;
+  }
+
+  .custom-xs-860-plans-box {
+    height: 75vh;
+  }
+
+  .custom-xs-860-call2 {
+    height: 60vh;
+  }
+
+  .custom-xs-860-about-infobox {
+    height: 80vh;
+  }
+
+  .custom-xs-860-aboutbox-2 {
+    margin-top: 3rem;
+  }
+
+  .custom-xs-860-aboutbox-3 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-aboutbox-5 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-aboutbox-6 {
+    margin-top: 4rem;
+  }
+
+  .custom-xs-860-benefits {
+    height: 210vh;
+  }
+
+  .custom-xs-860-mobile-gap {
+    /* Custom styles */
+    row-gap: 2.5rem;
+  }
+  .custom-xs-860-mobile-gap-list {
+    gap: 5rem;
+    margin-top: -1rem;
+  }
+
+  .custom-xs-860-mobile-vaults-hero-title {
+    padding-top: 3rem;
+  }
+
+  .custom-xs-860-mobile-vaults-hero {
+    /* Custom styles */
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    gap: 1.25rem;
   }
 }

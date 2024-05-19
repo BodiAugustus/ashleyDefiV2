@@ -2,6 +2,9 @@ const BenefitItem = ({ children }) => (
   <div
     className="hover:bg-slate-100 rounded-2xl hover:text-black text-2xl text-center transition-all p-3 cursor-pointer relative 
   xs:text-sm xs:p-2
+  xs3:text-base
+  xs5:text-lg
+  
   sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl"
   >
     <h2 className="mt-3 sm:mt-8 md:mt-10 lg:mt-3 xl:mt-3">{children}</h2>
@@ -13,6 +16,7 @@ const MemberBenefits = () => {
       <h2
         className="text-4xl text-center pt-0 mb-1 
        xs:text-2xl xs:mb-1
+       xs4:text-3xl
       md:text-5xl lg:text-4xl xl:text-4xl 2xl:mb-2 font-bold"
       >
         Members Only Benefits
