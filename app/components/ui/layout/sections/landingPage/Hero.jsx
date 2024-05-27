@@ -48,7 +48,7 @@ export default function Hero() {
             custom-xs-410675-hero-title
             custom-xs-410810-hero-title
            
-            lg:text-8xl"
+            lg:text-8xl lg:pt-10 lg:mb-4"
             >
               Ashley Capital & DeFi
             </h1>
@@ -70,7 +70,7 @@ export default function Hero() {
               custom-xs-640-snd-title
               custom-xs-410675-snd-title
               custom-xs-410810-snd-title
-              lg:text-2xl  tracking-wide  text-sky-400 ${playfair.className}`}
+              lg:text-3xl lg:pt-10 tracking-wide  text-sky-400 ${playfair.className}`}
             >
               Where whales are born.
             </h4>
@@ -78,7 +78,7 @@ export default function Hero() {
           <div>
             <div
               className="text-white mt-3
-            custom-xs-550-hero-cards"
+            custom-xs-550-hero-cards lg:pt-16"
             >
               <div
                 className="flex md:justify-between xs:gap-[0.6rem]

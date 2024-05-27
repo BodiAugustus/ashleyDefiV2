@@ -60,7 +60,7 @@ export default function FingerOne() {
         className="hidden md:block "
         alt="Screenshots of the dashboard project showing desktop version"
       /> */}
-      <div className="xs:hidden md:visible md:w-[50%] md:h-full md:relative">
+      <div className="xs:hidden md:block md:w-[50%] md:h-full md:relative">
         <video
           src={vid}
           className="brightness-70 rounded-2xl px-4"

@@ -8,7 +8,7 @@ export default function FingerTwo() {
       <div className="md:w-[50%] md:h-full md:relative ">
         <video
           src={vid}
-          className="brightness-70 rounded-2xl px-4 xs:hidden md:visible"
+          className="brightness-70 rounded-2xl px-4 xs:hidden md:block"
           autoPlay
           loop
           muted

@@ -39,7 +39,7 @@ export default function FingerThree() {
           Join Today &#8594;
         </Button>
       </div>
-      <div className="xs:hidden md:visible w-[50%] h-full relative rounded-2xl overflow-hidden">
+      <div className="xs:hidden md:block w-[50%] h-full relative rounded-2xl overflow-hidden">
         <video
           src={vid}
           className="brightness-70 px-4"

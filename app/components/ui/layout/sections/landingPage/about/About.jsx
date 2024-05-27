@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div
       className={`grid xs:grid-cols-1 md:grid-cols-2 
-      h-[100vh] max-w-[2200px] ${lato.className}
+      max-w-[2200px] ${lato.className} lg:items-center
       xs:h-auto
       `}
     >

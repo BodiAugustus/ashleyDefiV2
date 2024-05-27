@@ -109,7 +109,7 @@ export default function Vaults() {
                 {pool.borrowedAPR}
               </span>
               <span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded text-xs">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded text-xs md:text-lg lg:text-xl">
                   Deposit
                 </button>
               </span>

@@ -28,7 +28,7 @@ const Info = () => {
         xs:text-2xl xs:mb-1 xs:mt-2
         xs4:text-3xl
             md:text-5xl md:mb-3
-            lg:text-4xl lg:mb-2
+            lg:text-4xl lg:mb-3
             xl:text-4xl xl:mb-2
             2xl:mb-3"
       >
@@ -43,6 +43,7 @@ const Info = () => {
         custom-xs-670-about-infobox
         custom-xs-850-about-infobox 
         custom-xs-410810-about-infobox
+        lg:h-[87vh]
         "
       >
         <div className="  col-span-2 white-glassmorphism">
@@ -67,7 +68,7 @@ const Info = () => {
               </p>
 
               {isMobile && (
-                <div className="overflow-y-auto h-[25vh]">
+                <div className="overflow-y-auto h-[25vh]  xs:text-sm xs3:text-base xs6:text-lg">
                   <p className="pb-4">
                     Whether you're seeking a temporary learning resource to
                     eventually become your own DeFi master, looking for
@@ -93,7 +94,7 @@ const Info = () => {
             </div>
 
             {!isMobile && (
-              <p>
+              <p className="overflow-y-auto h-[35vh] xs:text-sm xs3:text-base xs6:text-lg ">
                 Whether you're seeking a temporary learning resource to
                 eventually become your own DeFi master, looking for long-term
                 crypto advisement, or simply interested in staking inside of our

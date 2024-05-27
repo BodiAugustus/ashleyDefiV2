@@ -21,7 +21,7 @@ export default function Call2Action() {
             className="relative xs:w-[100%] md:w-[60%] mx-auto flex flex-col items-center  md:h-[100%] justify-center xs:gap-5 
           xs4:p-3 md:gap-8"
           >
-            <h2 className="md:text-3xl font-bold xs:text-2xl xs:pt-5 text-center">
+            <h2 className="md:text-3xl font-bold xs:text-2xl xs:pt-5 text-center lg:text-4xl">
               Come Win With Us!
             </h2>
             <p className="text-center xs:text-sm xs3:text-base xs6:text-lg md:text-xl text-[#B0C7EF]">

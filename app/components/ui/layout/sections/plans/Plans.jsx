@@ -11,11 +11,11 @@ export default function Plans() {
     custom-xs-390780-plans
     custom-xs-410675-plans 
     custom-xs-410810-plans 
-     md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-10 text-white md:w-[90vw] mx-auto"
+     md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white md:w-[90vw] mx-auto"
     >
       <div
         className="text-center md:text-4xl font-bold xs:text-2xl xs:mb-1
-      xs4:text-3xl"
+      xs4:text-3xl lg:pt-5"
       >
         <h2>Our Services</h2>
       </div>
@@ -56,7 +56,7 @@ export default function Plans() {
             <Link
               href="/consulting"
               className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
-              xs5:text-lg xs6:text-;g"
+              xs5:text-lg xs6:text-lg lg:w-[60%]"
             >
               Learn More About Ashley Consulting
             </Link>
