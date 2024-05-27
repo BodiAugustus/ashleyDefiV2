@@ -418,7 +418,10 @@
     height: 65vh;
   }
 }
-@media (min-width: 380px) and (min-height: 670px) {
+@media (min-width: 380px) and (min-height: 680px) {
+  .custom-xs-670-hero-cards {
+    margin-top: -2.7rem;
+  }
   .custom-xs-670-aboutbox-5 {
     margin-top: 2rem;
   }
@@ -432,15 +435,19 @@
   }
 
   .custom-xs-670-plans-box {
-    height: 85vh;
+    height: 80vh;
   }
 
   .custom-xs-670-call2 {
-    height: 60vh;
+    height: 55vh;
+  }
+
+  .custom-xs-670-benefits {
+    height: 200vh;
   }
 
   .custom-xs-670-about-infobox {
-    height: 90vh;
+    height: 85vh;
   }
 }
 @media (min-width: 380px) and (min-height: 850px) {

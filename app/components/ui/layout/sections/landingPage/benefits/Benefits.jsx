@@ -12,6 +12,7 @@ const Benefits = () => {
         custom-xs-640-benefits
         custom-xs-550-benefits
         custom-xs-660-benefits
+        custom-xs-670-benefits
         custom-xs-850-benefits
   custom-xs-860-benefits 
   custom-xs-410810-benefits

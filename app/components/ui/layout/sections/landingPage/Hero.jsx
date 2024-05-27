@@ -67,6 +67,7 @@ export default function Hero() {
               xs:text-lg
               xs3:text-xl
               xs4:text-2xl
+              xs5:mt-5
               custom-xs-640-snd-title
               custom-xs-410675-snd-title
               custom-xs-410810-snd-title
@@ -78,11 +79,13 @@ export default function Hero() {
           <div>
             <div
               className="text-white mt-3
-            custom-xs-550-hero-cards lg:pt-16"
+            custom-xs-550-hero-cards 
+          
+            lg:pt-16"
             >
               <div
                 className="flex md:justify-between xs:gap-[0.6rem]
-                
+               
           lg:max-w-7xl lg:mx-auto lg:gap-16
                 "
               >
