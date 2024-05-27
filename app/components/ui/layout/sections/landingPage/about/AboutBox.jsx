@@ -45,7 +45,7 @@ const About = () => {
                     custom-xs-448-aboutbox-1
                     custom-xs-640-aboutbox-1
                      xs:leading-[0.95rem]
-                     xs3:text-lg xs3:leading-5
+                     xs3:text-lg xs3:leading-5 xs6:text-xl
                     sm:text-2xl sm:w-[90%] sm:left-[5%] sm:mt-6
                     md:text-3xl md:mt-10
                     lg:text-xl lg:mt-3 lg:w-[60%] lg:left-[20%] lg:leading-5
@@ -66,6 +66,7 @@ const About = () => {
                     custom-xs-640-aboutbox-1
                      xs:leading-[0.95rem]
                      xs3:text-lg xs3:leading-5
+                     xs6:text-xl
                     sm:text-xl sm:mt-6
                     md:text-2xl md:mt-8 md:w-[60%] md:left-[20%]
                     lg:text-lg lg:mt-4 lg:leading-tight lg:w-[80%] lg:left-[9%]
@@ -96,6 +97,7 @@ const About = () => {
                      xs3:text-lg
                      custom-xs-660-aboutbox-2 
                      custom-xs-850-aboutbox-2
+                     custom-xs-390780-aboutbox-2 xs6:text-xl
                     sm:text-2xl sm:w-[90%] sm:left-[6%] sm:mt-8
                     md:text-3xl md:mt-14
                     lg:text-lg lg:-mt-0 lg:leading-2
@@ -137,6 +139,7 @@ const About = () => {
                     custom-xs-550-aboutbox-3 
                     custom-xs-660-aboutbox-3
                     custom-xs-850-aboutbox-3
+                    custom-xs-390780-aboutbox-3 xs6:text-xl
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:leading-6 lg:mt-8
@@ -170,7 +173,8 @@ const About = () => {
                     custom-xs-850-aboutbox-5
                     custom-xs-390-650-aboutbox-5
 
-                  
+                    custom-xs-390780-aboutbox-5 xs6:text-xl
+                    custom-xs-410810-aboutbox-5 
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:mt-7 lg:leading-5
                     xl:text-2xl xl:mt-5
@@ -218,7 +222,8 @@ const About = () => {
                     custom-xs-860-aboutbox-6 
 
                     custom-xs-390-650-aboutbox-6 
-
+                    custom-xs-390780-aboutbox-6 xs6:text-xl
+                    custom-xs-410810-aboutbox-6 
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:leading-relaxed md:mt-16
                     lg:text-xl lg:mt-7
@@ -237,6 +242,7 @@ const About = () => {
             className="text-2xl 
             xs:text-base
             xs3:text-lg
+            xs6:text-xl
                 sm:w-[90%] sm:mx-auto
                 md:text-4xl md:w-[97%] md:p-2
                 lg:text-2xl

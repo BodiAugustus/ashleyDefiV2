@@ -10,7 +10,12 @@ export default function Plans() {
       <div className="flex gap-10">
         <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
           <div className="h-[35vh] relative">
-            <Image src="/earth.jpg" fill className="rounded-t-2xl" />
+            <Image
+              src="/earth.jpg"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of Earth."
+            />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
             <h3 className="text-3xl font-bold">Ashley Capital Consulting</h3>
@@ -29,7 +34,12 @@ export default function Plans() {
         </div>
         <div className="w-[40vw] h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700">
           <div className="h-[35vh] relative">
-            <Image src="/earth.jpg" fill className="rounded-t-2xl" />
+            <Image
+              src="/earth.jpg"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of Earth."
+            />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
             <h3 className="text-3xl font-bold">Ashley DeFi Staking</h3>

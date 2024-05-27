@@ -33,7 +33,7 @@ const FAQsSection = () => {
 
   return (
     <div className="py-8 px-4 text-white max-w-[2200px] md:w-[70vw] mx-auto">
-      <h2 className=" md:mb-6 md:text-4xl font-bold xs:text-2xl xs:pt-5 text-center">
+      <h2 className=" md:mb-6 md:text-4xl font-bold xs:text-2xl xs6:text-3xl xs:pt-5 text-center">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">
@@ -41,7 +41,7 @@ const FAQsSection = () => {
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
-      <p className="xs:mt-10 md:mt-16 text-center xs5:text-lg">
+      <p className="xs:mt-10 md:mt-16 text-center xs5:text-lg xs6:text-xl">
         Still have questions?{" "}
         <span className="font-bold">Write to us at support@ashleydefi.com</span>
       </p>

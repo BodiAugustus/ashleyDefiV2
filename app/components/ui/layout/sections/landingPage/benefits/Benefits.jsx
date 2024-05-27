@@ -14,6 +14,7 @@ const Benefits = () => {
         custom-xs-660-benefits
         custom-xs-850-benefits
   custom-xs-860-benefits 
+  custom-xs-410810-benefits
 
          xs:grid-rows-[3fr_3fr_1fr]
          md:grid-cols-2 md:grid-rows-[3fr_1fr] gap-y-5 mx-auto xs:gap-y-5"

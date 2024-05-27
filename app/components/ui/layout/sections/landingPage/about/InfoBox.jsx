@@ -42,6 +42,7 @@ const Info = () => {
         custom-xs-550-about-infobox
         custom-xs-670-about-infobox
         custom-xs-850-about-infobox 
+        custom-xs-410810-about-infobox
         "
       >
         <div className="  col-span-2 white-glassmorphism">
@@ -55,7 +56,7 @@ const Info = () => {
           </div>
 
           <div className="col-span-2 row-span-2 p-2 rounded-md  h-full relative">
-            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base">
+            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg">
               <p className="pb-1 xs:pt-0 ">
                 Ashley Capital & DeFi was founded in order to help
                 professionally onboard people into Decentralized Finance, the

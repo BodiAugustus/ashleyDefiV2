@@ -36,7 +36,7 @@ export default function FingerTwo() {
         </div>
         <p
           className=" xs:text-sm
-        xs3:text-base md:text-xl w-[100%] xs:indent-5 xs:mb-1 md:indent-0 xs:px-2 text-[#B0C7EF]"
+        xs3:text-base xs6:text-lg md:text-xl w-[100%] xs:indent-5 xs:mb-1 md:indent-0 xs:px-2 text-[#B0C7EF]"
         >
           Our high APY vault works as a Yield Aggregators, maximizing yield
           potentials from liquidity pools via auto-compounding and other

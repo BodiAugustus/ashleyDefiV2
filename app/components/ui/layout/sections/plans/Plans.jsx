@@ -8,6 +8,9 @@ export default function Plans() {
     custom-xs-640-plans
     custom-xs-660-plans 
     custom-xs-850-plans
+    custom-xs-390780-plans
+    custom-xs-410675-plans 
+    custom-xs-410810-plans 
      md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-10 text-white md:w-[90vw] mx-auto"
     >
       <div
@@ -22,10 +25,17 @@ export default function Plans() {
          custom-xs-640-plans-box
          custom-xs-660-plans-box
          custom-xs-850-plans-box
+         custom-xs-410675-plans-box
+         custom-xs-410810-plans-box
          md:h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700 xs:mx-auto"
         >
           <div className="h-[35vh] relative">
-            <Image src="/cnslt.jpg" fill className="rounded-t-2xl" />
+            <Image
+              src="/cnslt.jpg"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of consulting"
+            />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
             <h3
@@ -35,7 +45,7 @@ export default function Plans() {
             >
               Membership Consulting
             </h3>
-            <p className="xs:text-sm xs3:text-base xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
+            <p className="xs:text-sm xs3:text-base xs6:text-lg xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
               Our DeFi experts provide full-service Consulting solutions to
               assist you with anything related to decentralized finance. From
               questions about technical aspects to protocol explanations and
@@ -46,7 +56,7 @@ export default function Plans() {
             <Link
               href="/consulting"
               className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
-              xs5:text-lg"
+              xs5:text-lg xs6:text-;g"
             >
               Learn More About Ashley Consulting
             </Link>
@@ -57,16 +67,23 @@ export default function Plans() {
         custom-xs-640-plans-box 
         custom-xs-660-plans-box
         custom-xs-850-plans-box
+        custom-xs-410675-plans-box
+        custom-xs-410810-plans-box
         md:h-[75vh] mx-auto rounded-xl white-glassmorphism shadow-xl shadow-indigo-700"
         >
           <div className="h-[35vh] relative">
-            <Image src="/vault1.jpg" fill className="rounded-t-2xl" />
+            <Image
+              src="/vault1.jpg"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of a vault."
+            />
           </div>
           <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
             <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold xs:text-center md:text-left xs:-mb-2 md:mb-0">
               Staking Vault{" "}
             </h3>
-            <p className="xs:text-sm xs3:text-base xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
+            <p className="xs:text-sm xs3:text-base xs6:text-lg xs:indent-5 md:indent-0 md:text-lg text-[#B0C7EF]">
               We offer a fully-custodialized and permissionless staking vault
               that runs on the Fantom Sonic blockchain. This vaults allow for
               users to deposit their FTM tokens to receive a variable APR that

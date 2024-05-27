@@ -10,7 +10,10 @@ export default function Hero() {
         custom-xs-448-mobile-vaults-hero-title
         custom-xs-640-mobile-vaults-hero-title
         custom-xs-850-mobile-vaults-hero-title
+        custom-xs-390780-mobile-vaults-hero-title
+        custom-xs-410810-mobile-vaults-hero-title 
         xs3:text-4xl
+        xs8:text-5xl
         
          md:pt-0`}
       >
@@ -25,7 +28,7 @@ export default function Hero() {
         custom-xs-860-mobile-vaults-hero 
         xs3:gap-14 "
         >
-          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] text-center">
+          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] text-center custom-xs-410810-mobile-vaults-hero-text">
             High-yielding, permisionless, auto-compounding vaults with TVL based
             allowances for borrowing against collateral
           </h3>

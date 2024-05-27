@@ -23,7 +23,7 @@ export default function FingerThree() {
             style={{ width: "100%", height: "100%", borderRadius: "1rem" }}
           />
         </div>
-        <p className="xs:text-sm xs3:text-base md:text-xl xs:px-2 xs:indent-5 md:indent-0 md:w-[80%] xs:mb-1 text-[#B0C7EF]">
+        <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:px-2 xs:indent-5 md:indent-0 md:w-[80%] xs:mb-1 text-[#B0C7EF]">
           Come and join our growing community where you can engage directly with
           builders, investors, enthusiasts and analysts alike. Our Discord and
           Telegram servers offer real, value-filled conversations that provide

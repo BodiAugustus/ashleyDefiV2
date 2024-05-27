@@ -29,6 +29,7 @@ export default function Layout({ children }) {
               width={40}
               height={40}
               className="opacity-90 rounded-lg xs:visible xs2:hidden"
+              alt="Logo"
             />
 
             <Image
@@ -38,6 +39,7 @@ export default function Layout({ children }) {
               className="opacity-90 rounded-lg xs:hidden xs2:inline 
               
               "
+              alt="logo"
             />
           </Link>
           <button
@@ -112,6 +114,9 @@ export default function Layout({ children }) {
           custom-xs-448-mobile-gap
           custom-xs-640-mobile-gap
           custom-xs-860-mobile-gap
+          custom-xs-390780-mobile-gap
+          custom-xs-410675-mobile-gap 
+          custom-xs-410810-mobile-gap
           "
           >
             <div className="flex items-center justify-between">
@@ -121,12 +126,14 @@ export default function Layout({ children }) {
                 width={70}
                 height={70}
                 className="opacity-90 rounded-lg mb-0 xs:visible xs:mt-3 xs2:hidden"
+                alt="logo"
               />
               <Image
                 src="/android-chrome-192x1922.png"
                 width={90}
                 height={90}
                 className="opacity-90 rounded-lg mb-5 xs:hidden xs2:block"
+                alt="logo"
               />
               <button
                 onClick={closeMenu}
@@ -145,6 +152,8 @@ export default function Layout({ children }) {
               custom-xs-550-mobile-gap-list
               custom-xs-660-mobile-gap-list
               custom-xs-850-mobile-gap-list
+              custom-xs-390780-mobile-gap-list
+              custom-xs-410675-mobile-gap-list 
               xs4:text-3xl
               `}
             >

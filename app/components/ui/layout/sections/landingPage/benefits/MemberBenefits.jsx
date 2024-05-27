@@ -4,6 +4,8 @@ const BenefitItem = ({ children }) => (
   xs:text-sm xs:p-2
   xs3:text-base
   xs5:text-lg
+  xs8:text-xl
+  
   
   sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl"
   >

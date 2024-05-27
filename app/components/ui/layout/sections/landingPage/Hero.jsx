@@ -44,6 +44,9 @@ export default function Hero() {
             custom-xs-660-hero-title
             custom-xs-850-hero-title
             custom-xs-650-hero-title
+            custom-xs-390780-hero-title xs6:text-5xl 
+            custom-xs-410675-hero-title
+            custom-xs-410810-hero-title
            
             lg:text-8xl"
             >
@@ -52,6 +55,7 @@ export default function Hero() {
             <h2
               className="
             xs:text-2xl
+            
             xs2:mb-4
             
             lg:text-4xl lg:mb-14 "
@@ -64,6 +68,8 @@ export default function Hero() {
               xs3:text-xl
               xs4:text-2xl
               custom-xs-640-snd-title
+              custom-xs-410675-snd-title
+              custom-xs-410810-snd-title
               lg:text-2xl  tracking-wide  text-sky-400 ${playfair.className}`}
             >
               Where whales are born.
@@ -88,6 +94,10 @@ export default function Hero() {
                   custom-xs-550-hero-cards-height
                   custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
+                    xs6:text-lg xs6:leading-6
+                    custom-xs-390780-hero-cards-height 
+                    custom-xs-410675-hero-cards-height
+                    custom-xs-410810-hero-cards-height
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
                     lg:text-xl lg:w-[32%]
@@ -98,7 +108,7 @@ export default function Hero() {
                   <div
                     className="flex justify-between
                   xs:px-1
-                   px-4 py-2 items-center"
+                   px-4 py-2 items-center xs6:leading-5"
                   >
                     <h4>Our Purpose</h4>
                     <GiAbstract070
@@ -128,6 +138,10 @@ export default function Hero() {
                   custom-xs-550-hero-cards-height
                   custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
+                    xs6:text-lg xs6:leading-6
+                    custom-xs-390780-hero-cards-height 
+                    custom-xs-410675-hero-cards-height
+                    custom-xs-410810-hero-cards-height
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
                     lg:text-xl lg:w-[32%]
@@ -167,6 +181,10 @@ export default function Hero() {
                   custom-xs-550-hero-cards-height 
                   custom-xs-660-hero-cards-height
                     xp:h-[25vh] xp:text-base
+                    xs6:text-lg xs6:leading-6
+                    custom-xs-390780-hero-cards-height 
+                    custom-xs-410675-hero-cards-height
+                    custom-xs-410810-hero-cards-height
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
                     lg:text-xl lg:w-[32%]
@@ -193,7 +211,7 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We provide direct consulting with a high APR permissionless
+                    We provide direct consulting with a high APR no permission
                     staking vault.
                   </p>
                 </div>

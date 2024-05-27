@@ -130,7 +130,7 @@ export default function CnsltPlans() {
 
   const closeModal = () => setModalOpen(false);
   return (
-    <div className=" xs:h-auto md:h-[100vh] max-w-[2200px] flex flex-col items-center xs:gap-y-1 md:gap-y-10 text-white  md:w-[90vw] mx-auto xs:-mt-10 md:-mt-0">
+    <div className=" xs:h-auto md:h-[100vh] max-w-[2200px] flex flex-col items-center xs:gap-y-1 md:gap-y-10 text-white  md:w-[90vw] mx-auto xs:-mt-10 md:-mt-0 xs6:mb-5">
       <div
         className="text-center  xs:text-2xl md:text-4xl font-bold
       xs4:text-3xl
@@ -141,13 +141,18 @@ export default function CnsltPlans() {
       <div className="flex xs:flex-col md:flex-row xs:gap-6 md:gap-10 ">
         <div className="xs:w-[95%] md:w-[40vw] xs:h-auto h-[75vh] rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700">
           <div className="h-[35vh] relative">
-            <Image src="/whales.webp" fill className="rounded-t-2xl" />
+            <Image
+              src="/whales.webp"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of a whale."
+            />
           </div>
           <div className="xs:h-auto md:h-[40vh] py-4 px-6 flex flex-col xs:gap-1 md:gap-3">
             <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold">
               Members Consulting
             </h3>
-            <p className="xs:text-sm xs5:text-base md:text-lg text-[#B0C7EF]">
+            <p className="xs:text-sm xs5:text-base xs6:text-lg md:text-lg text-[#B0C7EF]">
               Our DeFi experts provide full-service Consulting solutions to our
               members to assist them with anything related to decentralized
               finance. From technical aspects to protocol explanations and
@@ -157,7 +162,7 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("monthly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%]"
+              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] xs6:text-lg"
             >
               Learn More About Members Consulting
             </button>
@@ -165,13 +170,18 @@ export default function CnsltPlans() {
         </div>
         <div className="xs:w-[95%] md:w-[40vw] xs:h-auto md:h-[75vh] rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700 xs:mb-6 md:mb-0">
           <div className="h-[35vh] relative">
-            <Image src="/whale.jpg" fill className="rounded-t-2xl" />
+            <Image
+              src="/whale.jpg"
+              fill
+              className="rounded-t-2xl"
+              alt="Image of a pod of whales"
+            />
           </div>
           <div className="xs:h-auto md:h-[40vh] py-4 px-6 flex flex-col xs:gap-1 md:gap-3">
             <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold">
               Hourly Consulting{" "}
             </h3>
-            <p className="xs:text-sm xs5:text-base md:text-lg text-[#B0C7EF]">
+            <p className="xs:text-sm xs5:text-base md:text-lg xs6:text-lg text-[#B0C7EF]">
               We offer hourly consulting services for customers who are looking
               for a more part-time partner. Once requested one of our
               consultants will reach out within 24 hours of your initial request
@@ -181,7 +191,7 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("hourly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%]"
+              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] xs6:text-lg"
             >
               Learn More About Hourly Consulting
             </button>

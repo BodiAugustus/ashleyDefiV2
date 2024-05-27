@@ -115,7 +115,7 @@ const Services = () => {
       >
         Consulting Services
       </h2>
-      <p className="xs:text-sm md:text-xl  text-center xs:mb-4 md:mb-6 xs:w-[95%] md:w-[45%] mx-auto text-[#B0C7EF] xs5:text-base">
+      <p className="xs:text-sm md:text-xl  text-center xs:mb-4 md:mb-6 xs:w-[95%] md:w-[45%] mx-auto text-[#B0C7EF] xs5:text-base xs6:text-lg">
         Our full-suite of DeFi consulting services are designed to cater to
         every level of our clients needs, regardless of their portfolio sizes
       </p>
@@ -139,7 +139,7 @@ const Services = () => {
           />
         ))}
       </div>
-      <p className="xs:mt-8 md:mt-16 text-center xs5:text-lg">
+      <p className="xs:mt-8 md:mt-16 text-center xs5:text-lg xs6:text-xl">
         Have any more questions?{" "}
         <span className="font-bold">
           Please write to us using the contact form below:

@@ -8,7 +8,7 @@ export default function AshleyAdv() {
       >
         The Ashley Advantage
       </h2>
-      <p className="text-[#B0C7EF] text-center xs:text-sm xs5:text-base md:text-xl xs:w-[95%] md:w-[40%] mx-auto xs:mb-4 md:mb-8">
+      <p className="text-[#B0C7EF] text-center xs:text-sm xs5:text-base xs6:text-lg xs6:leading-6 md:text-xl xs:w-[95%] md:w-[40%] mx-auto xs:mb-4 md:mb-8">
         Partnering with Ashley Capital & DeFi means us becoming an integral part
         of your team. It means having our consultant's dedicate themselves
         completely to assisting you in achieving your financial aims
@@ -19,7 +19,7 @@ export default function AshleyAdv() {
             <h3 className="xs:text-xl md:text-2xl font-bold xs5:text-2xl">
               Collaboration
             </h3>
-            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base">
+            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
               We emphasize the importance of working closely with our clients as
               partners, not just as service providers. This involves open
               dialouge, timely communication, and a deep understanding of our
@@ -33,7 +33,7 @@ export default function AshleyAdv() {
             <h3 className="xs:text-xl md:text-2xl font-bold xs5:text-2xl">
               Integrity
             </h3>
-            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base">
+            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
               Ashley Capital & DeFi consultants uphold the highest standards of
               honesty and ethical behavior. In the context of DeFi, where trust
               and security are paramount, integrity means providing reliable and
@@ -48,7 +48,7 @@ export default function AshleyAdv() {
             <h3 className="xs:text-xl md:text-2xl font-bold xs5:text-2xl">
               Returns
             </h3>
-            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base">
+            <p className="text-[#B0C7EF] xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
               Our consultants concentrate on strategies that maximize our client
               returns and profitability while mitigating risk and exposure. This
               involves identifying and implementing investment opportunities

@@ -11,6 +11,7 @@ export default function Hero() {
       custom-xs-640-mobile-consulting-hero
       custom-xs-360-mobile-consulting-hero
       custom-xs-550-mobile-consulting-hero 
+      custom-xs-390780-mobile-consulting-hero
       
        md:gap-8 items-center justify-center h-[100%] xs:mb-0 md:-mb-6"
       >
@@ -22,7 +23,7 @@ export default function Hero() {
         >
           Ashley Consulting: Your Partners in DeFi
         </h1>
-        <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg md:w-[60%] text-center ">
+        <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg md:w-[60%] text-center xs8:text-xl">
           Our advisory spans across the Fantom and Monero ecosystems including
           protocol assessments, trading strategies, tokenomics, education, and
           investing services.
@@ -41,7 +42,7 @@ export default function Hero() {
             Learn more
           </Button>
         </div>
-        <h4 className="xs:mt-4 md:mt-16 uppercase text-[#d3dcf0] font-bold xs:text-sm md:text-xl">
+        <h4 className="xs:mt-4 md:mt-16 uppercase text-[#d3dcf0] font-bold xs:text-sm md:text-xl xs8:text-base">
           Helping people make money since 2019
         </h4>
       </div>

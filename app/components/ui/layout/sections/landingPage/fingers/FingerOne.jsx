@@ -27,6 +27,7 @@ export default function FingerOne() {
           className="
         xs:text-sm xs:w-[100%] xs:indent-5 xs:pb-4 xs:px-2
         xs3:text-base
+        xs6:text-lg
         md:indent-0
         md:text-xl md:w-[80%] text-[#B0C7EF]"
         >

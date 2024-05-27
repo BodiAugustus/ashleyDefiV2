@@ -66,7 +66,7 @@ export default function Vaults() {
         xs4:text-3xl"
         >
           High Yield Staking Vaults -{" "}
-          <span className="font-sans font-thin xs:text-base md:text-xl ">
+          <span className="font-sans font-thin xs:text-base xs8:text-lg md:text-xl ">
             Please read the docs before staking.
           </span>
         </h1>
@@ -91,7 +91,7 @@ export default function Vaults() {
               onClick={() => handleRowClick(pool)}
               className="flex justify-between bg-[#292941]  p-4 rounded-lg mb-2"
             >
-              <span className="xs:text-xs md:text-base">{pool.pair}</span>
+              <span className="xs:text-xs md:text-base ">{pool.pair}</span>
               <span className="xs:text-xs md:text-base">{pool.depositAPR}</span>
               <span className="xs:hidden md:visible">
                 {pool.tvlTotal} / {pool.tvlTokens}

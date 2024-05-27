@@ -64,7 +64,7 @@ const ContactForm = () => {
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
-            className={`w-full p-2 ${
+            className={`w-full p-2 xs6:text-lg ${
               errors.name ? "border-red-500" : "border-gray-300"
             } border rounded`}
           />
@@ -76,7 +76,7 @@ const ContactForm = () => {
             placeholder="Email or Telegram"
             value={formData.contactInfo}
             onChange={handleChange}
-            className={`w-full p-2 ${
+            className={`w-full p-2 xs6:text-lg ${
               errors.contactInfo ? "border-red-500" : "border-gray-300"
             } border rounded`}
           />
@@ -88,7 +88,7 @@ const ContactForm = () => {
             name="consultingType"
             value={formData.consultingType}
             onChange={handleChange}
-            className={`w-full p-2 ${
+            className={`w-full p-2 xs6:text-lg ${
               errors.consultingType ? "border-red-500" : "border-gray-300"
             } border rounded`}
           >
@@ -105,7 +105,7 @@ const ContactForm = () => {
             name="idealTimeframe"
             value={formData.idealTimeframe}
             onChange={handleChange}
-            className={`w-full p-2 ${
+            className={`w-full p-2 xs6:text-lg ${
               errors.idealTimeframe ? "border-red-500" : "border-gray-300"
             } border rounded`}
           >
@@ -122,7 +122,7 @@ const ContactForm = () => {
             placeholder="Optional Message (extra details)"
             value={formData.optionalMessage}
             onChange={handleChange}
-            className="w-full p-2 border-gray-300 border rounded"
+            className="w-full p-2 xs6:text-lg border-gray-300 border rounded"
             rows="4"
           ></textarea>
 
@@ -130,7 +130,7 @@ const ContactForm = () => {
             variant="blue"
             size="lg"
             type="submit"
-            className="flex items-center justify-center  p-2 rounded w-full "
+            className="flex items-center justify-center  p-2 rounded w-full"
           >
             Submit
           </Button>

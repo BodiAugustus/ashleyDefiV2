@@ -38,7 +38,7 @@ export default function ServicesItem({
           <h3 className="xs:text-2xl xs:text-center md:text-left md:text-3xl font-bold">
             {title}
           </h3>
-          <p className="text-[#B0C7EF] xs:mb-3 xs:text-sm xs5:text-base md:text-lg">
+          <p className="text-[#B0C7EF] xs:mb-3 xs:text-sm xs5:text-base xs6:text-lg md:text-lg">
             {description}
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function ServicesItem({
       </div>
       <div
         className={`transition-height bg-[#292941] px-4 duration-500 ease-in-out pb-1 ${
-          isOpen ? "max-h-[1200px]" : "max-h-0"
+          isOpen ? "max-h-[1250px]" : "max-h-0"
         } overflow-hidden`}
         style={{
           transitionProperty: "max-height",
@@ -54,26 +54,28 @@ export default function ServicesItem({
         }}
       >
         <div className="flex flex-col md:gap-5">
-          <h3 className="pt-2 text-xl md:text-xl">{insideheader1}</h3>
-          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base">
+          <h3 className="pt-2 text-xl md:text-xl xs6:text-2xl ">
+            {insideheader1}
+          </h3>
+          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
             {insideDescription1}
           </p>
         </div>
         <div className="flex flex-col md:gap-5">
-          <h3 className="pt-2 text-xl">{insideheader2}</h3>
-          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base">
+          <h3 className="pt-2 text-xl xs6:text-2xl">{insideheader2}</h3>
+          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
             {insideDescription2}
           </p>
         </div>
         <div className="flex flex-col md:gap-5">
-          <h3 className="pt-2 text-xl">{insideheader3}</h3>
-          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base">
+          <h3 className="pt-2 text-xl xs6:text-2xl">{insideheader3}</h3>
+          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
             {insideDescription3}
           </p>
         </div>
         <div className="flex flex-col md:gap-5">
-          <h3 className="pt-2 text-xl">{insideheader4}</h3>
-          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base">
+          <h3 className="pt-2 text-xl xs6:text-2xl">{insideheader4}</h3>
+          <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base xs6:text-lg">
             {insideDescription4}
           </p>
         </div>

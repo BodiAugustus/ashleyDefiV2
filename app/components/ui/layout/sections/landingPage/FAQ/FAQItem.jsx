@@ -14,7 +14,7 @@ export default function FAQItem({ question, answer }) {
         className="flex justify-between items-center cursor-pointer"
         onClick={toggleOpen}
       >
-        <h3 className="text-lg font-semibold">{question}</h3>
+        <h3 className="text-lg font-semibold xs6:text-xl">{question}</h3>
         {isOpen ? <AiOutlineMinus size={24} /> : <AiOutlinePlus size={24} />}
       </div>
       <div
@@ -26,7 +26,7 @@ export default function FAQItem({ question, answer }) {
           transitionDuration: "500ms",
         }}
       >
-        <p className="pt-2">{answer}</p>
+        <p className="pt-2 xs6:text-lg">{answer}</p>
       </div>
     </div>
   );

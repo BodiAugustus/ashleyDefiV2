@@ -7,6 +7,7 @@ const HoverableSection = ({ content }) => (
   <div
     className="col-span-1  md:row-span-1 max-w-[800px] bg-[#1D3461] text-center hover:bg-[#4C5175] font-thin cursor-pointer p-3 xs:pt-4 xs:text-sm
     xs3:text-base
+    xs6:text-lg
   sm:pt-4 md:text-2xl md:p-3 lg:text-base  xl:text-xl xl:p-4 xl:pt-3"
   >
     <h2>{content}</h2>
@@ -63,9 +64,10 @@ const AtAGlance = () => {
           <h4
             className="text-center text-white text-xl mt-2 
           xs:text-lg
+          xs6:text-xl
           sm:text-2xl sm:w-[70%] sm:mx-auto md:text-3xl md:w-[55%] lg:text-2xl lg:w-[80%] lg:-mt-3 xl:text-2xl xl:-mt-2"
           >
-            All members get full access all of the time.
+            All members get full access all the time.
           </h4>
         </div>
 

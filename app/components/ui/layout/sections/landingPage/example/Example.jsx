@@ -82,7 +82,7 @@ const Example = () => {
     <section
       className=" mx-auto w-[100vw] h-[70vh] max-w-[1800px] pt-4
       xs:h-auto
-    
+    xs6:mb-4
     md:h-[40vh]
     lg:h-[80vh]
     
@@ -182,6 +182,7 @@ xs5:text-2xl
                       className="my-auto flex text-2xl
                       xs:text-sm
                       xs4:text-base
+                      xs6:text-lg
                       md:text-2xl
                     4xl:text-4xl
                     "

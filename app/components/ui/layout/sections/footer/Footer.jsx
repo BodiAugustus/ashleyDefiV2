@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-[1400px]  px-2 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 mx-auto justify-items-center">
         {/* Column 1 */}
         <div>
-          <h5 className="font-bold text-lg md:mb-4">Services</h5>
+          <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Services</h5>
           <ul>
             <li>
               <Link
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         {/* Column 2 */}
         <div>
-          <h5 className="font-bold text-lg md:mb-4">Support</h5>
+          <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Support</h5>
           <ul>
             <li>
               <Link
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         {/* Column 3 */}
         <div>
-          <h5 className="font-bold text-lg md:mb-4">Social</h5>
+          <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Social</h5>
           <ul>
             <li>
               <a
@@ -71,7 +71,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center text-gray-400 xs:pt-10 xs:leading-4 xs:text-sm md:pt-20">
+      <div className="text-center text-gray-400 xs:pt-10 xs:leading-4 xs:text-sm xs6:text-base xs6:leading-4 md:pt-20">
         <p>
           &copy; {new Date().getFullYear()} Ashley Capital & DeFi.
           <br /> Where whales are born.
