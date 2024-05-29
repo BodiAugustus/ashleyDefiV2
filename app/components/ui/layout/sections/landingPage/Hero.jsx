@@ -23,76 +23,68 @@ export default function Hero() {
         <div
           className={`absolute top-0 text-center xs:h-[88vh] md:h-[82vh] ${playfair.className} w-[100vw]`}
         >
-          <div
-            className="
-      
-            custom-xs-448-hero-cards
+          <div className="flex flex-col h-[100%] justify-around ">
+            <div className="lg:pb-16">
+              {/* custom-xs-448-hero-cards
             custom-xs-640-hero-cards
             custom-xs-340-hero-cards
-            custom-xs-550-hero-cards
-          
-          lg:pb-16"
-          >
-            <h1
-              className="
+            custom-xs-550-hero-cards */}
+              <h1
+                className="
             xs:text-3xl 
-            custom-xs-448-hero-title
-            custom-xs-640-hero-title 
-            custom-xs-340-hero-title
             xs4:text-4xl
-            custom-xs-550-hero-title
-            custom-xs-660-hero-title
-            custom-xs-850-hero-title
-            custom-xs-650-hero-title
-            custom-xs-390780-hero-title xs6:text-5xl 
-            custom-xs-410675-hero-title
-            custom-xs-410810-hero-title
-           
+            xs6:text-5xl 
             lg:text-8xl lg:pt-10 lg:mb-4"
-            >
-              Ashley Capital & DeFi
-            </h1>
-            <h2
-              className="
+              >
+                Ashley Capital & DeFi
+              </h1>
+              {/* custom-xs-448-hero-title custom-xs-640-hero-title
+            custom-xs-340-hero-title custom-xs-550-hero-title
+            custom-xs-660-hero-title custom-xs-850-hero-title
+            custom-xs-650-hero-title custom-xs-390780-hero-title
+            custom-xs-410675-hero-title
+            custom-xs-410810-hero-title */}
+              <h2
+                className="
             xs:text-2xl
-            
             xs2:mb-4
-            
             lg:text-4xl lg:mb-14 "
-            >
-              Crypto Consulting and Wealth Management
-            </h2>
+              >
+                Crypto Consulting and Wealth Management
+              </h2>
+            </div>
+
             <h4
               className={`
-              xs:text-lg
+              xs:text-lg xs:justify-start
               xs3:text-xl
               xs4:text-2xl
               xs5:mt-5
-              custom-xs-640-snd-title
-              custom-xs-410675-snd-title
-              custom-xs-410810-snd-title
+            
               lg:text-3xl lg:pt-10 tracking-wide  text-sky-400 ${playfair.className}`}
             >
-              Where whales are born.
+              Where whales are born. <br />
+              <br />
+              <br />
+              <br />
+              <br />
             </h4>
-          </div>
-          <div>
-            <div
-              className="text-white mt-3
-            custom-xs-550-hero-cards 
-          
-            lg:pt-16"
-            >
+
+            {/* custom-xs-640-snd-title
+              custom-xs-410675-snd-title
+              custom-xs-410810-snd-title */}
+
+            {/* Starts cards */}
+            <div className="text-white mt-3 lg:pt-16">
+              {/* custom-xs-550-hero-cards */}
               <div
-                className="flex md:justify-between xs:gap-[0.6rem]
-               
-          lg:max-w-7xl lg:mx-auto lg:gap-16
-                "
+                className="flex md:justify-between xs:gap-[0.6rem]     
+                lg:max-w-7xl lg:mx-auto lg:gap-16"
               >
                 <div
                   className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism 
                   
-                  xs3:text-sm xs:h-auto
+                  xs3:text-sm xs:h-auto xs:pb-1
                      xp:text-base
                     xs6:text-lg xs6:leading-6
                   
@@ -140,7 +132,7 @@ export default function Hero() {
                 <div
                   className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism 
                  
-                  xs3:text-sm xs:h-auto
+                  xs3:text-sm xs:h-auto xs:pb-1
                     xp:h-[25vh] xp:text-base
                     xs6:text-lg xs6:leading-6
                  
@@ -186,7 +178,7 @@ export default function Hero() {
                 <div
                   className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism  
                  
-                  xs3:text-sm xs:h-auto
+                  xs3:text-sm xs:h-auto xs:pb-1
                     xp:h-[25vh] xp:text-base
                     xs6:text-lg xs6:leading-6
                
