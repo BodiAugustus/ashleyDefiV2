@@ -91,23 +91,27 @@ export default function Hero() {
               >
                 <div
                   className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism 
-                  custom-xs-448-hero-cards2 
-                  custom-xs-640-hero-cards2 
-                  xs3:text-sm custom-xs-360-hero-cards-height
-                  custom-xs-550-hero-cards-height
-                  custom-xs-660-hero-cards-height
-                    xp:h-[25vh] xp:text-base
+                  
+                  xs3:text-sm xs:h-auto
+                     xp:text-base
                     xs6:text-lg xs6:leading-6
-                    custom-xs-390780-hero-cards-height 
-                    custom-xs-410675-hero-cards-height
-                    custom-xs-410810-hero-cards-height
+                  
                     sm:text-lg sm:h-[28vh] sm:w-[31%]
                     md:text-2xl
                     lg:text-xl lg:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
+
                     "
                 >
+                  {/* custom-xs-448-hero-cards2 
+                  custom-xs-640-hero-cards2 
+                    custom-xs-360-hero-cards-height
+                  custom-xs-550-hero-cards-height
+                  custom-xs-660-hero-cards-height
+                    custom-xs-390780-hero-cards-height 
+                    custom-xs-410675-hero-cards-height
+                    custom-xs-410810-hero-cards-height */}
                   <div
                     className="flex justify-between
                   xs:px-1
