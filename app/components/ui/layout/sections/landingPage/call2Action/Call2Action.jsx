@@ -2,19 +2,20 @@ import { Button } from "../../../../common/Button";
 
 export default function Call2Action() {
   return (
-    <div className="xs:h-auto md:h-[75vh] max-w-[2200px] z-0">
+    <div className="xs:h-auto md:h-[75vh] max-w-[2200px] z-0 ">
       <div
-        className="flex white-glassmorphism xs:w-[95%] md:w-[90vw] 
-      custom-xs-448-call2
+        className="flex white-glassmorphism xs:w-[95%] md:w-[90vw]  
+     
+       md:h-[70vh]  mx-auto text-white xs:p-2 md:p-4 max-w-[1400px] shadow-xl shadow-indigo-700 xs6:mb-10  xs8:mb-0"
+      >
+        {/* custom-xs-448-call2
       custom-xs-640-call2
       custom-xs-660-call2
       custom-xs-670-call2 
       custom-xs-850-call2
       custom-xs-860-call2
       custom-xs-410675-call2
-      custom-xs-410810-call2
-       md:h-[70vh]  mx-auto text-white xs:p-2 md:p-4 max-w-[1400px] shadow-xl shadow-indigo-700 xs6:mb-10  xs8:mb-0"
-      >
+      custom-xs-410810-call2 */}
         <div className="bg-[url(/haad.jpg)] bg-cover bg-center rounded-2xl relative">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
           <div
@@ -34,7 +35,7 @@ export default function Call2Action() {
                 where whales are born.
               </span>
             </p>
-            <Button className="shadow-xl font-thin font-sans xs5:text-xl">
+            <Button className="shadow-xl font-thin font-sans xs5:text-xl xs:mb-2">
               Become a Member
             </Button>
           </div>

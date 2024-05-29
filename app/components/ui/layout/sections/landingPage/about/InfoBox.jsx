@@ -35,28 +35,29 @@ const Info = () => {
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
       <div
-        className="xs:w-[95%] md:w-[90%] h-[88vh] mx-auto grid grid-cols-2 gap-2 grid-rows-3 p-2  white-glassmorphism shadow-xl shadow-indigo-700
-        custom-xs-448-about-infobox
+        className="xs:w-[95%] xs:h-auto
+         md:w-[90%] md:h-[88vh] mx-auto p-2  white-glassmorphism shadow-xl shadow-indigo-700
+        
+        lg:h-[87vh]
+        "
+      >
+        {/* custom-xs-448-about-infobox
         custom-xs-640-about-infobox
         custom-xs-360-about-infobox
         custom-xs-550-about-infobox
         custom-xs-670-about-infobox
         custom-xs-850-about-infobox 
-        custom-xs-410810-about-infobox
-        lg:h-[87vh]
-        "
-      >
+        custom-xs-410810-about-infobox */}
         <div className="  col-span-2 white-glassmorphism">
-          <div className="relative h-full ">
+          <div className="relative ">
             <Image
               src={tester2}
-              layout="fill"
-              alt="Venice, Italy"
+              alt="Man sitting at laptop in paradise investing in crypto"
               className="relative brightness-90 rounded-2xl"
             />
           </div>
 
-          <div className="col-span-2 row-span-2 p-2 rounded-md  h-full relative">
+          <div className="col-span-2 row-span-2 p-2 rounded-md relative">
             <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg">
               <p className="pb-1 xs:pt-0 ">
                 Ashley Capital & DeFi was founded in order to help
@@ -68,7 +69,7 @@ const Info = () => {
               </p>
 
               {isMobile && (
-                <div className="overflow-y-auto h-[25vh]  xs:text-sm xs3:text-base xs6:text-lg">
+                <div className="overflow-y-scroll   xs:text-sm xs3:text-base xs6:text-lg">
                   <p className="pb-4">
                     Whether you're seeking a temporary learning resource to
                     eventually become your own DeFi master, looking for

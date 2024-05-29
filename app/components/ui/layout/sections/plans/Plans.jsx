@@ -4,15 +4,17 @@ import Link from "next/link";
 export default function Plans() {
   return (
     <div
-      className="custom-xs-448-plans
+      className="
+      xs:h-auto
+     md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white md:w-[90vw] mx-auto xs:mb-10"
+    >
+      {/* custom-xs-448-plans
     custom-xs-640-plans
     custom-xs-660-plans 
     custom-xs-850-plans
     custom-xs-390780-plans
     custom-xs-410675-plans 
-    custom-xs-410810-plans 
-     md:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white md:w-[90vw] mx-auto"
-    >
+    custom-xs-410810-plans  */}
       <div
         className="text-center md:text-4xl font-bold xs:text-2xl xs:mb-1
       xs4:text-3xl lg:pt-5"
@@ -21,14 +23,15 @@ export default function Plans() {
       </div>
       <div className="flex md:gap-10 xs:flex-col xs:gap-7 md:flex-row">
         <div
-          className="xs:w-[95%] md:w-[40vw] custom-xs-448-plans-box
+          className="xs:w-[95%] xs:h-auto md:w-[40vw] 
+         md:h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700 xs:mx-auto"
+        >
+          {/* custom-xs-448-plans-box
          custom-xs-640-plans-box
          custom-xs-660-plans-box
          custom-xs-850-plans-box
          custom-xs-410675-plans-box
-         custom-xs-410810-plans-box
-         md:h-[75vh] rounded-xl white-glassmorphism shadow-xl shadow-indigo-700 xs:mx-auto"
-        >
+         custom-xs-410810-plans-box */}
           <div className="h-[35vh] relative">
             <Image
               src="/cnslt.jpg"
@@ -37,7 +40,7 @@ export default function Plans() {
               alt="Image of consulting"
             />
           </div>
-          <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
+          <div className=" py-4 px-6 flex flex-col gap-3">
             <h3
               className="xs:text-xl md:text-3xl font-bold xs:text-center
             xs5:text-2xl
@@ -63,14 +66,15 @@ export default function Plans() {
           </div>
         </div>
         <div
-          className="xs:w-[95%] md:w-[40vw] custom-xs-448-plans-box
+          className="xs:w-[95%] xs:h-auto md:w-[40vw]
+        md:h-[75vh] mx-auto rounded-xl white-glassmorphism shadow-xl shadow-indigo-700"
+        >
+          {/* custom-xs-448-plans-box
         custom-xs-640-plans-box 
         custom-xs-660-plans-box
         custom-xs-850-plans-box
         custom-xs-410675-plans-box
-        custom-xs-410810-plans-box
-        md:h-[75vh] mx-auto rounded-xl white-glassmorphism shadow-xl shadow-indigo-700"
-        >
+        custom-xs-410810-plans-box */}
           <div className="h-[35vh] relative">
             <Image
               src="/vault1.jpg"
@@ -79,7 +83,7 @@ export default function Plans() {
               alt="Image of a vault."
             />
           </div>
-          <div className="h-[40vh] py-4 px-6 flex flex-col gap-3">
+          <div className=" py-4 px-6 flex flex-col gap-3">
             <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold xs:text-center md:text-left xs:-mb-2 md:mb-0">
               Staking Vault{" "}
             </h3>

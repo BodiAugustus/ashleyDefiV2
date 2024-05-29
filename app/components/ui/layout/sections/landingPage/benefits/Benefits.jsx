@@ -5,21 +5,19 @@ import MemberBenefits from "./MemberBenefits";
 const Benefits = () => {
   return (
     <div
-      className="md:h-[100vh]  text-white font
-        lg:pt-2 max-w-[2200px] grid
-        xs:pt-2 xs:grid-cols-1 
-        custom-xs-448-benefits
+      className="md:h-[100vh]  text-white  xs:h-auto
+        xs:pt-4 max-w-[2200px] md:grid
+        xs:flex xs:flex-col xs:gap-5 xs:mb-10
+         md:grid-cols-2 md:grid-rows-[3fr_1fr] mx-auto "
+    >
+      {/* custom-xs-448-benefits
         custom-xs-640-benefits
         custom-xs-550-benefits
         custom-xs-660-benefits
         custom-xs-670-benefits
         custom-xs-850-benefits
   custom-xs-860-benefits 
-  custom-xs-410810-benefits
-
-         xs:grid-rows-[3fr_3fr_1fr]
-         md:grid-cols-2 md:grid-rows-[3fr_1fr] gap-y-5 mx-auto xs:gap-y-5"
-    >
+  custom-xs-410810-benefits */}
       <MemberBenefits />
       <AtAGlance />
       <Ticker />
