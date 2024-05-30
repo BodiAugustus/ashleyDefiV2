@@ -25,9 +25,9 @@ export default function Hero() {
           Ashley Consulting: Your Partners in DeFi
         </h1>
         <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg md:w-[60%] text-center xs8:text-xl">
-          Our advisory spans across the Fantom and Monero ecosystems including
-          protocol assessments, trading strategies, tokenomics, education, and
-          investing services.
+          Our advisory spans across the Fantom, Sonic and Monero ecosystems
+          including protocol assessments, trading strategies, tokenomics,
+          education, and investing services.
         </h3>
         <div className="flex gap-5 w-[100%] items-center justify-center xs:pt-5 md:pt-0 ">
           <Button
