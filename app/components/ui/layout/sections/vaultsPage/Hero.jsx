@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-30"></div>
       <h1
         className={`xs:text-3xl md:text-5xl text-white font-bold text-center tracking-normal ${playfair.className} md:pb-4 brightness-125 
-        pt-[10%]
+        pt-[20%]
         xs3:text-4xl
         xs8:text-5xl
         
