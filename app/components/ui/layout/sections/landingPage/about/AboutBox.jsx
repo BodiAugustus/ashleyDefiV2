@@ -12,7 +12,7 @@ import header6 from "./../../../../../../../public/ashley-defi-pic-3.jpg";
 const About = () => {
   return (
     <div
-      className=" text-white text-center max-w-[800px]
+      className=" text-white text-center max-w-[800px] xs:mb-3 md:mb-0
       
        
         "
