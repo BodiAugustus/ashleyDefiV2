@@ -11,20 +11,20 @@ import ParentComponent from "@/app/threeJS/ParentComponent.jsx";
 export default function Hero() {
   return (
     <div
-      className="text-white lg:p-4 max-w-[2200px]
+      className="text-white lg:p-4 max-w-[2200px] 
     xs:p-1"
     >
       <div
         className="
       
-      lg:w-[100vw] med:h-[82vh] xs:h-[88vh] mx-auto overflow-visible relative"
+      lg:w-[100vw]  xs:h-[88vh]   mx-auto overflow-visible relative"
       >
         <ParentComponent />
         <div
-          className={`absolute top-0 text-center xs:h-[88vh] md:h-[82vh] ${playfair.className} w-[100vw]`}
+          className={`absolute top-0 text-center xs:h-[88vh]  ${playfair.className} w-[100vw]`}
         >
-          <div className="flex flex-col h-[100%] justify-around ">
-            <div className="lg:pb-16">
+          <div className="flex flex-col xs:h-[100%] xs:justify-around md:justify-start ">
+            <div className="">
               {/* custom-xs-448-hero-cards
             custom-xs-640-hero-cards
             custom-xs-340-hero-cards
@@ -34,7 +34,7 @@ export default function Hero() {
             xs:text-3xl 
             xs4:text-4xl
             xs6:text-5xl 
-            lg:text-8xl lg:pt-10 lg:mb-4"
+            lg:text-8xl  lg:mb-4"
               >
                 Ashley Capital & DeFi
               </h1>
@@ -48,7 +48,7 @@ export default function Hero() {
                 className="
             xs:text-2xl
             xs2:mb-4
-            lg:text-4xl lg:mb-14 "
+            lg:text-4xl lg:mb-6 "
               >
                 Crypto Consulting and Wealth Management
               </h2>
@@ -67,7 +67,6 @@ export default function Hero() {
               <br />
               <br />
               <br />
-              <br />
             </h4>
 
             {/* custom-xs-640-snd-title
@@ -75,7 +74,7 @@ export default function Hero() {
               custom-xs-410810-snd-title */}
 
             {/* Starts cards */}
-            <div className="text-white mt-3 lg:pt-16">
+            <div className="text-white mt-3 ">
               {/* custom-xs-550-hero-cards */}
               <div
                 className="flex md:justify-between xs:gap-[0.6rem]     

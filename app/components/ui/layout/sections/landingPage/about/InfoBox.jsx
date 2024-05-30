@@ -35,10 +35,8 @@ const Info = () => {
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
       <div
-        className="xs:w-[95%] xs:h-auto
-         md:w-[90%] md:h-[88vh] mx-auto p-2  white-glassmorphism shadow-xl shadow-indigo-700
-        
-        lg:h-[87vh]
+        className="xs:w-[95%] xs:h-auto md:max-h-[650px]
+         md:w-[90%] mx-auto p-2 white-glassmorphism shadow-xl shadow-indigo-700
         "
       >
         {/* custom-xs-448-about-infobox
@@ -48,8 +46,8 @@ const Info = () => {
         custom-xs-670-about-infobox
         custom-xs-850-about-infobox 
         custom-xs-410810-about-infobox */}
-        <div className="  col-span-2 white-glassmorphism">
-          <div className="relative ">
+        <div className="col-span-2 white-glassmorphism">
+          <div className="relative block">
             <Image
               src={tester2}
               alt="Man sitting at laptop in paradise investing in crypto"
@@ -57,7 +55,7 @@ const Info = () => {
             />
           </div>
 
-          <div className="col-span-2 row-span-2 p-2 rounded-md relative">
+          <div className=" p-2 rounded-md relative ">
             <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg">
               <p className="pb-1 xs:pt-0 ">
                 Ashley Capital & DeFi was founded in order to help
@@ -95,7 +93,7 @@ const Info = () => {
             </div>
 
             {!isMobile && (
-              <p className="overflow-y-auto h-[35vh] xs:text-sm xs3:text-base xs6:text-lg ">
+              <p className=" xs:h-[35vh] md:h-auto xs:text-sm xs3:text-base xs6:text-lg  ">
                 Whether you're seeking a temporary learning resource to
                 eventually become your own DeFi master, looking for long-term
                 crypto advisement, or simply interested in staking inside of our

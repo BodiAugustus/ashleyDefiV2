@@ -4,17 +4,18 @@ import { lato, playfair } from "../../../fonts/font";
 export default function Hero() {
   return (
     <div className="w-[100vw] xs:h-[88vh] md:h-[80vh] mx-auto bg-[url(/consultingBg.jpg)]  bg-center bg-cover relative max-w-[2200px]">
-      <div className="absolute inset-0 bg-black md:rounded-2xl bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 "></div>
       <div
         className="relative flex flex-col 
-      custom-xs-448-mobile-consulting-hero
+     
+      
+       md:gap-8 items-center  h-[100%] xs:pt-[15%] md:-mb-6  xs:gap-[10%]"
+      >
+        {/* custom-xs-448-mobile-consulting-hero
       custom-xs-640-mobile-consulting-hero
       custom-xs-360-mobile-consulting-hero
       custom-xs-550-mobile-consulting-hero 
-      custom-xs-390780-mobile-consulting-hero
-      
-       md:gap-8 items-center justify-center h-[100%] xs:mb-0 md:-mb-6"
-      >
+      custom-xs-390780-mobile-consulting-hero */}
         <h1
           className={`xs:text-3xl xs:text-center xs5:text-4xl
           
