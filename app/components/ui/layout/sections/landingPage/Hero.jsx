@@ -56,17 +56,14 @@ export default function Hero() {
 
             <h4
               className={`
-              xs:text-lg xs:justify-start
+              xs:text-lg xs:justify-start xs:pb-[35%]
               xs3:text-xl
               xs4:text-2xl
               xs5:mt-5
             
-              lg:text-3xl lg:pt-10 tracking-wide  text-sky-400 ${playfair.className}`}
+              lg:text-3xl lg:pt-10 tracking-wide   text-sky-400 ${playfair.className}`}
             >
-              Where whales are born. <br />
-              <br />
-              <br />
-              <br />
+              Where whales are born.
             </h4>
 
             {/* custom-xs-640-snd-title
