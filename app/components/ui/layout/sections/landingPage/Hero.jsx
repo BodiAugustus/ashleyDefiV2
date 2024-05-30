@@ -56,7 +56,7 @@ export default function Hero() {
 
             <h4
               className={`
-              xs:text-lg xs:justify-start xs:pb-[35%]
+              xs:text-lg xs:justify-start xs:pb-[40%]
               xs3:text-xl
               xs4:text-2xl
               xs5:mt-5
