@@ -5,10 +5,10 @@ import MemberBenefits from "./MemberBenefits";
 const Benefits = () => {
   return (
     <div
-      className="md:h-[100vh]  text-white  xs:h-auto
-        xs:pt-4 max-w-[2200px] md:grid
+      className="lg:h-[100vh]  text-white  xs:h-auto
+        xs:pt-4 max-w-[2200px] lg:grid
         xs:flex xs:flex-col xs:gap-5 xs:mb-10
-         md:grid-cols-2 md:grid-rows-[3fr_1fr] mx-auto "
+         lg:grid-cols-2 lg:grid-rows-[3fr_1fr] mx-auto "
     >
       {/* custom-xs-448-benefits
         custom-xs-640-benefits

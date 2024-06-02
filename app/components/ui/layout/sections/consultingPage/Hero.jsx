@@ -9,7 +9,7 @@ export default function Hero() {
         className="relative flex flex-col 
      
       
-       md:gap-8 items-center  h-[100%] xs:pt-[15%] md:-mb-6  xs:gap-[10%]"
+        items-center  h-[100%] xs:pt-[15%] md:-mb-6  xs:gap-[10%]"
       >
         {/* custom-xs-448-mobile-consulting-hero
       custom-xs-640-mobile-consulting-hero
@@ -24,7 +24,7 @@ export default function Hero() {
         >
           Ashley Consulting: Your Partners in DeFi
         </h1>
-        <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg md:w-[60%] text-center xs8:text-xl">
+        <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg lg:w-[60%] text-center xs8:text-xl">
           Our advisory spans across the Fantom, Sonic and Monero ecosystems
           including protocol assessments, trading strategies, tokenomics,
           education, and investing services.

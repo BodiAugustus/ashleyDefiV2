@@ -23,7 +23,7 @@ export default function Hero() {
         <div
           className={`absolute top-0 text-center xs:h-[88vh]  ${playfair.className} w-[100vw]`}
         >
-          <div className="flex flex-col xs:h-[100%] xs:pt-[16%] md:pt-0 md:justify-start ">
+          <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start ">
             <div className="">
               {/* custom-xs-448-hero-cards
             custom-xs-640-hero-cards
@@ -34,6 +34,7 @@ export default function Hero() {
             xs:text-3xl 
             xs4:text-4xl
             xs6:text-5xl 
+            md:text-7xl
             lg:text-8xl  lg:mb-4"
               >
                 Ashley Capital & DeFi
@@ -48,6 +49,7 @@ export default function Hero() {
                 className="
             xs:text-2xl
             xs2:mb-4
+            md:text-3xl md:pt-1
             lg:text-4xl lg:mb-6 "
               >
                 Crypto Consulting and Wealth Management
@@ -60,6 +62,7 @@ export default function Hero() {
               xs3:text-xl
               xs4:text-2xl
               xs5:mt-5
+              
             
               lg:text-3xl lg:pt-10 tracking-wide   text-sky-400 ${playfair.className}`}
             >
@@ -74,18 +77,18 @@ export default function Hero() {
             <div className="text-white mt-3 ">
               {/* custom-xs-550-hero-cards */}
               <div
-                className="flex md:justify-between xs:gap-[0.6rem]     
-                lg:max-w-7xl lg:mx-auto lg:gap-16"
+                className="flex md:justify-around xs:gap-[0.6rem]     
+                lg:max-w-7xl lg:mx-auto md:gap-[0rem] lg:gap-16"
               >
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[31%] rounded-lg white-glassmorphism 
+                  className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 
                   
                   xs3:text-sm xs:h-auto xs:pb-1
                      xp:text-base
                     xs6:text-lg xs6:leading-6
                   
-                    sm:text-lg sm:h-[28vh] sm:w-[31%]
-                    md:text-2xl
+                    sm:text-lg  sm:w-[31%]
+                    md:text-xl
                     lg:text-xl lg:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
@@ -102,7 +105,7 @@ export default function Hero() {
                     custom-xs-410810-hero-cards-height */}
                   <div
                     className="flex justify-between
-                  xs:px-1
+                  xs:px-1 md:px-2
                    px-4 py-2 items-center xs6:leading-5"
                   >
                     <h4>Our Purpose</h4>
@@ -132,8 +135,8 @@ export default function Hero() {
                     xp:h-[25vh] xp:text-base
                     xs6:text-lg xs6:leading-6
                  
-                    sm:text-lg sm:h-[28vh] sm:w-[31%]
-                    md:text-2xl
+                    sm:text-lg sm:w-[31%]
+                    md:text-xl
                     lg:text-xl lg:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
@@ -178,8 +181,8 @@ export default function Hero() {
                     xp:h-[25vh] xp:text-base
                     xs6:text-lg xs6:leading-6
                
-                    sm:text-lg sm:h-[28vh] sm:w-[31%]
-                    md:text-2xl
+                    sm:text-lg sm:w-[31%]
+                    md:text-xl
                     lg:text-xl lg:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]

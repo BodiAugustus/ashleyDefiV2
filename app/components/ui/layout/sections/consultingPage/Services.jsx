@@ -108,14 +108,14 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-8 md:px-4 text-white max-w-[2200px] xs:h-auto xs:w-[95%] md:w-[70vw] mx-auto">
+    <div className="py-8 md:px-4 text-white max-w-[2200px] xs:h-auto xs:w-[95%] lg:w-[70vw] mx-auto">
       <h2
         className="xs:text-2xl md:text-4xl font-bold text-center xs:mb-1 md:mb-6
       xs4:text-3xl"
       >
         Consulting Services
       </h2>
-      <p className="xs:text-sm md:text-xl  text-center xs:mb-4 md:mb-6 xs:w-[95%] md:w-[45%] mx-auto text-[#B0C7EF] xs5:text-base xs6:text-lg">
+      <p className="xs:text-sm md:text-xl  text-center xs:mb-4 md:mb-6 xs:w-[95%] lg:w-[45%] mx-auto text-[#B0C7EF] xs5:text-base xs6:text-lg">
         Our full-suite of DeFi consulting services are designed to cater to
         every level of our clients needs, regardless of their portfolio sizes
       </p>

@@ -3,17 +3,17 @@ import { Button } from "../../../../common/Button";
 const vid = "consulting.mp4"; // No need to import, just provi
 export default function FingerOne() {
   return (
-    <div className="flex white-glassmorphism xs:w-[95vw] md:w-[80vw]  mx-auto text-white md:p-4 max-w-[1300px] shadow-xl shadow-indigo-700">
-      <div className="md:w-[50%] p-3 md:flex md:flex-col md:gap-5">
+    <div className="flex white-glassmorphism xs:w-[95vw] lg:w-[80vw]  mx-auto text-white md:p-4 max-w-[1300px] shadow-xl shadow-indigo-700">
+      <div className="lg:w-[50%] p-3 md:flex md:flex-col md:gap-5">
         <h2
           className="font-bold
         xs:text-xl xs:pb-2
         xs5:text-2xl
-         md:text-3xl"
+         md:text-3xl md:inline-block"
         >
           Consulting
         </h2>
-        <div className="xs:visible xs:pb-2 md:hidden md:w-[50%] md:h-full md:relative">
+        <div className="xs:visible xs:pb-2 lg:hidden ">
           <video
             src={vid}
             className="brightness-70 rounded-2xl px-4"
@@ -28,8 +28,8 @@ export default function FingerOne() {
         xs:text-sm xs:w-[100%] xs:indent-5 xs:pb-4 xs:px-2
         xs3:text-base
         xs6:text-lg
-        md:indent-0
-        md:text-xl md:w-[80%] text-[#B0C7EF]"
+        lg:indent-0 
+        md:text-xl lg:w-[80%] text-[#B0C7EF]"
         >
           Every Ashley DeFi consultant delivers concise, data-driven knowledge
           gained from extensive research on market catalysts, DeFi narratives,
@@ -40,16 +40,12 @@ export default function FingerOne() {
         </p>
         <Button
           variant="white"
-          className="xs:mx-auto xs:mb-2 md:w-[28%] md:hidden xs5:text-xl"
+          className="xs:mx-auto xs:mb-2  lg:hidden xs5:text-xl"
           size="md"
         >
           Learn More &#8594;
         </Button>
-        <Button
-          variant="white"
-          className="xs:hidden md:visible md:w-[28%]"
-          size="lg"
-        >
+        <Button variant="white" className="xs:hidden lg:block " size="lg">
           Learn More &#8594;
         </Button>
       </div>
@@ -60,7 +56,7 @@ export default function FingerOne() {
         className="hidden md:block "
         alt="Screenshots of the dashboard project showing desktop version"
       /> */}
-      <div className="xs:hidden md:block md:w-[50%] md:h-full md:relative">
+      <div className="xs:hidden lg:block lg:w-[50%] lg:h-full lg:relative">
         <video
           src={vid}
           className="brightness-70 rounded-2xl px-4"

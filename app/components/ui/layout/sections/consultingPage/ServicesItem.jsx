@@ -27,15 +27,15 @@ export default function ServicesItem({
   return (
     <div>
       <div
-        className="flex xs:flex-col md:flex-row justify-between items-center cursor-pointer bg-[#292941] w-[100%] md:h-[40vh] rounded-tl-2xl p-4 rounded-tr-2xl"
+        className="flex xs:flex-col lg:flex-row justify-between items-center cursor-pointer bg-[#292941] w-[100%]  rounded-tl-2xl p-4 rounded-tr-2xl"
         onClick={toggleOpen}
       >
-        <div className=" h-[100%]  md:w-[20%] flex flex-col items-center justify-center md:gap-5">
+        <div className=" h-[100%]  lg:w-[20%] flex flex-col items-center justify-center md:gap-5">
           {icon}
-          <h3 className="xs:text-xl md:text-2xl font-bold">{header}</h3>
+          <h3 className="xs:text-xl md:text-3xl font-bold">{header}</h3>
         </div>
-        <div className="md:w-[80%] md:p-4 flex flex-col gap-3">
-          <h3 className="xs:text-2xl xs:text-center md:text-left md:text-3xl font-bold">
+        <div className="lg:w-[80%] md:p-4 flex flex-col gap-3">
+          <h3 className="xs:text-2xl xs:text-center lg:text-left md:text-3xl font-bold">
             {title}
           </h3>
           <p className="text-[#B0C7EF] xs:mb-3 xs:text-sm xs5:text-base xs6:text-lg md:text-lg">
@@ -46,7 +46,7 @@ export default function ServicesItem({
       </div>
       <div
         className={`transition-height bg-[#292941] px-4 duration-500 ease-in-out pb-1 ${
-          isOpen ? "max-h-[1250px]" : "max-h-0"
+          isOpen ? "max-h-[1450px]" : "max-h-0"
         } overflow-hidden`}
         style={{
           transitionProperty: "max-height",
@@ -54,7 +54,7 @@ export default function ServicesItem({
         }}
       >
         <div className="flex flex-col md:gap-5">
-          <h3 className="pt-2 text-xl md:text-xl xs6:text-2xl ">
+          <h3 className="pt-2 text-xl md:text-2xl xs6:text-2xl ">
             {insideheader1}
           </h3>
           <p className="text-[#B0C7EF] xs:mb-3 md:pb-16 xs:text-sm md:text-lg xs5:text-base xs6:text-lg">

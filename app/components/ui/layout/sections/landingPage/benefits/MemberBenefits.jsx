@@ -7,7 +7,7 @@ const BenefitItem = ({ children }) => (
   xs8:text-xl
   
   
-  sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl"
+  md:text-2xl lg:text-3xl xl:text-3xl"
   >
     <h2 className="mt-3 sm:mt-8 md:mt-10 lg:mt-3 xl:mt-3">{children}</h2>
   </div>
@@ -24,7 +24,7 @@ const MemberBenefits = () => {
         Members Only Benefits
       </h2>
       <div className="p-2 rounded-2xl white-glassmorphism shadow-xl shadow-indigo-700">
-        <div className="h-[70vh] bg-[#2b2b2b] mx-auto bg-transparent grid grid-rows-6 transition-all font-economica bg-[url(/android-chrome-512x512.png)] bg-cover bg-center rounded-2xl relative md:w-[80vw] lg:w-[47vw]">
+        <div className="h-[70vh] bg-[#2b2b2b] mx-auto bg-transparent grid grid-rows-6 transition-all font-economica bg-[url(/android-chrome-512x512.png)] bg-cover bg-center rounded-2xl relative  lg:w-[47vw]">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
 
           <BenefitItem>Daily Updates and Individual Responses</BenefitItem>

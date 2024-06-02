@@ -35,7 +35,7 @@ const Info = () => {
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
       <div
-        className="xs:w-[95%] xs:h-auto md:max-h-[650px]
+        className="xs:w-[95%] xs:h-auto lg:max-h-[650px]
          md:w-[90%] mx-auto p-2 white-glassmorphism shadow-xl shadow-indigo-700
         "
       >
@@ -56,7 +56,7 @@ const Info = () => {
           </div>
 
           <div className=" p-2 rounded-md relative ">
-            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg">
+            <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg md:text-xl">
               <p className="pb-1 xs:pt-0 ">
                 Ashley Capital & DeFi was founded in order to help
                 professionally onboard people into Decentralized Finance, the
@@ -67,7 +67,7 @@ const Info = () => {
               </p>
 
               {isMobile && (
-                <div className="overflow-y-scroll   xs:text-sm xs3:text-base xs6:text-lg">
+                <div className="overflow-y-scroll   xs:text-sm xs3:text-base xs6:text-lg md:text-xl">
                   <p className="pb-4">
                     Whether you're seeking a temporary learning resource to
                     eventually become your own DeFi master, looking for
@@ -93,7 +93,7 @@ const Info = () => {
             </div>
 
             {!isMobile && (
-              <p className=" xs:h-[35vh] md:h-auto xs:text-sm xs3:text-base xs6:text-lg  ">
+              <p className=" xs:h-[35vh] md:h-auto xs:text-sm xs3:text-base xs6:text-lg md:text-xl ">
                 Whether you're seeking a temporary learning resource to
                 eventually become your own DeFi master, looking for long-term
                 crypto advisement, or simply interested in staking inside of our

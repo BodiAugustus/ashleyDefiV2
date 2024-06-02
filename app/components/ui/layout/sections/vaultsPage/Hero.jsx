@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="w-[100vw] h-[88vh] mx-auto   relative max-w-[2200px] xs:p-2 md:p-4 flex flex-col justify-center items-center bg-[url(/garden.webp)]  bg-center bg-no-repeat bg-cover ">
       <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-30"></div>
       <h1
-        className={`xs:text-3xl md:text-5xl text-white font-bold text-center tracking-normal ${playfair.className} md:pb-4 brightness-125 
+        className={`xs:text-3xl md:text-6xl text-white font-bold text-center tracking-normal ${playfair.className} md:pb-4 brightness-125 
         pt-[20%]
         xs3:text-4xl
         xs8:text-5xl
@@ -20,9 +20,9 @@ export default function Hero() {
         custom-xs-850-mobile-vaults-hero-title
         custom-xs-390780-mobile-vaults-hero-title
         custom-xs-410810-mobile-vaults-hero-title  */}
-      <div className="bg-[url(/vaults.webp)]  bg-center bg-no-repeat bg-contain h-[90%] flex justify-center items-center ">
+      <div className="bg-[url(/vaults.webp)]  bg-center bg-no-repeat bg-contain xs:h-[90%] md:h-[60%] flex justify-center items-center ">
         <div
-          className="relative flex flex-col  items-center md:justify-end h-[100%] md:py-10 md:gap-10 xs:pt-[21%] 
+          className="relative flex flex-col  items-center md:justify-end h-[100%] md:py-10 md:gap-10 xs:pt-[23%] 
         
         "
         >
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className=" flex  md:gap-5 w-[100%] items-center justify-center ">
             <Button
               variant="white"
-              className="md:w-[20%] flex justify-center xs:mt-[37%] md:mt-0 xs5:text-xl"
+              className="flex justify-center xs:mt-[37%] md:mt-0 xs5:text-xl"
             >
               Read the Docs
             </Button>

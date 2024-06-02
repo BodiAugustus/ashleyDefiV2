@@ -68,7 +68,7 @@ const About = () => {
                      xs3:text-lg xs3:leading-5
                      xs6:text-xl
                     sm:text-xl sm:mt-6
-                    md:text-2xl md:mt-8 md:w-[60%] md:left-[20%]
+                    md:text-3xl md:mt-8 md:w-[60%] md:left-[20%]
                     lg:text-lg lg:mt-4 lg:leading-tight lg:w-[80%] lg:left-[9%]
                     xl:text-2xl xl:mt-5
                     2xl:mt-7

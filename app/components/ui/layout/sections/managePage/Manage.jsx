@@ -42,16 +42,16 @@ export default function Manage() {
             </div>
             {/* Action Buttons */}
             <div className="flex justify-between xs:flex-col xs:gap-3 md:gap-0 md:flex-row">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
                 Stake
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
                 Lock
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
                 Withdraw
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
                 Add LP
               </button>
             </div>
