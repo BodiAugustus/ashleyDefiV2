@@ -8,7 +8,7 @@ export default function Manage() {
         Manage Finances
       </h1>
       <div className="xs:p-2 md:p-6 text-white max-w-[2200px] md:w-[90%] mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 ">
           {/* Container 1 */}
           <div className="flex flex-col gap-5 bg-[#292941] p-4 rounded-2xl ">
             <h2 className="text-2xl text-center">Total Staked</h2>
@@ -42,16 +42,16 @@ export default function Manage() {
             </div>
             {/* Action Buttons */}
             <div className="flex justify-between xs:flex-col xs:gap-3 md:gap-0 md:flex-row">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
                 Stake
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
                 Lock
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
                 Withdraw
               </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
                 Add LP
               </button>
             </div>

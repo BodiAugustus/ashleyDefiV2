@@ -2,11 +2,11 @@ import { Button } from "../../../../common/Button";
 
 export default function Call2Action() {
   return (
-    <div className="xs:h-auto lg:h-[75vh] max-w-[2200px] z-0 ">
+    <div className="xs:h-auto  max-w-[2200px] z-0 xl:pt-6">
       <div
         className="flex white-glassmorphism xs:w-[95%] md:w-[90vw]  
      
-       lg:h-[70vh]  mx-auto text-white xs:p-2 md:p-4 max-w-[1400px] shadow-xl shadow-indigo-700 xs6:mb-10  xs8:mb-0"
+        mx-auto text-white xs:p-2 md:p-4 max-w-[1400px] shadow-xl shadow-indigo-700 xs6:mb-10  xs8:mb-0"
       >
         {/* custom-xs-448-call2
       custom-xs-640-call2
@@ -19,7 +19,7 @@ export default function Call2Action() {
         <div className="bg-[url(/haad.jpg)] bg-cover bg-center rounded-2xl relative">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
           <div
-            className="relative xs:w-[100%] lg:w-[60%] mx-auto flex flex-col items-center  md:h-[100%] justify-center xs:gap-5 
+            className="relative xs:w-[100%] lg:w-[70%] mx-auto flex flex-col items-center  md:h-[100%] justify-center xs:gap-5 
           xs4:p-3 md:gap-8"
           >
             <h2 className=" font-bold xs:text-2xl xs:pt-5 text-center md:text-4xl">

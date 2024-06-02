@@ -133,7 +133,7 @@ export default function CnsltPlans() {
     <div
       className=" xs:h-auto  max-w-[2200px] flex flex-col
      items-center xs:gap-y-1 md:gap-y-10 text-white  md:w-[90vw] 
-     mx-auto xs:-mt-10  xs6:mb-5 md:pb-7"
+     mx-auto xs:-mt-10  xs6:mb-5 md:pb-7 lg:gap-y-3 lg:pt-5"
     >
       <div
         className="text-center  xs:text-2xl md:text-4xl font-bold
@@ -166,13 +166,13 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("monthly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] xs6:text-lg md:text-xl"
+              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] lg:w-[100%] xs6:text-lg md:text-xl"
             >
               Learn More About Members Consulting
             </button>
           </div>
         </div>
-        <div className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto lg:h-[75vh] rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700 xs:mb-6 md:mb-0">
+        <div className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700 xs:mb-6 md:mb-0">
           <div className="h-[35vh] relative">
             <Image
               src="/whale.jpg"
@@ -195,7 +195,7 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("hourly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] xs6:text-lg md:text-xl"
+              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] lg:w-[100%] xs6:text-lg md:text-xl"
             >
               Learn More About Hourly Consulting
             </button>

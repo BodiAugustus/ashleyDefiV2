@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className=" text-white xs:mt-6 md:mt-28 max-w-[2200px] ">
-      <div className="max-w-[1400px]  px-2 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 mx-auto justify-items-center">
+      <div className="max-w-[1400px]  px-2 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 mx-auto justify-items-center lg:text-xl">
         {/* Column 1 */}
         <div>
           <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Services</h5>

@@ -20,9 +20,9 @@ export default function Hero() {
         custom-xs-850-mobile-vaults-hero-title
         custom-xs-390780-mobile-vaults-hero-title
         custom-xs-410810-mobile-vaults-hero-title  */}
-      <div className="bg-[url(/vaults.webp)]  bg-center bg-no-repeat bg-contain xs:h-[90%] md:h-[60%] flex justify-center items-center ">
+      <div className="bg-[url(/vaults.webp)]  bg-center bg-no-repeat bg-contain xs:h-[90%] md:h-[60%] lg:h-[80%] flex justify-center items-center ">
         <div
-          className="relative flex flex-col  items-center md:justify-end h-[100%] md:py-10 md:gap-10 xs:pt-[23%] 
+          className="relative flex flex-col  items-center md:justify-end h-[100%] md:py-10 md:gap-10 xs:pt-[23%] lg:justify-between
         
         "
         >
@@ -30,7 +30,7 @@ export default function Hero() {
         custom-xs-640-mobile-vaults-hero
         custom-xs-850-mobile-vaults-hero
         custom-xs-860-mobile-vaults-hero  */}
-          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] text-center custom-xs-410810-mobile-vaults-hero-text">
+          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] lg:w-[40%] text-center custom-xs-410810-mobile-vaults-hero-text">
             High-yielding, permisionless, auto-compounding vaults with TVL based
             allowances for borrowing against collateral
           </h3>

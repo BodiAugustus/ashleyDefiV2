@@ -82,11 +82,11 @@ const Example = () => {
     <section
       className=" mx-auto w-[100vw] h-[70vh] max-w-[1800px] pt-4
       xs:h-auto
-    xs6:mb-4
+    xs6:mb-4 xl:mb-10 xl:pt-8
     
-    lg:h-[80vh]
+  
     
-    xl:h-[90vh]
+ 
     
     "
     >

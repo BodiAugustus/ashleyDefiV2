@@ -47,7 +47,7 @@ const ContactForm = () => {
   return (
     <>
       <h2
-        className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0
+        className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2
       xs4:text-3xl
       "
       >

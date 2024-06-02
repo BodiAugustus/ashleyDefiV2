@@ -11,7 +11,7 @@ import ParentComponent from "@/app/threeJS/ParentComponent.jsx";
 export default function Hero() {
   return (
     <div
-      className="text-white lg:p-4 max-w-[2200px] 
+      className="text-white 2xl:p-4 max-w-[2200px] 
     xs:p-1"
     >
       <div
@@ -23,7 +23,7 @@ export default function Hero() {
         <div
           className={`absolute top-0 text-center xs:h-[88vh]  ${playfair.className} w-[100vw]`}
         >
-          <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start ">
+          <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start lg:pt-[2%] xl:pt-[5%] ">
             <div className="">
               {/* custom-xs-448-hero-cards
             custom-xs-640-hero-cards
@@ -50,7 +50,7 @@ export default function Hero() {
             xs:text-2xl
             xs2:mb-4
             md:text-3xl md:pt-1
-            lg:text-4xl lg:mb-6 "
+            lg:text-4xl lg:mb-4 "
               >
                 Crypto Consulting and Wealth Management
               </h2>
@@ -62,9 +62,9 @@ export default function Hero() {
               xs3:text-xl
               xs4:text-2xl
               xs5:mt-5
-              
+              lg:pb-[5%]
             
-              lg:text-3xl lg:pt-10 tracking-wide   text-sky-400 ${playfair.className}`}
+              lg:text-3xl lg:pt-0 tracking-wide   text-sky-400 ${playfair.className}`}
             >
               Where whales are born.
             </h4>
@@ -74,11 +74,11 @@ export default function Hero() {
               custom-xs-410810-snd-title */}
 
             {/* Starts cards */}
-            <div className="text-white mt-3 ">
+            <div className="text-white mt-3  ">
               {/* custom-xs-550-hero-cards */}
               <div
-                className="flex md:justify-around xs:gap-[0.6rem]     
-                lg:max-w-7xl lg:mx-auto md:gap-[0rem] lg:gap-16"
+                className="flex md:justify-center xs:gap-[0.6rem]     
+                lg:max-w-[1200px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-16"
               >
                 <div
                   className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 
@@ -89,7 +89,7 @@ export default function Hero() {
                   
                     sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[32%]
+                    lg:text-xl lg:w-[28%] xl:w-[30%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
 
@@ -129,15 +129,15 @@ export default function Hero() {
                 </div>
 
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism 
-                 
+                  className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 
+                  
                   xs3:text-sm xs:h-auto xs:pb-1
-                    xp:h-[25vh] xp:text-base
+                     xp:text-base
                     xs6:text-lg xs6:leading-6
-                 
-                    sm:text-lg sm:w-[31%]
+                  
+                    sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[32%]
+                    lg:text-xl lg:w-[28%] xl:w-[30%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
                     "
@@ -175,15 +175,15 @@ export default function Hero() {
                 </div>
 
                 <div
-                  className="bg-[#2b2b2b] text-xs w-[30%] rounded-lg white-glassmorphism  
-                 
+                  className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 
+                  
                   xs3:text-sm xs:h-auto xs:pb-1
-                    xp:h-[25vh] xp:text-base
+                     xp:text-base
                     xs6:text-lg xs6:leading-6
-               
-                    sm:text-lg sm:w-[31%]
+                  
+                    sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[32%]
+                    lg:text-xl lg:w-[28%] xl:w-[30%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
                     "
@@ -197,7 +197,7 @@ export default function Hero() {
                     custom-xs-410675-hero-cards-height
                     custom-xs-410810-hero-cards-height */}
                   <div
-                    className="flex justify-around md:px-4 py-2 items-center
+                    className="flex xs:justify-around lg:justify-between md:px-4 py-2 items-center
                   xs:px-1"
                   >
                     <h4>Services</h4>

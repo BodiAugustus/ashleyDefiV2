@@ -3,7 +3,7 @@ import { Button } from "../../../../common/Button";
 const vid = "consulting.mp4"; // No need to import, just provi
 export default function FingerOne() {
   return (
-    <div className="flex white-glassmorphism xs:w-[95vw] lg:w-[80vw]  mx-auto text-white md:p-4 max-w-[1300px] shadow-xl shadow-indigo-700">
+    <div className="flex white-glassmorphism xs:w-[95vw] xl:w-[80vw]  mx-auto lg:items-center text-white md:p-4 max-w-[1300px] shadow-xl shadow-indigo-700">
       <div className="lg:w-[50%] p-3 md:flex md:flex-col md:gap-5">
         <h2
           className="font-bold
@@ -28,8 +28,8 @@ export default function FingerOne() {
         xs:text-sm xs:w-[100%] xs:indent-5 xs:pb-4 xs:px-2
         xs3:text-base
         xs6:text-lg
-        lg:indent-0 
-        md:text-xl lg:w-[80%] text-[#B0C7EF]"
+        md:indent-0 
+        md:text-xl lg:w-[98%] text-[#B0C7EF] lg:pb-1 lg:indent-4"
         >
           Every Ashley DeFi consultant delivers concise, data-driven knowledge
           gained from extensive research on market catalysts, DeFi narratives,
@@ -40,12 +40,16 @@ export default function FingerOne() {
         </p>
         <Button
           variant="white"
-          className="xs:mx-auto xs:mb-2  lg:hidden xs5:text-xl"
+          className="xs:mx-auto xs:mb-2  md:hidden xs5:text-xl"
           size="md"
         >
           Learn More &#8594;
         </Button>
-        <Button variant="white" className="xs:hidden lg:block " size="lg">
+        <Button
+          variant="white"
+          className="xs:hidden md:inline-block  lg:mx-auto "
+          size="lg"
+        >
           Learn More &#8594;
         </Button>
       </div>

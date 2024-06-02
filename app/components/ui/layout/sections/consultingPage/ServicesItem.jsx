@@ -30,9 +30,11 @@ export default function ServicesItem({
         className="flex xs:flex-col lg:flex-row justify-between items-center cursor-pointer bg-[#292941] w-[100%]  rounded-tl-2xl p-4 rounded-tr-2xl"
         onClick={toggleOpen}
       >
-        <div className=" h-[100%]  lg:w-[20%] flex flex-col items-center justify-center md:gap-5">
+        <div className=" h-[100%]  xl:w-[20%] flex flex-col items-center justify-center md:gap-5">
           {icon}
-          <h3 className="xs:text-xl md:text-3xl font-bold">{header}</h3>
+          <h3 className="xs:text-xl md:text-3xl font-bold lg:text-center">
+            {header}
+          </h3>
         </div>
         <div className="lg:w-[80%] md:p-4 flex flex-col gap-3">
           <h3 className="xs:text-2xl xs:text-center lg:text-left md:text-3xl font-bold">

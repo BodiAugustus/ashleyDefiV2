@@ -8,7 +8,7 @@ export default function AshleyAdv() {
       >
         The Ashley Advantage
       </h2>
-      <p className="text-[#B0C7EF] text-center xs:text-sm xs5:text-base xs6:text-lg xs6:leading-6 md:text-xl xs:w-[95%] lg:w-[40%] mx-auto xs:mb-4 md:mb-8">
+      <p className="text-[#B0C7EF] text-center xs:text-sm xs5:text-base xs6:text-lg xs6:leading-6 md:text-xl xs:w-[95%] lg:w-[60%] xl:w-[50%]  mx-auto xs:mb-4 md:mb-8">
         Partnering with Ashley Capital & DeFi means us becoming an integral part
         of your team. It means having our consultant's dedicate themselves
         completely to assisting you in achieving your financial aims

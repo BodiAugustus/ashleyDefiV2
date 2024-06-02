@@ -6,7 +6,7 @@ export default function Plans() {
     <div
       className="
       xs:h-auto
-     lg:h-[100vh] max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white lg:w-[90vw] mx-auto xs:mb-10"
+      max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white lg:w-[90vw] mx-auto xs:mb-10"
     >
       {/* custom-xs-448-plans
     custom-xs-640-plans
@@ -17,7 +17,7 @@ export default function Plans() {
     custom-xs-410810-plans  */}
       <div
         className="text-center  font-bold xs:text-2xl xs:mb-1
-      xs4:text-3xl md:pt-5 md:text-5xl md:-mb-3"
+      xs4:text-3xl md:pt-5 md:text-5xl md:-mb-3 lg:text-4xl"
       >
         <h2>Our Services</h2>
       </div>
@@ -59,7 +59,7 @@ export default function Plans() {
             <Link
               href="/consulting"
               className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
-              xs5:text-lg xs6:text-lg md:text-xl lg:w-[60%]"
+              xs5:text-lg xs6:text-lg md:text-xl lg:w-[100%]"
             >
               Learn More About Ashley Consulting
             </Link>
@@ -97,7 +97,7 @@ export default function Plans() {
             </p>
             <Link
               href="/vaults"
-              className=" text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:block xs:w-[100%]  lg:w-[55%] hover:pl-3 xs:text-sm xs3:text-base xs5:text-lg md:text-xl"
+              className=" text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:block xs:w-[100%]  lg:w-[100%] hover:pl-3 xs:text-sm xs3:text-base xs5:text-lg md:text-xl"
             >
               Learn More About High Yield Staking
             </Link>

@@ -31,7 +31,7 @@ const AtAGlance = () => {
         className="text-4xl text-center text-white pt-0 mb-1 font-bold 
       xs:text-2xl xs:mb-1
       xs4:text-3xl
-      md:text-5xl lg:text-4xl xl:text-4xl 2xl:mb-2 "
+      md:text-5xl lg:text-4xl xl:text-4xl md:mb-2 md:pt-4 lg:pt-1"
       >
         What We Offer
       </h2>
@@ -80,7 +80,7 @@ const AtAGlance = () => {
         <div
           className="col-span-2 bg-[#0A3055] rounded-bl-2xl rounded-br-2xl p-3 text-3xl 
         xs:text-2xl
-        sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl"
+        sm:text-4xl md:text-5xl lg:text-3xl xl:text-4xl"
         >
           <h2 className="text-center text-white">
             Come and join us, <br /> the future is{" "}
