@@ -47,7 +47,7 @@ const Info = () => {
             />
           </div>
 
-          <div className="p-2 rounded-md relative h-[50%] overflow-hidden">
+          <div className="p-2 rounded-md relative h-[45%] overflow-hidden">
             <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg md:text-xl lg:text-lg h-full overflow-y-scroll relative">
               <p className="pb-1 xs:pt-0">
                 Ashley Capital & DeFi was founded in order to help

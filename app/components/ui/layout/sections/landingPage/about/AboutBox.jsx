@@ -101,7 +101,7 @@ const About = () => {
                     sm:text-2xl sm:w-[90%] sm:left-[6%] sm:mt-8
                     md:text-3xl md:mt-14
                     lg:text-lg lg:mt-2 lg:leading-2
-                    xl:text-2xl xl:mt-6
+                    xl:text-2xl xl:mt-5
                     2xl:mt-6
                     "
             >
@@ -176,8 +176,8 @@ const About = () => {
                     custom-xs-390780-aboutbox-5 xs6:text-xl
                     custom-xs-410810-aboutbox-5 
                     md:text-3xl md:mt-16 md:leading-relaxed
-                    lg:text-xl lg:mt-5 lg:leading-5
-                    xl:text-2xl xl:mt-8
+                    lg:text-xl lg:mt-6 lg:leading-5
+                    xl:text-2xl xl:mt-6
                     2xl:mt-8
                     "
             >

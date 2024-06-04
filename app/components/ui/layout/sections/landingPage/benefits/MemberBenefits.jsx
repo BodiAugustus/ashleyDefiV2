@@ -19,7 +19,7 @@ const MemberBenefits = () => {
         className="text-4xl text-center pt-0  
        xs:text-2xl xs:mb-1
        xs4:text-3xl
-      md:text-5xl lg:text-4xl xl:text-4xl md:mb-3 font-bold"
+      md:text-5xl lg:text-4xl xl:text-3xl md:mb-3 font-bold"
       >
         Members Only Benefits
       </h2>
