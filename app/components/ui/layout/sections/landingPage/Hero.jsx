@@ -78,7 +78,7 @@ export default function Hero() {
               {/* custom-xs-550-hero-cards */}
               <div
                 className="flex md:justify-center xs:gap-[0.6rem]     
-                lg:max-w-[1200px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-16"
+                lg:max-w-[1200px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-12"
               >
                 <div
                   className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 
@@ -89,7 +89,7 @@ export default function Hero() {
                   
                     sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[28%] xl:w-[30%]
+                    lg:text-xl lg:w-[28%] xl:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
 
@@ -137,7 +137,7 @@ export default function Hero() {
                   
                     sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[28%] xl:w-[30%]
+                    lg:text-xl lg:w-[28%] xl:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
                     "
@@ -183,7 +183,7 @@ export default function Hero() {
                   
                     sm:text-lg  sm:w-[31%]
                     md:text-xl
-                    lg:text-xl lg:w-[28%] xl:w-[30%]
+                    lg:text-xl lg:w-[28%] xl:w-[32%]
                     xl:text-2xl xl:h-[30vh]
                     2xl:w[-32%]
                     "
