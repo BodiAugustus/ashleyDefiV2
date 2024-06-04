@@ -23,7 +23,7 @@ export default function Hero() {
         <div
           className={`absolute top-0 text-center xs:h-[88vh]  ${playfair.className} w-[100vw]`}
         >
-          <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start lg:pt-[2%] xl:pt-[5%] ">
+          <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start lg:pt-[2%] xl:pt-[3%] ">
             <div className="">
               {/* custom-xs-448-hero-cards
             custom-xs-640-hero-cards
