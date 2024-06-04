@@ -78,7 +78,7 @@ export default function Hero() {
               {/* custom-xs-550-hero-cards */}
               <div
                 className="flex md:justify-center xs:gap-[0.6rem]     
-                lg:max-w-[1280px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-12"
+                lg:max-w-[1200px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-12 lg:overflow-hidden"
               >
                 <div
                   className="bg-[#2b2b2b] text-xs md:w-[29%] rounded-lg white-glassmorphism 

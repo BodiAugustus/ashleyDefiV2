@@ -80,7 +80,7 @@ const AtAGlance = () => {
         <div
           className="col-span-2 bg-[#0A3055] rounded-bl-2xl rounded-br-2xl p-3 text-3xl 
         xs:text-2xl
-        sm:text-4xl md:text-5xl lg:text-3xl xl:text-4xl"
+        sm:text-4xl md:text-5xl lg:text-3xl xl:text-3xl"
         >
           <h2 className="text-center text-white">
             Come and join us, <br /> the future is{" "}
