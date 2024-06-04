@@ -101,7 +101,7 @@ const About = () => {
                     sm:text-2xl sm:w-[90%] sm:left-[6%] sm:mt-8
                     md:text-3xl md:mt-14
                     lg:text-lg lg:mt-2 lg:leading-2
-                    xl:text-2xl xl:mt-8
+                    xl:text-2xl xl:mt-6
                     2xl:mt-6
                     "
             >
@@ -143,7 +143,7 @@ const About = () => {
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:mt-16 md:leading-relaxed
                     lg:text-xl lg:leading-6 lg:mt-8
-                    xl:text-2xl xl:mt-8 xl:leading-relaxed
+                    xl:text-2xl xl:mt-6 xl:leading-relaxed
                     2xl:mt-14
                     "
             >
@@ -176,7 +176,7 @@ const About = () => {
                     custom-xs-390780-aboutbox-5 xs6:text-xl
                     custom-xs-410810-aboutbox-5 
                     md:text-3xl md:mt-16 md:leading-relaxed
-                    lg:text-xl lg:mt-7 lg:leading-5
+                    lg:text-xl lg:mt-5 lg:leading-5
                     xl:text-2xl xl:mt-8
                     2xl:mt-8
                     "
@@ -227,7 +227,7 @@ const About = () => {
                     sm:text-2xl sm:mt-10
                     md:text-3xl md:leading-relaxed md:mt-16
                     lg:text-xl lg:mt-7
-                    xl:text-2xl xl:leading-relaxed xl:mt-7
+                    xl:text-2xl xl:leading-relaxed xl:mt-5
                     2xl:mt-14
                     "
             >
