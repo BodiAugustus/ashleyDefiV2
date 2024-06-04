@@ -9,7 +9,7 @@ export default function Hero() {
         className="relative flex flex-col 
      
       
-        items-center  h-[100%] xs:pt-[15%] md:-mb-6  xs:gap-[10%] lg:pt-16 xl:pt-24"
+        items-center  h-[100%] xs:pt-[15%] md:-mb-6  xs:gap-[10%] lg:pt-16 xl:gap-[12%]"
       >
         {/* custom-xs-448-mobile-consulting-hero
       custom-xs-640-mobile-consulting-hero
