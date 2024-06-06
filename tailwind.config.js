@@ -18,7 +18,7 @@ module.exports = {
         "10xl": "8rem",
       },
       screens: {
-        "2xl": "1536px", // Keeping the existing size for consistency
+        "2xl": "1536px",
         "3xl": "1600px",
         "4xl": "1800px",
         "5xl": "2000px", // Custom screen size for widths wider than 1600px

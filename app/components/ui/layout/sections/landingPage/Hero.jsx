@@ -11,13 +11,13 @@ import ParentComponent from "@/app/threeJS/ParentComponent.jsx";
 export default function Hero() {
   return (
     <div
-      className="text-white 2xl:p-4 max-w-[2200px] 
-    xs:p-1"
+      className="text-white  max-w-[2200px] 
+    xs:p-1 xl:p-0"
     >
       <div
         className="
       
-      lg:w-[100vw]  xs:h-[88vh]   mx-auto overflow-visible relative"
+      lg:w-[100vw]  xs:h-[88vh]   mx-auto overflow-hidden relative"
       >
         <ParentComponent />
         <div
@@ -35,7 +35,8 @@ export default function Hero() {
             xs4:text-4xl
             xs6:text-5xl 
             md:text-7xl
-            lg:text-8xl  lg:mb-4"
+            lg:text-8xl  lg:mb-4
+            "
               >
                 Ashley Capital & DeFi
               </h1>
@@ -64,7 +65,8 @@ export default function Hero() {
               xs5:mt-5
               lg:pb-[5%]
             
-              lg:text-3xl lg:pt-0 tracking-wide   text-sky-400 ${playfair.className}`}
+              lg:text-3xl lg:pt-0 tracking-wide   text-sky-400 ${playfair.className}
+              `}
             >
               Where whales are born.
             </h4>
@@ -91,7 +93,7 @@ export default function Hero() {
                     md:text-xl
                     lg:text-xl lg:w-[28%] xl:w-[32%]
                     xl:text-2xl xl:h-[30vh]
-                    2xl:w[-32%]
+                    
 
                     "
                 >
@@ -120,7 +122,7 @@ export default function Hero() {
                     className="text-center px-[.2px]
                             md:mt-4
                             lg:mt-0
-                            xl:w-[90%] xl:mx-auto xl:mt-2
+                            xl:w-[90%] xl:mx-auto xl:mt-2 lg:px-2
                             "
                   >
                     Onboarding you into DeFi so that you can find and make

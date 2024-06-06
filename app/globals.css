@@ -832,3 +832,10 @@
     padding-top: 2.5rem;
   }
 }
+
+@media (min-width: 1536px) {
+  .hero-cards {
+    height: 35vh;
+    width: 40%;
+  }
+}
