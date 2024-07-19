@@ -54,7 +54,7 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="#twitter"
+                href="https://x.com/AshleyDeFi"
                 className="hover:text-gray-400 transition-colors duration-300"
               >
                 Twitter
@@ -62,7 +62,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#instagram"
+                href="https://t.me/+89dQjvU76cwxZGU9"
                 className="hover:text-gray-400 transition-colors duration-300"
               >
                 Telegram

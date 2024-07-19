@@ -1,7 +1,12 @@
 import { Button } from "../../../common/Button";
 import CryptoTickerTable from "../../../common/Ticker";
 import { lato, playfair } from "../../../fonts/font";
-export default function Hero() {
+export default function Hero({ formRef }) {
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollToForm();
+    }
+  };
   return (
     <div className="w-[100vw] xs:h-[88vh] md:h-[80vh] mx-auto bg-[url(/consultingBg.jpg)]  bg-center bg-cover relative max-w-[2200px]">
       <div className="absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 "></div>
@@ -33,6 +38,7 @@ export default function Hero() {
           <Button
             variant="blue"
             className="md:w-[20%] flex justify-center shadow-md xs5:text-xl"
+            onClick={scrollToForm}
           >
             Get in touch
           </Button>

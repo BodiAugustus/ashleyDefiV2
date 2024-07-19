@@ -1,13 +1,14 @@
 "use client";
+
 import { TbReportSearch } from "react-icons/tb";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdTrendingUp } from "react-icons/md";
 import { AiFillPieChart } from "react-icons/ai";
 import { RiShieldKeyholeFill } from "react-icons/ri";
-import React from "react";
+import React, { useRef } from "react";
 import ServicesItem from "./ServicesItem"; // Adjust the import path as necessary
 
-const Services = () => {
+const Services = ({ formRef }) => {
   const faqs = [
     {
       title: "Technology Asessment Reports",
@@ -29,23 +30,23 @@ const Services = () => {
       icon: <TbReportSearch className="text-8xl" />,
     },
     {
-      title: "Education and Training",
+      title: "Portfolio Management",
       description:
-        "Our Education and Training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive curriculum covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
-      insideheader1: "Cryptocurrency Basics",
+        "Our Portfolio Management service is crafted to assist clients in navigating the volatile crypto markets while achieving balanced and diversified investment portfolios. By applying advanced analysis and strategic asset allocation, we aim to optimize returns and minimize risks for our clients, ensuring their investments are well-positioned for both stability and growth.",
+      insideheader1: "Asset Allocation Strategy",
       insideDescription1:
-        "This foundational module introduces clients to the world of cryptocurrencies, including the history and evolution of major digital currencies, basic concepts like blockchain and mining, and how to understand market dynamics. Key activities include interactive workshops, engaging webinars, and real-world examples.",
-      insideheader2: "Blockchain Technology",
+        "We develop a customized asset allocation strategy for each client based on their individual risk tolerance, investment goals, and market conditions. This strategy involves the selection of a mix of cryptocurrencies, tokens, and possibly other blockchain-based assets to provide a balanced approach that mitigates risk while aiming for optimal returns.",
+      insideheader2: "Risk Management Techniques",
       insideDescription2:
-        "In this module, we delve deeper into the mechanics of blockchain technology, exploring its architecture, how transactions are recorded, and the security mechanisms that underpin it. Clients learn through hands-on activities like setting up a blockchain simulation, which provides a practical understanding of blocks, hashing, and the proof-of-work system.",
-      insideheader3: "Investing in Crypto",
+        "Effective risk management is central to successful portfolio management. We implement a variety of techniques such as stop-loss orders, position sizing, and diversification across different types of crypto assets and sectors. These practices are designed to protect the portfolio against significant losses and ensure long-term stability.",
+      insideheader3: "Regular Portfolio Reviews and Rebalancing",
       insideDescription3:
-        "This segment focuses on the intricacies of investing in cryptocurrencies and DeFi. It covers various investment strategies, how to analyze cryptocurrencies, understanding risk management, and portfolio diversification. Our experts provide market insights, trend analysis, and tools to track and manage investments effectively.",
-      insideheader4: "Security and Wallet Management",
+        "Our service includes regular review sessions with our clients to assess the performance of their portfolio and make adjustments as needed. Rebalancing is done to realign the portfolio with the client’s strategic goals and to adapt to changes in market dynamics or in the client's personal circumstances.",
+      insideheader4: "Advanced Analytics and Reporting",
       insideDescription4:
-        "A critical aspect of dealing with cryptocurrencies, this module covers the best practices for securing digital assets. Topics include choosing the right type of wallet, setting up and using hardware wallets, and implementing security measures such as two-factor authentication and multi-signature addresses. Interactive demonstrations and real-life scenario analyses are used to underscore the importance of security.",
-      header: "Mastering DeFi",
-      icon: <FaChalkboardTeacher className="text-8xl" />,
+        "We provide detailed analytics and reports that track the performance of the portfolio against established benchmarks and goals. These reports offer insightful data on asset performance, sector trends, and potential opportunities for further diversification or consolidation.",
+      header: "Wealth Fund",
+      icon: <AiFillPieChart className="text-8xl" />,
     },
 
     {
@@ -67,25 +68,7 @@ const Services = () => {
       header: "Market Entry",
       icon: <MdTrendingUp className="text-8xl" />,
     },
-    {
-      title: "Portfolio Management",
-      description:
-        "Our Portfolio Management service is crafted to assist clients in navigating the volatile crypto markets while achieving balanced and diversified investment portfolios. By applying advanced analysis and strategic asset allocation, we aim to optimize returns and minimize risks for our clients, ensuring their investments are well-positioned for both stability and growth.",
-      insideheader1: "Asset Allocation Strategy",
-      insideDescription1:
-        "We develop a customized asset allocation strategy for each client based on their individual risk tolerance, investment goals, and market conditions. This strategy involves the selection of a mix of cryptocurrencies, tokens, and possibly other blockchain-based assets to provide a balanced approach that mitigates risk while aiming for optimal returns.",
-      insideheader2: "Risk Management Techniques",
-      insideDescription2:
-        "Effective risk management is central to successful portfolio management. We implement a variety of techniques such as stop-loss orders, position sizing, and diversification across different types of crypto assets and sectors. These practices are designed to protect the portfolio against significant losses and ensure long-term stability.",
-      insideheader3: "Regular Portfolio Reviews and Rebalancing",
-      insideDescription3:
-        "Our service includes regular review sessions with our clients to assess the performance of their portfolio and make adjustments as needed. Rebalancing is done to realign the portfolio with the client’s strategic goals and to adapt to changes in market dynamics or in the client's personal circumstances.",
-      insideheader4: "Advanced Analytics and Reporting",
-      insideDescription4:
-        "We provide detailed analytics and reports that track the performance of the portfolio against established benchmarks and goals. These reports offer insightful data on asset performance, sector trends, and potential opportunities for further diversification or consolidation.",
-      header: "Wealth Fund",
-      icon: <AiFillPieChart className="text-8xl" />,
-    },
+
     {
       title: "Security and Wallet Management",
       description:
@@ -104,6 +87,25 @@ const Services = () => {
         "In the event of a security breach, we provide immediate incident response support to minimize losses and restore security. This includes helping clients recover access to their assets when possible, navigating the steps to mitigate the damage, and implementing preventative measures to avoid future incidents.",
       header: "Asset Protection",
       icon: <RiShieldKeyholeFill className="text-8xl" />,
+    },
+    {
+      title: "Education and Training",
+      description:
+        "Our Education and Training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive curriculum covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
+      insideheader1: "Cryptocurrency Basics",
+      insideDescription1:
+        "This foundational module introduces clients to the world of cryptocurrencies, including the history and evolution of major digital currencies, basic concepts like blockchain and mining, and how to understand market dynamics. Key activities include interactive workshops, engaging webinars, and real-world examples.",
+      insideheader2: "Blockchain Technology",
+      insideDescription2:
+        "In this module, we delve deeper into the mechanics of blockchain technology, exploring its architecture, how transactions are recorded, and the security mechanisms that underpin it. Clients learn through hands-on activities like setting up a blockchain simulation, which provides a practical understanding of blocks, hashing, and the proof-of-work system.",
+      insideheader3: "Investing in Crypto",
+      insideDescription3:
+        "This segment focuses on the intricacies of investing in cryptocurrencies and DeFi. It covers various investment strategies, how to analyze cryptocurrencies, understanding risk management, and portfolio diversification. Our experts provide market insights, trend analysis, and tools to track and manage investments effectively.",
+      insideheader4: "Security and Wallet Management",
+      insideDescription4:
+        "A critical aspect of dealing with cryptocurrencies, this module covers the best practices for securing digital assets. Topics include choosing the right type of wallet, setting up and using hardware wallets, and implementing security measures such as two-factor authentication and multi-signature addresses. Interactive demonstrations and real-life scenario analyses are used to underscore the importance of security.",
+      header: "Mastering DeFi",
+      icon: <FaChalkboardTeacher className="text-8xl" />,
     },
   ];
 
@@ -136,6 +138,7 @@ const Services = () => {
             insideDescription2={faq.insideDescription2}
             insideDescription3={faq.insideDescription3}
             insideDescription4={faq.insideDescription4}
+            formRef={formRef}
           />
         ))}
       </div>

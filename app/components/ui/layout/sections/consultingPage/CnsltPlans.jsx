@@ -157,12 +157,10 @@ export default function CnsltPlans() {
               Members Consulting
             </h3>
             <p className="xs:text-sm xs5:text-base xs6:text-lg md:text-xl text-[#B0C7EF]">
-              Our DeFi experts provide full-service Consulting solutions to our
-              members to assist them with anything related to decentralized
-              finance. From technical aspects to protocol explanations and
-              walkthroughs to project tokenomics, our experts will provide you
-              with the right information to help you make well-informed
-              investing decisions.
+              Our DeFi experts provide full-suite consulting services to all
+              members. From technical aspects, protocol explanations, project
+              tokenomics and more, our experts will provide you with the right
+              information to make well-informed investing decisions.
             </p>
             <button
               onClick={() => handleOpenModal("monthly")}
@@ -186,12 +184,10 @@ export default function CnsltPlans() {
               Hourly Consulting{" "}
             </h3>
             <p className="xs:text-sm xs5:text-base md:text-xl xs6:text-lg text-[#B0C7EF]">
-              We offer hourly consulting services for customers who are looking
-              for a more part-time partner. Once requested one of our
-              consultants will reach out within 24 hours of your initial request
-              to determine the nature of your needs and to schedule the
-              appointment. All consultations occur 1-on-1 in person, by zoom, or
-              if you prefer by phone as well.
+              Our expert consultants offer ad hoc consulting services and
+              technology reports for interested clientele. Consultations occur
+              over zoom and are scheduled within twenty-four hours of receiving
+              your request. Additional services are available upon request.
             </p>
             <button
               onClick={() => handleOpenModal("hourly")}

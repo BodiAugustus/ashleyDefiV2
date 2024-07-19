@@ -1,17 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useState, forwardRef, useRef, useImperativeHandle } from "react";
 import { Button } from "../../../common/Button";
 
-const ContactForm = () => {
+const ContactForm = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
     name: "",
     contactInfo: "",
     consultingType: "",
     idealTimeframe: "",
+    optionalMessage: "",
   });
 
   const [errors, setErrors] = useState({});
+  const nameInputRef = useRef(null);
+
+  useImperativeHandle(ref, () => ({
+    scrollToForm() {
+      if (nameInputRef.current) {
+        nameInputRef.current.scrollIntoView({ behavior: "smooth" });
+        nameInputRef.current.focus();
+      }
+    },
+  }));
 
   const validateForm = () => {
     let tempErrors = {};
@@ -35,25 +46,43 @@ const ContactForm = () => {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // Submit form data
-      // Placeholder for future MongoDB connection
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          console.log("Contact saved successfully");
+          setFormData({
+            name: "",
+            contactInfo: "",
+            consultingType: "",
+            idealTimeframe: "",
+            optionalMessage: "",
+          });
+          setErrors({});
+        } else {
+          console.error("Failed to save contact");
+        }
+      } catch (error) {
+        console.error("Failed to save contact", error);
+      }
     }
   };
 
   return (
     <>
-      <h2
-        className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2
-      xs4:text-3xl
-      "
-      >
+      <h2 className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2 xs4:text-3xl">
         Reach Out
       </h2>
-      <div className="bg-[#292941]  xs:w-[95%] md:w-[80vw] lg:w-[50vw] mx-auto min-h-[55vh] rounded-2xl mb-16 pb-8">
+      <div className="bg-[#292941] xs:w-[95%] md:w-[80vw] lg:w-[50vw] mx-auto min-h-[55vh] rounded-2xl mb-16 pb-8">
         <h3 className="text-white xs:text-xl xs4:text-2xl md:text-2xl font-bold text-center p-4">
           Contact Form
         </h3>
@@ -67,6 +96,7 @@ const ContactForm = () => {
             className={`w-full p-2 xs6:text-lg ${
               errors.name ? "border-red-500" : "border-gray-300"
             } border rounded`}
+            ref={nameInputRef}
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 
@@ -93,9 +123,11 @@ const ContactForm = () => {
             } border rounded`}
           >
             <option value="">Select Consulting Type</option>
-            <option value="strategy">Strategy Consulting</option>
-            <option value="management">Management Consulting</option>
-            <option value="it">IT Consulting</option>
+            <option value="reports">Technology Asessment Reports</option>
+            <option value="management">Portfolio Management</option>
+            <option value="growth">Market Entry and Growth Strategies</option>
+            <option value="security">Security and Wallet Management</option>
+            <option value="training">Education and Training</option>
           </select>
           {errors.consultingType && (
             <p className="text-red-500 text-sm">{errors.consultingType}</p>
@@ -111,8 +143,8 @@ const ContactForm = () => {
           >
             <option value="">Select Ideal Timeframe</option>
             <option value="immediately">Immediately</option>
-            <option value="1-3 months">In 1-3 Months</option>
-            <option value="6 months">In 6 Months</option>
+            <option value="1-2 weeks">In 1-2 weeks</option>
+            <option value="+2 weeks">+2 weeks</option>
           </select>
           {errors.idealTimeframe && (
             <p className="text-red-500 text-sm">{errors.idealTimeframe}</p>
@@ -130,7 +162,7 @@ const ContactForm = () => {
             variant="blue"
             size="lg"
             type="submit"
-            className="flex items-center justify-center  p-2 rounded w-full"
+            className="flex items-center justify-center p-2 rounded w-full"
           >
             Submit
           </Button>
@@ -138,6 +170,6 @@ const ContactForm = () => {
       </div>
     </>
   );
-};
+});
 
 export default ContactForm;

@@ -42,9 +42,9 @@ const AtAGlance = () => {
       >
         {/* Non-hoverable header section */}
         <div
-          className="col-span-2 row-span-1 bg-[#0A3055] rounded-tl-2xl rounded-tr-2xl p-3 text-3xl 
+          className="col-span-2 row-span-1 bg-[#0A3055] rounded-tl-2xl rounded-tr-2xl p-4 text-3xl 
         
-        sm:text-4xl  lg:text-3xl lg:p-2 xl:text-3xl"
+        sm:text-4xl  lg:text-3xl lg:p-1 xl:text-3xl"
         >
           <div
             className="flex items-center text-white

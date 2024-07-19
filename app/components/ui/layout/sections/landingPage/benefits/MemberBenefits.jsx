@@ -24,7 +24,7 @@ const MemberBenefits = () => {
         Members Only Benefits
       </h2>
       <div className="p-2 rounded-2xl white-glassmorphism shadow-xl shadow-indigo-700 ">
-        <div className="h-[70vh] bg-[#2b2b2b] mx-auto bg-transparent grid grid-rows-6 transition-all font-economica bg-[url(/android-chrome-512x512.png)] bg-cover bg-center rounded-2xl relative  lg:w-[47vw]">
+        <div className="h-[70vh] bg-[#2b2b2b] mx-auto bg-transparent grid grid-rows-6 transition-all font-economica bg-[url(/android-chrome-512x512.png)] bg-cover bg-center rounded-2xl relative  lg:w-auto">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
 
           <BenefitItem>Daily Updates and Individual Responses</BenefitItem>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../../../../common/Button";
+import Link from "next/link";
 const vid = "vault.mp4";
 
 export default function FingerTwo() {
@@ -45,9 +46,11 @@ export default function FingerTwo() {
           automation to manage their investments in various pools, continually
           seeking out the best opportunities.
         </p>
-        <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">
-          Visit Vaults &#8594;
-        </Button>
+        <Link href="/vaults" passHref>
+          <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">
+            Visit Vaults &#8594;
+          </Button>
+        </Link>
       </div>
     </div>
   );

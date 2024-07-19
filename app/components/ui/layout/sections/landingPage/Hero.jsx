@@ -40,7 +40,7 @@ export default function Hero() {
               >
                 Ashley Capital & DeFi
               </h1>
-              {/* custom-xs-448-hero-title custom-xs-640-hero-title
+              {/*  custom-xs-640-hero-title
             custom-xs-340-hero-title custom-xs-550-hero-title
             custom-xs-660-hero-title custom-xs-850-hero-title
             custom-xs-650-hero-title custom-xs-390780-hero-title
@@ -97,7 +97,7 @@ export default function Hero() {
 
                     "
                 >
-                  {/* custom-xs-448-hero-cards2 
+                  {/* 
                   custom-xs-640-hero-cards2 
                     custom-xs-360-hero-cards-height
                   custom-xs-550-hero-cards-height
@@ -144,7 +144,7 @@ export default function Hero() {
                     2xl:w[-32%]
                     "
                 >
-                  {/* custom-xs-448-hero-cards2 
+                  {/* custom-xs-448-hero-cards2
                   custom-xs-640-hero-cards2 
                  custom-xs-360-hero-cards-height
                   custom-xs-550-hero-cards-height
@@ -190,7 +190,7 @@ export default function Hero() {
                     2xl:w[-32%]
                     "
                 >
-                  {/* custom-xs-448-hero-cards2 
+                  {/* 
                   custom-xs-640-hero-cards2 
                 custom-xs-360-hero-cards-height
                   custom-xs-550-hero-cards-height 

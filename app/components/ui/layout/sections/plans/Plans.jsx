@@ -58,7 +58,7 @@ export default function Plans() {
             </p>
             <Link
               href="/consulting"
-              className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
+              className="text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100   xs:w-[100%] md:w-[50%] hover:pl-3 xs:text-sm xs3:text-base
               xs5:text-lg xs6:text-lg md:text-xl lg:w-[100%]"
             >
               Learn More About Ashley Consulting
@@ -89,15 +89,15 @@ export default function Plans() {
             </h3>
             <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:indent-5 md:indent-0  text-[#B0C7EF]">
               We offer a fully-custodialized and permissionless staking vault
-              that runs on the Fantom Sonic blockchain. This vaults allow for
-              users to deposit their FTM tokens to receive a variable APR that
-              is significantly above the traditional finance's average. Staked
-              assets accrue rewards paid out in FTM to the user on a per second
-              basis.
+              that runs on the revolutionary Sonic blockchain. This vault allows
+              for users to deposit their FTM tokens in order to receive a
+              variable APR that is significantly above the traditional financial
+              industry average. Staked assets accrue rewards paid out in FTM to
+              the user on a per second basis.
             </p>
             <Link
               href="/vaults"
-              className=" text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100  custom-underline xs:block xs:w-[100%]  lg:w-[100%] hover:pl-3 xs:text-sm xs3:text-base xs5:text-lg md:text-xl"
+              className=" text-sky-400 transition-all duration-300 md:inline transform-origin-center-bottom hover:scale-105 active:scale-100   xs:block xs:w-[100%]  lg:w-[100%] hover:pl-3 xs:text-sm xs3:text-base xs5:text-lg md:text-xl"
             >
               Learn More About High Yield Staking
             </Link>

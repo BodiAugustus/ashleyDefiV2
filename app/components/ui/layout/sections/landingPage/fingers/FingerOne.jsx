@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../../../../common/Button";
+import Link from "next/link";
 const vid = "consulting.mp4"; // No need to import, just provi
 export default function FingerOne() {
   return (
@@ -38,20 +39,24 @@ export default function FingerOne() {
           ahead and take the first step by engaging with one of our expert
           consultants today!
         </p>
-        <Button
-          variant="white"
-          className="xs:mx-auto xs:mb-2  md:hidden xs5:text-xl"
-          size="md"
-        >
-          Learn More &#8594;
-        </Button>
-        <Button
-          variant="white"
-          className="xs:hidden md:inline-block  lg:mx-auto "
-          size="lg"
-        >
-          Learn More &#8594;
-        </Button>
+        <Link href="/consulting" passHref>
+          <Button
+            variant="white"
+            className="xs:mx-auto xs:mb-2  md:hidden xs5:text-xl"
+            size="md"
+          >
+            Learn More &#8594;
+          </Button>
+        </Link>
+        <Link href="/consulting" passHref>
+          <Button
+            variant="white"
+            className="xs:hidden md:inline-block  lg:mx-auto "
+            size="lg"
+          >
+            Learn More &#8594;
+          </Button>
+        </Link>
       </div>
       {/* <Image
         src="/Ashley-capital-logo.png"

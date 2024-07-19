@@ -19,10 +19,17 @@ export default function ServicesItem({
   insideDescription2,
   insideDescription3,
   insideDescription4,
+  formRef,
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollToForm();
+    }
+  };
 
   return (
     <div>
@@ -83,7 +90,9 @@ export default function ServicesItem({
         </div>
       </div>
       <div className="bg-[#292941] xs:h-[20vh] md:h-[15vh] flex items-center justify-center rounded-bl-2xl rounded-br-2xl border-t-2  ">
-        <Button className="xs5:text-xl">Enquire about this service</Button>
+        <Button className="xs5:text-xl" onClick={scrollToForm}>
+          Enquire about this service
+        </Button>
       </div>
     </div>
   );

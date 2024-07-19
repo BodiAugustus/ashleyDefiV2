@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../../../../common/Button";
+import Link from "next/link";
 const vid = "community.mp4"; // No need to import, just provi
 export default function FingerThree() {
   return (
@@ -25,15 +26,17 @@ export default function FingerThree() {
         </div>
         <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:px-2 xs:indent-5 lg:indent-0 ] xs:mb-1 text-[#B0C7EF]">
           Come and join our growing community where you can engage directly with
-          builders, investors, enthusiasts and analysts alike. Our Discord and
-          Telegram servers offer real, value-filled conversations that provide
-          advance insights and answers. We also have the annual members only
-          "Whale Party," which happens in different amazing places all around
-          the world!
+          builders, investors, enthusiasts and analysts from all around the
+          world. Our Telegram server offers real, value-filled conversations
+          providing real, advance insights and answers to the latest news. We
+          also host an annual members only party which happens in different
+          amazing places all around the world!
         </p>
-        <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">
-          Join Today &#8594;
-        </Button>
+        <Link href="https://t.me/+89dQjvU76cwxZGU9" passHref>
+          <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">
+            Join Today &#8594;
+          </Button>
+        </Link>
       </div>
       <div className="xs:hidden lg:block w-[50%] h-full relative rounded-2xl overflow-hidden">
         <video
