@@ -39,12 +39,12 @@ export default function FingerTwo() {
           className=" xs:text-sm
         xs3:text-base xs6:text-lg md:text-xl w-[100%] xs:indent-5 xs:mb-1 xl:indent-0 xs:px-2 text-[#B0C7EF]"
         >
-          Our high APY vault works as a Yield Aggregators, maximizing yield
-          potentials from liquidity pools via auto-compounding and other
-          strategies. A yield aggregator is a service that helps investors earn
-          the highest possible return on their crypto investments by using
-          automation to manage their investments in various pools, continually
-          seeking out the best opportunities.
+          Our high-APY vaults functions as yield aggregators, maximizing yield
+          potential from liquidity pools through auto-compounding and other
+          advanced strategies. A yield aggregator is a service designed to help
+          investors achieve the highest possible returns on their crypto
+          investments by automating the management of investments across various
+          pools and continually seeking out the best opportunities.
         </p>
         <Link href="/vaults" passHref>
           <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">

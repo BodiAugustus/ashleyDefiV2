@@ -1,10 +1,16 @@
 import { Button } from "../../../common/Button";
 import CryptoTickerTable from "../../../common/Ticker";
 import { lato, playfair } from "../../../fonts/font";
-export default function Hero({ formRef }) {
+export default function Hero({ formRef, ashleyAdvRef }) {
   const scrollToForm = () => {
     if (formRef.current) {
       formRef.current.scrollToForm();
+    }
+  };
+
+  const scrollToAshleyAdv = () => {
+    if (ashleyAdvRef.current) {
+      ashleyAdvRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
   return (
@@ -30,7 +36,7 @@ export default function Hero({ formRef }) {
           Ashley Consulting: Your Partners in DeFi
         </h1>
         <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg lg:w-[70%] xl:w-[50%] text-center xs8:text-xl lg:text-xl">
-          Our advisory spans across the Fantom, Sonic and Monero ecosystems
+          Our advisory covers the Fantom, Sonic, and Monero blockchains,
           including protocol assessments, trading strategies, tokenomics,
           education, and investing services.
         </h3>
@@ -45,6 +51,7 @@ export default function Hero({ formRef }) {
           <Button
             variant="white"
             className="md:w-[20%] flex justify-center xs5:text-xl"
+            onClick={scrollToAshleyAdv}
           >
             Learn more
           </Button>

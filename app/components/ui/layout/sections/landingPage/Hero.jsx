@@ -125,7 +125,7 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2 lg:px-2
                             "
                   >
-                    Onboarding you into DeFi so that you can find and make
+                    We onboard you into DeFi to help you find and make
                     profitable investing decisions.
                   </p>
                 </div>
@@ -171,8 +171,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We have over four years of blockchain development and DeFi
-                    investing experience.
+                    We have over four years of experience in blockchain
+                    development and DeFi investing.
                   </p>
                 </div>
 
@@ -217,8 +217,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We provide direct consulting with a high APR no permission
-                    staking vault.
+                    We provide direct consulting and multiple high-APR,
+                    permissionless staking vaults.
                   </p>
                 </div>
               </div>

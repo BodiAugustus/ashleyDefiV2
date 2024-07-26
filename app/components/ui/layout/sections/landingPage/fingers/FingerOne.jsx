@@ -32,12 +32,11 @@ export default function FingerOne() {
         md:indent-0 
         md:text-xl lg:w-[98%] text-[#B0C7EF] lg:pb-1 lg:indent-4"
         >
-          Every Ashley DeFi consultant delivers concise, data-driven knowledge
-          gained from extensive research on market catalysts, DeFi narratives,
-          protocols and industry relevent events. We provide expert insights for
-          well-informed, timely decision-making to all of our clientele. Go
-          ahead and take the first step by engaging with one of our expert
-          consultants today!
+          Every Ashley DeFi consultant provides concise, data-driven insights
+          derived from extensive research on market catalysts, DeFi narratives,
+          protocols, and industry-relevant events. We offer expert guidance for
+          well-informed, timely decision-making to all our clients. Take the
+          first step by engaging with one of our expert consultants today!
         </p>
         <Link href="/consulting" passHref>
           <Button

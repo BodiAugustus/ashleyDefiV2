@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Call2Action() {
   return (
-    <div className="xs:h-auto  max-w-[2200px] z-0 xl:pt-6">
+    <div className="xs:h-auto  max-w-[2200px]  xl:pt-6">
       <div
         className="flex white-glassmorphism xs:w-[95%] md:w-[90vw]  
      
@@ -27,10 +27,10 @@ export default function Call2Action() {
               Come Win With Us!
             </h2>
             <p className="text-center xs:text-sm xs3:text-base xs6:text-lg md:text-xl text-[#B0C7EF]">
-              At Ashley Capital & DeFi, we make your money work as hard and
-              smart as possible so that you can have more of it back to do the
-              things you love and enjoy. So if you like having extra money, then
-              you've come to the right place. Welcome to Ashley Capital & DeFi,
+              At Ashley Capital & DeFi, we ensure your money works as hard and
+              smart as possible, maximizing your returns so you can enjoy more
+              of what you love. If you’re looking to grow your wealth, you’ve
+              come to the right place. Welcome to Ashley Capital & DeFi,
               <br /> <br />{" "}
               <span className="text-sky-400 font-bold xs:text-xl xs6:text-2xl md:text-2xl ">
                 where whales are born.

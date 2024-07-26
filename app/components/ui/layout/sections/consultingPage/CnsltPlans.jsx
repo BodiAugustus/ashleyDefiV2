@@ -19,52 +19,41 @@ export default function CnsltPlans() {
       type === "monthly" ? (
         <div className="md:p-4 ">
           <h2 className=" xs:text-xl md:text-2xl font-bold text-center">
-            Members Consulting Details
+            Members Consulting Info
           </h2>
           <h3 className=" md:mb-5 font-bold text-center xs:text-base">
-            Details regarding our monthly membership consulting services.
+            Details regarding our monthly member's consulting services
           </h3>
           <div className="flex flex-col xs:gap-1 md:gap-5 mx-auto xs:w-[95%] md:w-[90%]">
             <div>
               <div className="flex items-center gap-2">
                 <FaUserFriends />
-                <h4>2 hours of direct 1-on-1 consultation monthly</h4>
+                <h4>2 hours of direct, 1-on-1 consultation per month</h4>
               </div>
               <p className="font-thin font-sans xs:text-sm md:text-base">
-                Consulting sessions are done in person or over Google
-                Meets/ZOOM.
+                Consulting sessions are held via Zoom and include a thorough
+                review of your portfolio by the consultant.
               </p>
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <FaSearch />
-                <h4> 1 hour of preparation work</h4>
-              </div>
-              <p className="font-thin font-sans xs:text-sm md:text-base">
-                Before each consultation your portfolio and all of its
-                paremeters will be individually researched and checked to ensure
-                you have the best information and position possible.
-              </p>
-            </div>
+
             <div>
               <div className="flex items-center gap-2">
                 <FaFileAlt />
-                <h4> Free access to all technology reports</h4>
+                <h4> Free access to technology reports</h4>
               </div>
               <p className="font-thin font-sans xs:text-sm md:text-base">
-                Members are not required to pay to see any reports or other
-                informationals put out by Ashley DeFi. All members will be kept
-                notified.
+                Members receive all technology reports and other produced
+                content at no additional cost.
               </p>
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <FaCheckCircle />
-                <h4> Priority given to responses</h4>
+                <h4> Priority responses</h4>
               </div>
               <p className="font-thin font-sans xs:text-sm md:text-base">
-                Members always get first priortiy to response times for
-                communication with their consultants.
+                Members receive priority response when communicating with their
+                consultants.
               </p>
             </div>
             <div>
@@ -73,20 +62,20 @@ export default function CnsltPlans() {
                 <h4>Portfolio management</h4>
               </div>
               <p className="font-thin font-sans mb-5 xs:text-sm md:text-base">
-                Holding a membership with Ashley DeFi means having a
-                professional watching over your portfolio, ready to advise to
-                protect and extend your gains during uptimes and down.
+                Ashley DeFi members benefit from industry-specific professionals
+                overseeing their portfolios, ensuring the protection and
+                enhancement of gains during both market upturns and downturns.
               </p>
             </div>
           </div>
           <h4 className="mb-5 text-center">
-            Monthly Membership Fee: <span className="font-bold">$119.99</span>
+            Monthly Membership Fee: <span className="font-bold">$99.99</span>
           </h4>
           <Button className="mx-auto">Buy Now</Button>
           {/* You can add more detailed sections here as needed */}
         </div>
       ) : (
-        <div className="md:p-4">
+        <div className="md:p-4  ">
           <h2 className=" xs:text-xl md:text-2xl font-bold text-center">
             Hourly Consulting
           </h2>
@@ -97,11 +86,10 @@ export default function CnsltPlans() {
             <div>
               <div className="flex items-center gap-2">
                 <FaUserFriends />
-                <h4>1 hour of direct 1-on-1 consultation per session</h4>
+                <h4>One hour of direct, 1-on-1 consultation</h4>
               </div>
               <p className="font-thin font-sans">
-                Consulting sessions are done in person or over Google
-                Meets/ZOOM.
+                Consulting sessions are done over ZOOM
               </p>
             </div>
 
@@ -111,13 +99,13 @@ export default function CnsltPlans() {
                 <h4> Pay to access technology reports</h4>
               </div>
               <p className="font-thin font-sans">
-                Non-members are required to pay $9.99 to see any of Ashley
-                DeFi's technology or protocol reports.
+                Non-members must pay $9.99 to access any of Ashley DeFi's
+                technology or protocol reports.
               </p>
             </div>
           </div>
-          <h4 className="mb-5 text-center">
-            Hourly Consulting Fee: <span className="font-bold">60 USD</span>
+          <h4 className="mb-5 mt-5 text-center">
+            Hourly Consulting Fee: <span className="font-bold">$60.00</span>
           </h4>
           <Button className="mx-auto">Buy Now</Button>
           {/* You can add more detailed sections here as needed */}
@@ -131,7 +119,7 @@ export default function CnsltPlans() {
   const closeModal = () => setModalOpen(false);
   return (
     <div
-      className=" xs:h-auto  max-w-[2200px] flex flex-col
+      className=" xs:h-auto   max-w-[2200px] flex flex-col
      items-center xs:gap-y-1 md:gap-y-10 text-white  md:w-[90vw] 
      mx-auto xs:-mt-10  xs6:mb-5 md:pb-7 lg:gap-y-3 lg:pt-5"
     >
@@ -143,7 +131,10 @@ export default function CnsltPlans() {
         <h2>Our Services</h2>
       </div>
       <div className="flex xs:flex-col lg:flex-row xs:gap-6 md:gap-10 ">
-        <div className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto h-[75vh] rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700">
+        <div
+          className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto 
+        rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700"
+        >
           <div className="h-[35vh] relative">
             <Image
               src="/whales.webp"
@@ -157,10 +148,11 @@ export default function CnsltPlans() {
               Members Consulting
             </h3>
             <p className="xs:text-sm xs5:text-base xs6:text-lg md:text-xl text-[#B0C7EF]">
-              Our DeFi experts provide full-suite consulting services to all
-              members. From technical aspects, protocol explanations, project
-              tokenomics and more, our experts will provide you with the right
-              information to make well-informed investing decisions.
+              Our DeFi experts offer comprehensive consulting services to all
+              members. From technical aspects and protocol explanations to
+              project tokenomics and beyond, our specialists provide the
+              essential information you need to make well-informed investment
+              decisions.
             </p>
             <button
               onClick={() => handleOpenModal("monthly")}
@@ -184,10 +176,11 @@ export default function CnsltPlans() {
               Hourly Consulting{" "}
             </h3>
             <p className="xs:text-sm xs5:text-base md:text-xl xs6:text-lg text-[#B0C7EF]">
-              Our expert consultants offer ad hoc consulting services and
-              technology reports for interested clientele. Consultations occur
-              over zoom and are scheduled within twenty-four hours of receiving
-              your request. Additional services are available upon request.
+              Our expert consultants provide ad hoc consulting services and
+              technology reports for interested clients. Consultations are
+              conducted via Zoom and scheduled within twenty-four hours of
+              receiving your request. Additional services are available upon
+              request.
             </p>
             <button
               onClick={() => handleOpenModal("hourly")}

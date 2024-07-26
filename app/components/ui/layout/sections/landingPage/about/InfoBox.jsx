@@ -50,31 +50,30 @@ const Info = () => {
           <div className="p-2 rounded-md relative h-[45%] lg:h-[42%] overflow-hidden">
             <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg md:text-xl lg:text-lg h-full overflow-y-scroll relative">
               <p className="pb-1 xs:pt-0">
-                Ashley Capital & DeFi was founded in order to help
-                professionally onboard people into Decentralized Finance, the
-                future of money. We accomplish our mission via our client-based
-                consulting services and a high yields permissionless staking
-                vault that offers consistent APR's far above the traditional
-                finance industry average.
+                Ashley Capital & DeFi was founded to professionally onboard
+                individuals into Decentralized Finance, the future of money. We
+                achieve this through our client-based consulting services and
+                high-yield, permissionless staking vaults, which offer
+                consistent APRs well above the traditional finance industry
+                average.
               </p>
               <p className="pb-4">
-                Whether you're seeking a temporary learning resource to
-                eventually become your own DeFi master, looking for long-term
-                crypto advisement, or simply interested in staking inside of our
-                vault to earn yields, we've got you covered! Our consultants are
-                professional DeFi investors, coders and blockchain engineers who
-                utilize and build upon DeFi protocols everyday using the most
-                advanced technologies and analytics available, including AI.
+                Whether you're seeking a temporary learning resource on your
+                path to becoming a DeFi master, looking for long-term crypto
+                advisement, or interested in staking within our vaults to earn
+                yields, we've got you covered! Our consultants are professional
+                DeFi investors, coders, and blockchain engineers who use and
+                build upon DeFi protocols daily, leveraging the most advanced
+                technologies and analytics, including AI.
               </p>
               <p>
-                We spend all the hours sifting through forums, posts, and data
-                in order to find and test the many constantly evolving
-                technologies so that you don't have to. Our years of learned
-                experience are constantly engaged in finding legitimate
-                protocols, figuring out their dynamics and utility cases and
-                then leveraging them in unique and novel ways to develop highly
-                profitable strategies within a fast-paced, constantly changing
-                environment.
+                We spend countless hours sifting through forums, posts, and data
+                to find and test the ever-evolving technologies so you don't
+                have to. Our extensive experience is dedicated to discovering
+                legitimate protocols, understanding their dynamics and use
+                cases, and leveraging them in innovative ways to develop highly
+                profitable strategies within a fast-paced and constantly
+                changing environment.
               </p>
             </div>
 

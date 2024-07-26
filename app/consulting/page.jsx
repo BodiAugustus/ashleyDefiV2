@@ -11,12 +11,15 @@ import React, { useRef } from "react";
 
 export default function Page() {
   const formRef = useRef(null);
+  const ashleyAdvRef = useRef(null);
 
   return (
     <main className="max-w-[2200px] overflow-hidden min-h-screen">
       <Layout />
-      <Hero formRef={formRef} />
-      <AshleyAdv />
+      <Hero formRef={formRef} ashleyAdvRef={ashleyAdvRef} />
+      <div ref={ashleyAdvRef}>
+        <AshleyAdv />
+      </div>
       <Services formRef={formRef} />
       <ContactForm ref={formRef} />
       <CnsltPlans />

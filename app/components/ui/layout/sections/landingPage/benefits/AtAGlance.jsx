@@ -20,9 +20,9 @@ const AtAGlance = () => {
     "Individualized portfolio strategies customized to your own desired levels of risk and exposure.",
     "Direct crypto and DeFi consulting services with regular client meetings and updates.",
     "Timely feedback from an actual DeFi consultant, not a customer service representative.",
-    "Self-custodial, fully-permissionless, high-yields savings vault based within the FTM ecosystem.",
+    "Self-custodial, fully-permissionless, high-yields savings vaults based within the Sonic ecosystem.",
     "Advanced technical expertise and insights from real world blockchain developers.",
-    "First exposure to alpha news drops as revealed though our proven list of cultivated affiliates.",
+    "Two-hours of direct, individual DeFi consultations conducted via ZOOM very month.",
   ];
 
   return (
@@ -67,7 +67,7 @@ const AtAGlance = () => {
           xs6:text-xl
           sm:text-2xl sm:w-[70%] sm:mx-auto md:text-3xl md:w-[55%] lg:text-2xl lg:w-[80%] lg:-mt-3 xl:text-2xl xl:-mt-2"
           >
-            All members get full access all the time.
+            All members get full access, all the time.
           </h4>
         </div>
 

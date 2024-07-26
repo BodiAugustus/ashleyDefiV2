@@ -25,12 +25,11 @@ export default function FingerThree() {
           />
         </div>
         <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:px-2 xs:indent-5 lg:indent-0 ] xs:mb-1 text-[#B0C7EF]">
-          Come and join our growing community where you can engage directly with
-          builders, investors, enthusiasts and analysts from all around the
-          world. Our Telegram server offers real, value-filled conversations
-          providing real, advance insights and answers to the latest news. We
-          also host an annual members only party which happens in different
-          amazing places all around the world!
+          Join our growing community and connect directly with builders,
+          investors, enthusiasts, and analysts from around the globe. Our
+          Telegram server provides valuable, in-depth conversations and advanced
+          insights into the latest news. Plus, we host an annual members-only
+          party in exciting locations around the world!
         </p>
         <Link href="https://t.me/+89dQjvU76cwxZGU9" passHref>
           <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">

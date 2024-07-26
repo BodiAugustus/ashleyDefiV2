@@ -8,7 +8,7 @@ const FAQsSection = () => {
     {
       question: "What is DeFi?",
       answer:
-        "Decentralized finance, often abbreviated as DeFi, refers to a financial system built on blockchain technology that operates without the need for traditional centralized intermediaries such as banks, brokers, or exchanges. DeFi platforms enable users to lend, borrow, trade, earn interest, and access a wide range of financial services directly from their digital wallets using smart contracts. These contracts are self-executing agreements, with the terms directly written into code, which provide transparency, security, and reduced risk of manipulation. This ecosystem is designed to be open, inclusive, and interoperable, offering a global, permissionless, and more democratized alternative to conventional financial systems.",
+        "Decentralized Finance (DeFi) is a financial system built on blockchain technology that operates without traditional intermediaries such as banks, brokers, or exchanges. DeFi platforms allow users to lend, borrow, trade, earn interest, and access a variety of financial services directly from their digital wallets through smart contracts. These self-executing agreements, with terms encoded in blockchain, offer transparency, security, and minimized risk of manipulation. Designed to be open, inclusive, and interoperable, DeFi provides a global, permissionless, and democratized alternative to conventional financial systems.",
     },
     {
       question: "Why should I invest in DeFi?",
@@ -18,16 +18,17 @@ const FAQsSection = () => {
     {
       question: "Do I have to be a member to utilize the vaults?",
       answer:
-        "No, our auto-compounding vault is permissionless and open to anyone at anytime.",
+        "No, our auto-compounding vaults are permissionless and open to anyone at anytime.",
     },
     {
       question: "How long does a subscription last?",
-      answer: "All subscriptions are monthly based and can be auto-renewed.",
+      answer:
+        "All subscriptions are monthly based and can also be auto-renewed.",
     },
     {
       question: "Can I share my account with others?",
       answer:
-        "No, each account is for individual use only and member-services may not be shared.",
+        "Each account is for individual use only; member services cannot be shared.",
     },
   ];
 

@@ -49,12 +49,13 @@ export default function Plans() {
               Membership Consulting
             </h3>
             <p className="xs:text-sm xs3:text-base xs6:text-lg xs:indent-5 md:indent-0 md:text-xl text-[#B0C7EF]">
-              Our DeFi experts provide full-service Consulting solutions to
-              assist you with anything related to decentralized finance. From
-              questions about technical aspects to protocol explanations and
-              walkthroughs to individual project tokenomics, our experts will
-              provide you with the right information to help you make
-              well-informed investing decisions.
+              Our DeFi experts offer comprehensive consulting solutions to
+              support you with all aspects of decentralized finance. Whether you
+              have questions about technical details, need protocol
+              explanations, require walkthroughs, or seek insights into
+              individual project tokenomics, our experts are here to provide you
+              with the information you need to make well-informed investment
+              decisions.
             </p>
             <Link
               href="/consulting"
@@ -88,12 +89,13 @@ export default function Plans() {
               Staking Vault{" "}
             </h3>
             <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:indent-5 md:indent-0  text-[#B0C7EF]">
-              We offer a fully-custodialized and permissionless staking vault
-              that runs on the revolutionary Sonic blockchain. This vault allows
-              for users to deposit their FTM tokens in order to receive a
-              variable APR that is significantly above the traditional financial
-              industry average. Staked assets accrue rewards paid out in FTM to
-              the user on a per second basis.
+              We provide fully-custodial and permissionless staking vaults on
+              the revolutionary Sonic blockchain. Users can seemlessly deposit
+              their sonic tokens ($S) into one of our vaults to earn variable
+              APR's well above traditional financial averages. Rewards are
+              accrued and paid out in sonic tokens on a per-second basis,
+              maximizing your staking returns with industry leading,
+              cutting-edge technology.
             </p>
             <Link
               href="/vaults"

@@ -28,11 +28,11 @@ const MemberBenefits = () => {
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
 
           <BenefitItem>Daily Updates and Individual Responses</BenefitItem>
-          <BenefitItem>Weekly Half-Hour 1-on-1 Consultations</BenefitItem>
+          <BenefitItem>2 Hours of Monthly Consultations</BenefitItem>
           <BenefitItem>Members-Only Telegram Chat</BenefitItem>
-          <BenefitItem>In-Depth Projects Outlooks & Analysis</BenefitItem>
-          <BenefitItem>Members-Only Learning Resources</BenefitItem>
-          <BenefitItem>First Access for All Alpha News Drops</BenefitItem>
+          <BenefitItem>In-Depth Project Technology Reports</BenefitItem>
+          <BenefitItem>Direct Learning Resources</BenefitItem>
+          <BenefitItem>Individualized Portfolio Management</BenefitItem>
         </div>
       </div>
     </div>
