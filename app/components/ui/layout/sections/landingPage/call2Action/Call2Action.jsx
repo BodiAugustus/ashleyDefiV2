@@ -36,7 +36,7 @@ export default function Call2Action() {
                 where whales are born.
               </span>
             </p>
-            <Link href="/consulting" passHref>
+            <Link href="https://buy.stripe.com/5kA4iL4ppeITc1ydQQ" passHref>
               <Button className="shadow-xl font-thin font-sans xs5:text-xl xs:mb-2">
                 Become a Member
               </Button>

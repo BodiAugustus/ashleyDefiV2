@@ -11,6 +11,7 @@ import {
   FaCheckCircle,
   FaChartLine,
 } from "react-icons/fa";
+import Link from "next/link";
 export default function CnsltPlans() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
@@ -71,7 +72,9 @@ export default function CnsltPlans() {
           <h4 className="mb-5 text-center">
             Monthly Membership Fee: <span className="font-bold">$99.99</span>
           </h4>
-          <Button className="mx-auto">Buy Now</Button>
+          <Link href="https://buy.stripe.com/5kA4iL4ppeITc1ydQQ" passHref>
+            <Button className="mx-auto">Buy Now</Button>
+          </Link>
           {/* You can add more detailed sections here as needed */}
         </div>
       ) : (
@@ -107,7 +110,9 @@ export default function CnsltPlans() {
           <h4 className="mb-5 mt-5 text-center">
             Hourly Consulting Fee: <span className="font-bold">$60.00</span>
           </h4>
-          <Button className="mx-auto">Buy Now</Button>
+          <Link href="https://buy.stripe.com/6oEaH9g8730b3v2001" passHref>
+            <Button className="mx-auto">Buy Now</Button>
+          </Link>
           {/* You can add more detailed sections here as needed */}
         </div>
       );

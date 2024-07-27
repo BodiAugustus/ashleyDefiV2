@@ -125,8 +125,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2 lg:px-2
                             "
                   >
-                    We onboard you into DeFi to help you find and make
-                    profitable investing decisions.
+                    Onboarding you into the new realm of decentralized finance,
+                    the future of money
                   </p>
                 </div>
 
@@ -172,7 +172,7 @@ export default function Hero() {
                             "
                   >
                     We have over four years of experience in blockchain
-                    development and DeFi investing.
+                    development and DeFi.
                   </p>
                 </div>
 

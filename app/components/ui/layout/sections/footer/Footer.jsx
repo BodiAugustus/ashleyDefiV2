@@ -32,7 +32,7 @@ const Footer = () => {
           <ul>
             <li>
               <Link
-                href="#help"
+                href="https://app.gitbook.com/o/1kCTyP86x3ppTwOIirwA/s/sGR40A0WJZIMWRlOulen/"
                 className="hover:text-gray-400 transition-colors duration-300"
               >
                 Docs

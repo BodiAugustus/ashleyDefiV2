@@ -8,7 +8,7 @@ const HoverableSection = ({ content }) => (
     className="col-span-1  md:row-span-1 max-w-[800px] bg-[#1D3461] text-center hover:bg-[#4C5175] font-thin cursor-pointer p-3 xs:pt-4 xs:text-sm
     xs3:text-base
     xs6:text-lg
-  sm:pt-4 md:text-2xl md:p-3 lg:text-base  xl:text-xl xl:p-4 xl:pt-3"
+  sm:pt-4 md:text-2xl md:p-3 lg:text-base   2xl:text-xl xl:p-4 xl:pt-3"
   >
     <h2>{content}</h2>
   </div>
