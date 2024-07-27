@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata = {
   title: "Ashley DeFi",
   description:
-    "A crypto wealth management and consulting company with the main objective of onboarding millions into decentralized finance.",
+    "A crypto wealth management and consulting company with the main objective of onboarding people into decentralized finance.",
 };
 
 export default function RootLayout({ children }) {

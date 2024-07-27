@@ -176,8 +176,16 @@ export default function Layout({ children }) {
             xs:text-3xl xs3:text-4xl xs4:text-5xl
             "
             >
-              <FaTelegram />
-              <FaTwitter />
+              <Link href="https://t.me/+89dQjvU76cwxZGU9" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <FaTelegram />
+                </a>
+              </Link>
+              <Link href="https://x.com/AshleyDeFi" passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
+              </Link>
             </div>
             <div className="flex flex-col">
               <h4
