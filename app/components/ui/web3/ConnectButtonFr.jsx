@@ -6,6 +6,7 @@ const HomePage = () => {
       <ConnectButton
         style={{ backgroundColor: "#292941", alignItems: "center" }}
         accentColor="#292941"
+        z
         label="Connect"
         accountStatus={{ smallScreen: "avatar", largeScreen: "full" }}
         showBalance={{ smallScreen: false, largeScreen: true }}
