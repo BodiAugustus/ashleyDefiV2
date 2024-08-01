@@ -230,7 +230,9 @@ export default function Layout({ children }) {
               alt="logo"
             />
           </Link>
-          <ConnectButtonFr />
+          <div className="md:hidden">
+            <ConnectButtonFr />
+          </div>
           <button
             className="md:hidden xs:text-4xl xs2:text-5xl hover:scale-105 active:scale-100 transition-transform duration-300"
             onClick={openMenu}
