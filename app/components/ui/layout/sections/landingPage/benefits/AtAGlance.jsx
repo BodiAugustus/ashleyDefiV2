@@ -22,7 +22,7 @@ const AtAGlance = () => {
     "Timely feedback from an actual DeFi consultant, not a customer service representative.",
     "Self-custodial, fully-permissionless, high-yields savings vaults based within the Sonic ecosystem.",
     "Advanced technical expertise and insights from real world blockchain developers.",
-    "Two-hours of direct, individual DeFi consultations conducted via ZOOM very month.",
+    "Two-hours of direct, individual DeFi consultations conducted via ZOOM every month.",
   ];
 
   return (
