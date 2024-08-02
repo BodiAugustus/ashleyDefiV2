@@ -1,5 +1,6 @@
 "use client";
 import "@rainbow-me/rainbowkit/styles.css";
+import Head from "next/head";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import {
@@ -47,6 +48,23 @@ export default function Home({ component, pageProps }) {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
+          <Head>
+            <title>
+              Decentralized Finance Consulting & Fund Management | Ashley DeFi
+            </title>
+            <meta
+              name="description"
+              content="Expert decentralized finance consulting and fund management services focusing on Fantom, Sonic, and Monero blockchains. Achieve your financial goals with Ashley DeFi."
+            />
+            <meta
+              name="keywords"
+              content="Decentralized Finance, DeFi Consulting, Fund Management, Fantom Blockchain, Sonic Blockchain, Monero Blockchain"
+            />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+          </Head>
           <main className="overflow-hidden max-w-[2200px] min-h-screen mx-auto">
             <Layout />
             <Hero />

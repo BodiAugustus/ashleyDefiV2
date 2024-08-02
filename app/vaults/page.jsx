@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
@@ -44,6 +45,21 @@ export default function Page() {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
+          <Head>
+            <title>Secure DeFi Vaults on Sonic | Ashley DeFi</title>
+            <meta
+              name="description"
+              content="Explore secure decentralized finance vaults with Ashley DeFi. Maximize your DeFi assets securely in our Sonic Blockchain vaults."
+            />
+            <meta
+              name="keywords"
+              content="DeFi Vaults, Blockchain Vaults, Sonic Vaults,  Decentralized Finance"
+            />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+          </Head>
           <main className="max-w-[2200px] overflow-hidden">
             <Layout />
             {/* <Hero />
