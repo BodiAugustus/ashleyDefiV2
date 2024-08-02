@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ashleydefi.com
+
+# Sitemaps
+Sitemap: https://ashleydefi.com/sitemap.xml
+Sitemap: https://ashleydefi.com/server-sitemap.xml
