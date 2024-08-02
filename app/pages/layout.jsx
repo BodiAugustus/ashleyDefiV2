@@ -194,6 +194,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 // import { ConnectButton } from "@rainbow-me/rainbowkit";
 import ConnectButtonFr from "../components/ui/web3/ConnectButtonFr";
 import CustomConnectButton from "../components/ui/web3/CustomConnectButton.jsx";
+import Logo from "../../public/Ashley-capital-logo.png";
 
 export default function Layout({ children }) {
   const menuRef = useRef(null);
@@ -285,7 +286,7 @@ export default function Layout({ children }) {
           {/* <Button variant="white" size="md">
             Connect
           </Button> */}
-          <ConnectButtonFr />
+          <CustomConnectButton />
         </div>
       </nav>
 
@@ -296,7 +297,7 @@ export default function Layout({ children }) {
       >
         <div className="bg-[#292941] relative xs:p-2 xs4:p-5 rounded-lg shadow-lg flex flex-col items-center  h-full w-full">
           <Image
-            src="/Ashley-capital-logo.png"
+            src={Logo}
             alt="Logo"
             layout="fill"
             objectFit="contain"
