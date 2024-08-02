@@ -26,9 +26,9 @@ const FAQsSection = () => {
         "All subscriptions are monthly based and can also be auto-renewed.",
     },
     {
-      question: "Can I share my account with others?",
+      question: "Can I share my subscription with others?",
       answer:
-        "Each account is for individual use only; member services cannot be shared.",
+        "Each subscription is for individual use only; member services cannot be shared.",
     },
   ];
 

@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div
       className="text-white  max-w-[2200px] 
-    xs:p-1 xl:p-0"
+    xs:p-0 xl:p-0"
     >
       <div
         className="
@@ -76,10 +76,10 @@ export default function Hero() {
               custom-xs-410810-snd-title */}
 
             {/* Starts cards */}
-            <div className="text-white mt-3  ">
+            <div className="text-white mt-3 xs:px-1 md:px-0 ">
               {/* custom-xs-550-hero-cards */}
               <div
-                className="flex md:justify-center xs:gap-[0.6rem]     
+                className="flex md:justify-center xs:gap-[0.4rem]     
                 lg:max-w-[1200px] lg:mx-auto md:gap-[1.5rem]  lg:gap-10 xl:gap-12 lg:overflow-hidden"
               >
                 <div

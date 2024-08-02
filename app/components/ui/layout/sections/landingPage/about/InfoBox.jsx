@@ -35,7 +35,7 @@ const Info = () => {
         A <span className="text-green-500">Better</span> Way Forward
       </h2>
       <div
-        className="xs:w-[95%] xs:h-auto lg:h-[88vh]
+        className="xs:w-[95%] xs:h-auto  lg:h-[88vh]
          md:w-[90%] mx-auto p-2 white-glassmorphism shadow-xl shadow-indigo-700"
       >
         <div className="col-span-2 white-glassmorphism lg:h-full">
