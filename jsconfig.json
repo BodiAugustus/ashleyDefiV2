@@ -1,7 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@public/*": ["client/public/*"],
+      "@components/*": ["client/app/components/*"],
+      "@pages/*": ["client/pages/*"],
+      "@firebase/*": ["client/firebase/*"],
+      "@lib/*": ["client/app/lib/*"],
+      "@hooks/*": ["client/app/components/hooks/*"],
+      "@utils/*": ["client/app/components/utils/*"],
+      "@threeJS/*": ["client/app/components/threeJS/*"],
+      "@data/*": ["client/app/components/data/*"],
+      "@fonts/*": ["client/app/components/ui/fonts/*"],
+      "@sections/*": ["client/app/components/ui/layout/sections/*"]
     }
-  }
+  },
+  "include": ["client/**/*", "client/app/**/*"]
 }

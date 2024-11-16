@@ -102,8 +102,8 @@
 //           <Image
 //             src="/Ashley-capital-logo.png"
 //             alt="Logo"
-//             layout="fill"
-//             objectFit="contain"
+//             fill
+//             style={{objectFit:"cover"}}
 //             className="rounded-2xl opacity-20"
 //           />
 
@@ -299,8 +299,8 @@ export default function Layout({ children }) {
           <Image
             src={Logo}
             alt="Logo"
-            layout="fill"
-            objectFit="contain"
+            fill
+            style={{ objectFit: "contain" }}
             className="rounded-2xl opacity-20 "
           />
 

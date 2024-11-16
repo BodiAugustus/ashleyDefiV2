@@ -34,7 +34,7 @@ const About = () => {
           <div className="relative h-full ">
             <Image
               src={header2}
-              layout="fill"
+              fill
               alt="Venice, Italy"
               className="relative brightness-50 rounded-2xl"
             />
@@ -84,7 +84,7 @@ const About = () => {
           <div className="relative h-full">
             <Image
               src={header4}
-              layout="fill"
+              fill
               alt="Stockbrokers arguing about crypto"
               className="relative brightness-50 rounded-2xl"
             />
@@ -127,7 +127,7 @@ const About = () => {
           <div className="relative h-full">
             <Image
               src={header6}
-              layout="fill"
+              fill
               alt="Clueless hedgefund manager"
               className="relative brightness-50 rounded-2xl"
             />
@@ -157,7 +157,7 @@ const About = () => {
           <div className="relative h-full">
             <Image
               src={header3}
-              layout="fill"
+              fill
               alt="Regretful and depressed lady."
               className="relative brightness-50 rounded-2xl"
             />
@@ -207,7 +207,7 @@ const About = () => {
           <div className="relative h-full">
             <Image
               src={header1}
-              layout="fill"
+              fill
               sizes="300px"
               alt="Roulette wheel"
               className="relative brightness-50 rounded-2xl"

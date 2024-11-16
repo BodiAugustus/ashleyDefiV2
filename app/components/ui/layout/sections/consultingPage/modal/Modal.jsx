@@ -23,7 +23,11 @@ function Modal({ closeModal, content }) {
   }, []); // Empty dependency array means this effect will only run once, similar to componentDidMount
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 mx-auto xs:overflow-y-scroll md:overflow-y-hidden h-auto z-10">
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 mx-auto h-auto z-10
+      xs:overflow-y-scroll 
+      md:overflow-y-hidden "
+    >
       <div
         ref={modalRef} // Set the ref to the modal content
         className={`relative bg-[#292941] p-4 rounded-2xl shadow-lg transform transition-transform scale-0 animate-scaleUp max-w-[800px] w-[100%] ${lato.className} border-4 border-indigo-400 shadow-xl shadow-indigo-700 z-100 `}
@@ -31,15 +35,15 @@ function Modal({ closeModal, content }) {
         <Image
           src="/Ashley-capital-logo.png"
           alt="Logo"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="rounded-2xl opacity-20 xs:hidden md:visible"
         />
         <Image
           src="/Ashley-capital-logo.png"
           alt="Logo"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="rounded-2xl opacity-20 "
         />
         <div className="relative z-30 xs:overflow-y-scroll md:overflow-y-hidden">

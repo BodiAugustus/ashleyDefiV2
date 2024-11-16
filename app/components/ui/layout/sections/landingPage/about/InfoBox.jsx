@@ -79,7 +79,7 @@ const Info = () => {
 
             <Image
               src={logo}
-              layout="fill"
+              fill
               alt="Venice, Italy"
               className="relative rounded-xl opacity-10"
             />

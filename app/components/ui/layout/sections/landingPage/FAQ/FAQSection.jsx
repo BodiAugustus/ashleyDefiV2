@@ -2,6 +2,7 @@
 
 import React from "react";
 import FAQItem from "./FAQItem"; // Adjust the import path as necessary
+import Link from "next/link";
 
 const FAQsSection = () => {
   const faqs = [
@@ -44,7 +45,15 @@ const FAQsSection = () => {
       </div>
       <p className="xs:mt-10 md:mt-16 text-center xs5:text-lg xs6:text-xl">
         Still have questions?{" "}
-        <span className="font-bold">Write to us at support@ashleydefi.com</span>
+        <Link
+          href="https://t.me/+89dQjvU76cwxZGU9"
+          passHref
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold"
+        >
+          Write to us in our Telegram!
+        </Link>
       </p>
     </div>
   );

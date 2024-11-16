@@ -14,7 +14,7 @@ import {
 } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
-import Footer from "@/app/components/ui/layout/sections/footer/Footer";
+import Footer from "../components/ui/layout/sections/footer/Footer";
 import Layout from "../pages/layout";
 import Hero from "../components/ui/layout/sections/consultingPage/Hero";
 import AshleyAdv from "../components/ui/layout/sections/consultingPage/AshleyAdv";

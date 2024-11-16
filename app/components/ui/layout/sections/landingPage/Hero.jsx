@@ -1,5 +1,4 @@
 "use client";
-import ZenAnimation from "@/app/threeJS/ZenAnimation";
 import { playfair, lato } from "../../../fonts/font.js";
 import {
   GiAbstract070,
@@ -21,7 +20,7 @@ export default function Hero() {
       >
         <ParentComponent />
         <div
-          className={`absolute top-0 text-center xs:h-[88vh]  ${playfair.className} w-[100vw]`}
+          className={`absolute top-0 text-center xs:h-[88vh] ${playfair.className} w-[100vw]`}
         >
           <div className="flex flex-col xs:h-[100%] xs:pt-[16%]  md:justify-start lg:pt-[2%] xl:pt-[3%] ">
             <div className="">

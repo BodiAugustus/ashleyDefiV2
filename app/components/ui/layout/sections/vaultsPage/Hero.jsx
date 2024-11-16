@@ -30,9 +30,8 @@ export default function Hero() {
         custom-xs-640-mobile-vaults-hero
         custom-xs-850-mobile-vaults-hero
         custom-xs-860-mobile-vaults-hero  */}
-          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] lg:w-[40%] xl:w-[37%] text-center custom-xs-410810-mobile-vaults-hero-text">
-            High-yielding, permisionless, auto-compounding vaults with TVL based
-            allowances for borrowing against collateral
+          <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[47%] text-center custom-xs-410810-mobile-vaults-hero-text">
+            High-yielding, permisionless, auto-compounding vaults.
           </h3>
           <div className=" flex  md:gap-5 w-[100%] items-center justify-center ">
             <Button

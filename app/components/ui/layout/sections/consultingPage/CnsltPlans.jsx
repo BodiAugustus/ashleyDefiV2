@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { useState } from "react";
 import Modal from "./modal/Modal";
 import { Button } from "../../../common/Button";
@@ -12,26 +11,45 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 import Link from "next/link";
+
 export default function CnsltPlans() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
+
   const handleOpenModal = (type) => {
     const content =
       type === "monthly" ? (
         <div className="md:p-4 ">
-          <h2 className=" xs:text-xl md:text-2xl font-bold text-center">
+          <h2
+            className="font-bold text-center 
+          xs:text-xl 
+          md:text-2xl "
+          >
             Members Consulting Info
           </h2>
-          <h3 className=" md:mb-5 font-bold text-center xs:text-base">
+          <h3
+            className="font-bold text-center 
+          xs:text-base
+          md:mb-5  
+         "
+          >
             Details regarding our monthly member's consulting services
           </h3>
-          <div className="flex flex-col xs:gap-1 md:gap-5 mx-auto xs:w-[95%] md:w-[90%]">
+          <div
+            className="flex flex-col mx-auto
+          xs:gap-1 xs:w-[95%]
+          md:gap-5 md:w-[90%]"
+          >
             <div>
               <div className="flex items-center gap-2">
                 <FaUserFriends />
                 <h4>2 hours of direct, 1-on-1 consultation per month</h4>
               </div>
-              <p className="font-thin font-sans xs:text-sm md:text-base">
+              <p
+                className="font-thin font-sans 
+              xs:text-sm 
+              md:text-base"
+              >
                 Consulting sessions are held via Zoom and include a thorough
                 review of your portfolio by the consultant.
               </p>
@@ -42,7 +60,11 @@ export default function CnsltPlans() {
                 <FaFileAlt />
                 <h4> Free access to technology reports</h4>
               </div>
-              <p className="font-thin font-sans xs:text-sm md:text-base">
+              <p
+                className="font-thin font-sans 
+              xs:text-sm 
+              md:text-base"
+              >
                 Members receive all technology reports and other produced
                 content at no additional cost.
               </p>
@@ -52,7 +74,11 @@ export default function CnsltPlans() {
                 <FaCheckCircle />
                 <h4> Priority responses</h4>
               </div>
-              <p className="font-thin font-sans xs:text-sm md:text-base">
+              <p
+                className="font-thin font-sans 
+              xs:text-sm 
+              md:text-base"
+              >
                 Members receive priority response when communicating with their
                 consultants.
               </p>
@@ -62,7 +88,11 @@ export default function CnsltPlans() {
                 <FaChartLine />
                 <h4>Portfolio management</h4>
               </div>
-              <p className="font-thin font-sans mb-5 xs:text-sm md:text-base">
+              <p
+                className="font-thin font-sans mb-5 
+              xs:text-sm 
+              md:text-base"
+              >
                 Ashley DeFi members benefit from industry-specific professionals
                 overseeing their portfolios, ensuring the protection and
                 enhancement of gains during both market upturns and downturns.
@@ -79,13 +109,20 @@ export default function CnsltPlans() {
         </div>
       ) : (
         <div className="md:p-4  ">
-          <h2 className=" xs:text-xl md:text-2xl font-bold text-center">
+          <h2
+            className="font-bold text-center 
+          xs:text-xl 
+          md:text-2xl "
+          >
             Hourly Consulting
           </h2>
           <h3 className=" mb-5 font-bold text-center">
             Details regarding our hourly consulting services
           </h3>
-          <div className="flex flex-col gap-5 mx-auto md:w-[90%]">
+          <div
+            className="flex flex-col gap-5 mx-auto 
+          md:w-[90%]"
+          >
             <div>
               <div className="flex items-center gap-2">
                 <FaUserFriends />
@@ -124,21 +161,35 @@ export default function CnsltPlans() {
   const closeModal = () => setModalOpen(false);
   return (
     <div
-      className=" xs:h-auto   max-w-[2200px] flex flex-col
-     items-center xs:gap-y-1 md:gap-y-10 text-white  md:w-[90vw] 
-     mx-auto xs:-mt-10  xs6:mb-5 md:pb-7 lg:gap-y-3 lg:pt-5"
+      className="max-w-[2200px] flex flex-col text-white mx-auto 
+      items-center 
+      xs:h-auto xs:gap-y-1 xs:-mt-10
+      xs6:mb-5 
+      md:gap-y-10 md:w-[90vw] md:pb-7 
+      lg:gap-y-3 lg:pt-5"
     >
       <div
-        className="text-center  xs:text-2xl md:text-4xl font-bold
-      xs4:text-3xl
+        className="text-center font-bold 
+        xs:text-2xl 
+        xs4:text-3xl
+        md:text-4xl 
+     
       "
       >
         <h2>Our Services</h2>
       </div>
-      <div className="flex xs:flex-col lg:flex-row xs:gap-6 md:gap-10 ">
+      <div
+        className="flex 
+      xs:flex-col xs:gap-6 
+      md:gap-10
+      lg:flex-row  "
+      >
         <div
-          className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto 
-        rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700"
+          className="rounded-xl white-glassmorphism shadow-xl shadow-indigo-700
+          xs:w-[95%] xs:h-auto xs:mx-auto
+          md:w-[80vw] 
+          lg:w-[40vw] 
+        "
         >
           <div className="h-[35vh] relative">
             <Image
@@ -148,11 +199,26 @@ export default function CnsltPlans() {
               alt="Image of a whale."
             />
           </div>
-          <div className="xs:h-auto  py-4 px-6 flex flex-col xs:gap-1 md:gap-3">
-            <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold">
+          <div
+            className="py-4 px-6 flex flex-col 
+          xs:h-auto xs:gap-1  
+          md:gap-3"
+          >
+            <h3
+              className="font-bold
+            xs:text-xl 
+            xs5:text-2xl 
+            md:text-3xl "
+            >
               Members Consulting
             </h3>
-            <p className="xs:text-sm xs5:text-base xs6:text-lg md:text-xl text-[#B0C7EF]">
+            <p
+              className="text-[#B0C7EF]
+            xs:text-sm 
+            xs5:text-base 
+            xs6:text-lg 
+            md:text-xl "
+            >
               Our DeFi experts offer comprehensive consulting services to all
               members. From technical aspects and protocol explanations to
               project tokenomics and beyond, our specialists provide the
@@ -161,13 +227,21 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("monthly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] lg:w-[100%] xs6:text-lg md:text-xl"
+              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline 
+              xs6:text-lg
+              md:w-[65%] md:text-xl
+              lg:w-[100%]  "
             >
               Learn More About Members Consulting
             </button>
           </div>
         </div>
-        <div className="xs:w-[95%] md:w-[80vw] lg:w-[40vw] xs:h-auto rounded-xl xs:mx-auto white-glassmorphism shadow-xl shadow-indigo-700 xs:mb-6 md:mb-0">
+        <div
+          className="rounded-xl white-glassmorphism shadow-xl shadow-indigo-700
+        xs:w-[95%] xs:h-auto xs:mx-auto xs:mb-6 
+        md:w-[80vw] md:mb-0
+        lg:w-[40vw]   "
+        >
           <div className="h-[35vh] relative">
             <Image
               src="/whale.jpg"
@@ -176,11 +250,26 @@ export default function CnsltPlans() {
               alt="Image of a pod of whales"
             />
           </div>
-          <div className="xs:h-auto  py-4 px-6 flex flex-col xs:gap-1 md:gap-3">
-            <h3 className="xs:text-xl xs5:text-2xl md:text-3xl font-bold">
+          <div
+            className="py-4 px-6 flex flex-col
+          xs:h-auto xs:gap-1 
+          md:gap-3"
+          >
+            <h3
+              className="font-bold
+            xs:text-xl 
+            xs5:text-2xl 
+            md:text-3xl "
+            >
               Hourly Consulting{" "}
             </h3>
-            <p className="xs:text-sm xs5:text-base md:text-xl xs6:text-lg text-[#B0C7EF]">
+            <p
+              className="text-[#B0C7EF]
+            xs:text-sm 
+            xs5:text-base 
+            xs6:text-lg
+            md:text-xl  "
+            >
               Our expert consultants provide ad hoc consulting services and
               technology reports for interested clients. Consultations are
               conducted via Zoom and scheduled within twenty-four hours of
@@ -189,7 +278,10 @@ export default function CnsltPlans() {
             </p>
             <button
               onClick={() => handleOpenModal("hourly")}
-              className="text-sky-400  hover:scale-105 active:scale-100 text-left  transition-all duration-300 inline md:w-[65%] lg:w-[100%] xs6:text-lg md:text-xl"
+              className="text-sky-400 hover:scale-105 active:scale-100 text-left transition-all duration-300 inline 
+              xs6:text-lg
+              md:w-[65%] md:text-xl
+              lg:w-[100%]  "
             >
               Learn More About Hourly Consulting
             </button>
