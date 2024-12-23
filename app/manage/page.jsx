@@ -30,8 +30,16 @@ const sonicChain = {
     decimals: 18,
   },
   rpcUrls: {
-    default: { http: ["https://rpc.soniclabs.com"] },
-    public: { http: ["https://rpc.soniclabs.com"] },
+    default: {
+      http: [
+        "https://sonic-mainnet.g.alchemy.com/v2/3DEIAvFYsMWwN4jGjjxub1IGajE-RCT8m",
+      ],
+    },
+    public: {
+      http: [
+        "https://sonic-mainnet.g.alchemy.com/v2/3DEIAvFYsMWwN4jGjjxub1IGajE-RCT8",
+      ],
+    },
   },
   blockExplorers: {
     default: { name: "Sonic Explorer", url: "https://sonicscan.org" },
