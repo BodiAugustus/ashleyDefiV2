@@ -43,6 +43,7 @@ const Footer = () => {
               <Link
                 href="https://t.me/+89dQjvU76cwxZGU9"
                 className="hover:text-gray-400 transition-colors duration-300"
+                target="_blank"
               >
                 Contact Us
               </Link>
@@ -57,6 +58,7 @@ const Footer = () => {
               <a
                 href="https://x.com/AshleyDeFi"
                 className="hover:text-gray-400 transition-colors duration-300"
+                target="_blank"
               >
                 Twitter
               </a>
@@ -65,6 +67,7 @@ const Footer = () => {
               <a
                 href="https://t.me/+89dQjvU76cwxZGU9"
                 className="hover:text-gray-400 transition-colors duration-300"
+                target="_blank"
               >
                 Telegram
               </a>

@@ -23,7 +23,7 @@ import {
 const sonicChain = {
   id: 146,
   name: "Sonic",
-  network: "sonic",
+  network: "Sonic Mainnet",
   nativeCurrency: {
     name: "Sonic",
     symbol: "S",

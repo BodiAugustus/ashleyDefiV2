@@ -6,7 +6,7 @@ export const sonicMainnet = {
   name: "Sonic",
   network: "sonic",
   nativeCurrency: {
-    name: "Sonic",
+    name: "Sonic Mainnet",
     symbol: "S",
     decimals: 18,
   },
