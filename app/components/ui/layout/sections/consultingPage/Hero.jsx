@@ -31,7 +31,7 @@ export default function Hero({ formRef, ashleyAdvRef }) {
           className={`xs:text-3xl xs:text-center xs5:text-4xl
           
           md:text-5xl text-white font-bold tracking-tight ${lato.className} xs:pt-14
-          xs3:pt-0`}
+          xs3:pt-0 md:pt-6`}
         >
           Ashley Consulting: Your Partners in DeFi
         </h1>
@@ -57,7 +57,7 @@ export default function Hero({ formRef, ashleyAdvRef }) {
           </Button>
         </div>
         <h4 className="xs:mt-4 md:mt-16 uppercase text-[#d3dcf0] font-bold xs:text-sm md:text-xl xs8:text-base">
-          Helping people make money since 2019
+          Helping increase people&apos;s wealth since 2019
         </h4>
       </div>
       <div className="text-white">

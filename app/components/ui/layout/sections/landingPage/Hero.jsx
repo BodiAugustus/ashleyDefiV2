@@ -5,7 +5,7 @@ import {
   GiConcentricCrescents,
   GiHalfTornado,
 } from "react-icons/gi";
-import ParentComponent from "@/app/threeJS/ParentComponent.jsx";
+import ParentComponent from "../../../../../threeJS/ParentComponent.jsx";
 
 export default function Hero() {
   return (
@@ -125,7 +125,7 @@ export default function Hero() {
                             "
                   >
                     Onboarding you into the new realm of decentralized finance,
-                    the future of money
+                    the future of money.
                   </p>
                 </div>
 
@@ -170,8 +170,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We have over four years of experience in blockchain
-                    development and DeFi.
+                    We have over seven years experience in blockchain technology
+                    and DeFi.
                   </p>
                 </div>
 
@@ -216,8 +216,8 @@ export default function Hero() {
                             xl:w-[90%] xl:mx-auto xl:mt-2
                             "
                   >
-                    We provide direct consulting and multiple high-APR,
-                    permissionless staking vaults.
+                    Direct consulting, technology reports, and a high-APR,
+                    permissionless staking vault.
                   </p>
                 </div>
               </div>

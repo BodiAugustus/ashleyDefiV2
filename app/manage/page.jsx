@@ -1,8 +1,13 @@
 "use client";
+
+import React from "react";
 import Head from "next/head";
 import "@rainbow-me/rainbowkit/styles.css";
+
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
 import {
   mainnet,
   polygon,
@@ -10,40 +15,74 @@ import {
   arbitrum,
   base,
   fantom,
-  fantomSonicTestnet,
-} from "wagmi/chains";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+} from "@wagmi/chains";
 
-import Footer from "../components/ui/layout/sections/footer/Footer";
-import Manage from "./../components/ui/layout/sections/managePage/Manage";
-import Layout from "../pages/layout";
-import ContactCTA from "../components/ui/layout/sections/vaultsPage/Help";
-import Image from "next/image";
-import sonicWallpaper from "../../public/sonicwallpaper.webp";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+// ────────────────────────────────────────────────────────────────────────────────
+// 1. Define Sonic chain (same code as before; just ensure it’s above usage)
+// ────────────────────────────────────────────────────────────────────────────────
+const sonicChain = {
+  id: 146,
+  name: "Sonic",
+  network: "sonic",
+  nativeCurrency: {
+    name: "Sonic",
+    symbol: "S",
+    decimals: 18,
+  },
+  rpcUrls: {
+    default: { http: ["https://rpc.soniclabs.com"] },
+    public: { http: ["https://rpc.soniclabs.com"] },
+  },
+  blockExplorers: {
+    default: { name: "Sonic Explorer", url: "https://sonicscan.org" },
+  },
+  testnet: false,
+};
 
-const queryClient = new QueryClient();
+// ────────────────────────────────────────────────────────────────────────────────
+// 2. Prepare all the chains you want
+// ────────────────────────────────────────────────────────────────────────────────
+const chains = [mainnet, polygon, optimism, arbitrum, base, fantom, sonicChain];
 
+// ────────────────────────────────────────────────────────────────────────────────
+// 3. Create wagmi + RainbowKit config using getDefaultConfig
+//    (similar to your consulting page)
+// ────────────────────────────────────────────────────────────────────────────────
 const config = getDefaultConfig({
   appName: "Ashley DeFi",
-  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889", // Replace with your actual WalletConnect project ID
-  chains: [
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
-    fantom,
-    fantomSonicTestnet,
-  ],
-  ssr: true, // If your dApp uses server side rendering (SSR)
+  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889", // (Your WalletConnect project ID)
+  chains,
+  ssr: true, // If your dApp is rendered on the server
 });
 
+// ────────────────────────────────────────────────────────────────────────────────
+// 4. Setup your TanStack Query client
+// ────────────────────────────────────────────────────────────────────────────────
+const queryClient = new QueryClient();
+
+// ────────────────────────────────────────────────────────────────────────────────
+// 5. Import your page components
+// ────────────────────────────────────────────────────────────────────────────────
+import Layout from "../pages/layout";
+import Footer from "../components/ui/layout/sections/footer/Footer";
+import Manage from "../components/ui/layout/sections/managePage/Manage";
+import ContactCTA from "../components/ui/layout/sections/vaultsPage/Help";
+// (Remove or uncomment if needed)
+// import Image from "next/image";
+// import sonicWallpaper from "../../public/sonicwallpaper.webp";
+
+// ────────────────────────────────────────────────────────────────────────────────
+// 6. Final page component
+// ────────────────────────────────────────────────────────────────────────────────
 export default function ManagePage() {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
+        {/*
+          If you need to restrict which chains appear in the RainbowKit chain switcher,
+          you can pass `chains={chains}` to <RainbowKitProvider>:
+        */}
+        <RainbowKitProvider chains={chains}>
           <Head>
             <title>
               Manage Your DeFi Assets on the Sonic Blockchain | Ashley DeFi
@@ -61,15 +100,20 @@ export default function ManagePage() {
               content="width=device-width, initial-scale=1.0"
             />
           </Head>
-          <div className="max-w-[2200px] mx-auto overflow-hidden">
+
+          <main className="max-w-[2200px] mx-auto overflow-hidden">
             <Layout />
-            <div className="flex flex-col items-center justify-center h-auto">
-              <Image src={sonicWallpaper} alt="Under Construction" fill />
-            </div>
-            {/* <Manage />
+            {/* 
+              If you want a full background image, uncomment:
+              
+              <div className="relative w-full h-[500px]">
+                <Image src={sonicWallpaper} alt="Sonic wallpaper" fill />
+              </div>
+            */}
+            <Manage />
             <ContactCTA />
-            <Footer /> */}
-          </div>
+            <Footer />
+          </main>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

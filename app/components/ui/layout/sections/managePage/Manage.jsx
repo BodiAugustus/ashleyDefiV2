@@ -1,179 +1,307 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import { useVault } from "../../../../../hooks/useVault.js";
+import { ethers } from "ethers";
+import { Button } from "../../../common/Button.jsx";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Manage() {
+  const { contract, signer, userAddress } = useVault();
+
+  // --------------------------
+  // Price from DexScreener
+  // --------------------------
+  const [ftmPriceUsd, setFtmPriceUsd] = useState(0);
+
+  // --------------------------
+  // State for user data
+  // --------------------------
+  const [userShares, setUserShares] = useState("0");
+  const [userBalance, setUserBalance] = useState("0");
+  const [pendingWithdrawals, setPendingWithdrawals] = useState("0");
+  const [rateOfReturn, setRateOfReturn] = useState("0");
+  const [apr, setApr] = useState("0");
+  const [lastDepositTime, setLastDepositTime] = useState(null);
+
+  // --------------------------
+  // State for vault-wide data
+  // --------------------------
+  const [pricePerShare, setPricePerShare] = useState("0");
+  const [investedAssets, setInvestedAssets] = useState("0");
+  const [totalVaultAssets, setTotalVaultAssets] = useState("0");
+
+  // --------------------------
+  // Inputs for deposit/withdraw
+  // --------------------------
+  const [depositAmount, setDepositAmount] = useState("");
+  const [withdrawShares, setWithdrawShares] = useState("");
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 1) Fetch FTM price from DexScreener every 30 seconds
+  // ─────────────────────────────────────────────────────────────────────────
+  useEffect(() => {
+    async function fetchFtmPrice() {
+      try {
+        const response = await fetch(
+          "https://api.dexscreener.com/latest/dex/tokens/0xAD29AbB318791D579433D831ed122aFeAf29dcfe"
+        );
+        const data = await response.json();
+        if (data?.pairs?.[0]?.priceUsd) {
+          setFtmPriceUsd(Number(data.pairs[0].priceUsd));
+        }
+      } catch (error) {
+        console.error("Failed to fetch FTM price:", error);
+      }
+    }
+
+    // Initial fetch
+    fetchFtmPrice();
+
+    // Then fetch every 30 seconds
+    const interval = setInterval(() => {
+      fetchFtmPrice();
+    }, 30000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 2) Fetch vault / user data
+  // ─────────────────────────────────────────────────────────────────────────
+  useEffect(() => {
+    async function fetchData() {
+      if (!contract || !signer || !userAddress) return;
+
+      try {
+        // user data
+        const sharesBN = await contract.getUserShares(userAddress);
+        const balanceBN = await contract.getUserBalance(userAddress);
+        const pendingBN = await contract.getUserPendingWithdrawals(userAddress);
+        const rorBN = await contract.calculateRateOfReturn(userAddress);
+        const userAprBN = await contract.calculateAPR(userAddress);
+
+        setUserShares(sharesBN.toString());
+        setUserBalance(ethers.formatEther(balanceBN));
+        setPendingWithdrawals(ethers.formatEther(pendingBN));
+
+        const rorPct = (Number(rorBN.toString()) / 1e18) * 100;
+        const aprPct = (Number(userAprBN.toString()) / 1e18) * 100;
+        setRateOfReturn(rorPct.toFixed(2));
+        setApr(aprPct.toFixed(2));
+
+        // vault data
+        const ppsBN = await contract.pricePerShare();
+        const investedBN = await contract.investedAssets();
+        const totalBN = await contract.totalAssets();
+
+        setPricePerShare(ethers.formatEther(ppsBN));
+        setInvestedAssets(ethers.formatEther(investedBN));
+        setTotalVaultAssets(ethers.formatEther(totalBN));
+      } catch (error) {
+        console.error("Failed to fetch vault data:", error);
+      }
+    }
+    fetchData();
+  }, [contract, signer, userAddress]);
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 3) Helper calculations using ftmPriceUsd
+  // ─────────────────────────────────────────────────────────────────────────
+  const userBalanceUsd = (Number(userBalance) * ftmPriceUsd).toFixed(2);
+  const pricePerShareUsd = (Number(pricePerShare) * ftmPriceUsd).toFixed(4);
+  const totalVaultValueUsd = (Number(totalVaultAssets) * ftmPriceUsd).toFixed(
+    2
+  );
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 4) Deposit / Withdraw
+  // ─────────────────────────────────────────────────────────────────────────
+  async function handleDeposit() {
+    if (!contract || !signer || !userAddress) {
+      toast.error("Please connect your wallet first.");
+      return;
+    }
+    if (!depositAmount || Number(depositAmount) <= 0) {
+      toast.error("Please enter a valid deposit amount.");
+      return;
+    }
+
+    try {
+      const tx = await contract.depositSonic({
+        value: ethers.parseEther(depositAmount),
+      });
+      const receipt = await tx.wait();
+
+      setDepositAmount("");
+
+      const explorerLink = `https://sonicscan.org/tx/${receipt.transactionHash}`;
+      toast.success(
+        <div>
+          Successfully deposited {depositAmount} FTM! <br />
+          <a
+            href={explorerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#4aa3f0", textDecoration: "underline" }}
+          >
+            View on SonicScan
+          </a>
+        </div>
+      );
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 5000);
+    } catch (error) {
+      console.error("Deposit failed:", error);
+      toast.error("Deposit failed. Check console for details.");
+    }
+  }
+
+  async function handleWithdraw() {
+    if (!contract || !signer || !userAddress) {
+      toast.error("Please connect your wallet first.");
+      return;
+    }
+    if (!withdrawShares || Number(withdrawShares) <= 0) {
+      toast.error("Please enter a valid (non-zero) share amount.");
+      return;
+    }
+
+    const userSharesBN = userShares ? BigInt(userShares) : 0n;
+    const withdrawBN = BigInt(withdrawShares);
+
+    if (withdrawBN > userSharesBN) {
+      toast.error("You cannot withdraw more shares than you own.");
+      return;
+    }
+
+    try {
+      const tx = await contract.requestWithdrawalSonic(withdrawBN);
+      const receipt = await tx.wait();
+
+      setWithdrawShares("");
+
+      const explorerLink = `https://sonicscan.org/tx/${receipt.transactionHash}`;
+      toast.success(
+        <div>
+          Withdrawal requested for {withdrawShares} shares! <br />
+          <a
+            href={explorerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#4aa3f0", textDecoration: "underline" }}
+          >
+            View on SonicScan
+          </a>
+        </div>
+      );
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 5000);
+    } catch (error) {
+      console.error("Withdrawal request failed:", error);
+      toast.error("Withdrawal request failed. Check console for details.");
+    }
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 5) Render
+  // ─────────────────────────────────────────────────────────────────────────
   return (
-    <div>
-      <h1
-        className="text-center font-bold xs:text-3xl md:text-5xl text-white pt-5 md:pb-4 xs:-mb-0
-      xs4:text-3xl"
-      >
-        Manage Finances
-      </h1>
-      <div className="xs:p-2 md:p-6 text-white max-w-[2200px] md:w-[90%] mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 ">
-          {/* Container 1 */}
-          <div className="flex flex-col gap-5 bg-[#292941] p-4 rounded-2xl ">
-            <h2 className="text-2xl text-center">Total Staked</h2>
-            {/* Global Stake */}
-            <div className="grid grid-cols-3 items-center xs:text-sm xs6:text-base xs8:text-lg md:text-base lg:text-lg">
-              <div>Global Stake</div>
-              <div>10,000 XYZ</div>
-              <div>5% APR</div>
-            </div>
-            {/* Global Lock */}
-            <div className="grid grid-cols-3 items-center xs:text-sm xs6:text-base xs8:text-lg md:text-base lg:text-lg">
-              <div>Global Lock</div>
-              <div>5,000 XYZ</div>
-              <div>7% APR</div>
-            </div>
-            {/* Total Amount Claimable */}
-            <div className="grid grid-cols-3 items-center xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <div>Total Amount Claimable</div>
-              <div>2,000 XYZ</div>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-3 md:px-4 rounded-md   xs:text-sm md:text-base">
-                Vest
-              </button>
-            </div>
-            {/* Unlocked/Staked */}
-            <div className="grid grid-cols-3 items-center mb-5 xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <div>Staked</div>
-              <div>0 XYZ</div>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
-                Withdraw
-              </button>
-            </div>
-            {/* Action Buttons */}
-            <div className="flex justify-between xs:flex-col xs:gap-3 md:gap-0 md:flex-row">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
-                Stake
-              </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
-                Lock
-              </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
-                Withdraw
-              </button>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 xs:px-4 md:px-2 lg:px-4 xl:px-3 rounded">
-                Add LP
-              </button>
-            </div>
+    <div className="max-w-5xl mx-auto p-4 text-white">
+      {/* TOP: Total Vault Value */}
+      <div className="text-center mb-8 md:pt-10">
+        <h2 className="text-3xl font-bold">Total Vault Value (USD)</h2>
+        <div className="text-4xl font-bold mt-2">${totalVaultValueUsd}</div>
+      </div>
+
+      {/* Then the "Your Vault Data" heading, etc. */}
+      <h2 className="text-3xl font-bold text-center mb-6">Your Vault Data:</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Left Column: user info */}
+        <div className="bg-[#292941] p-4 rounded-2xl">
+          <h3 className="text-xl mb-4">User Dashboard</h3>
+
+          {userAddress ? (
+            <p className="mb-4">Connected as: {userAddress}</p>
+          ) : (
+            <p className="mb-4">No wallet connected</p>
+          )}
+
+          <div className="mb-2">
+            <strong>Your Shares:</strong> {userShares}
+          </div>
+          <div className="mb-2">
+            <strong>Your S Balance:</strong> {Number(userBalance).toFixed(4)}
+          </div>
+          <div className="mb-2">
+            <strong>Your USD Balance (approx):</strong> ${userBalanceUsd}
+          </div>
+          <div className="mb-2">
+            <strong>Pending Withdrawals (S):</strong>{" "}
+            {Number(pendingWithdrawals).toFixed(4)}
+          </div>
+          <div className="mb-2">
+            <strong>Rate of Return:</strong> {rateOfReturn}%
+          </div>
+          <div className="mb-2">
+            <strong>APR:</strong> {apr}%
+          </div>
+        </div>
+
+        {/* Right Column: vault info */}
+        <div className="bg-[#292941] p-4 rounded-2xl">
+          <h3 className="text-xl mb-4">Vault Overview</h3>
+
+          <div className="mb-2">
+            <strong>Price Per Share (S):</strong>{" "}
+            {Number(pricePerShare).toFixed(4)}
+          </div>
+          <div className="mb-2">
+            <strong>Price Per Share (USD):</strong>{" "}
+            {(Number(pricePerShare) * ftmPriceUsd).toFixed(4)}
+          </div>
+          <div className="mb-2">
+            <strong>Total Vault Assets (S):</strong>{" "}
+            {Number(totalVaultAssets).toFixed(4)}
+          </div>
+          <div className="mb-4">
+            <strong>Total Invested Assets (S):</strong>{" "}
+            {Number(investedAssets).toFixed(4)}
           </div>
 
-          {/* Container 2 */}
-          <div className="flex flex-col gap-2 bg-[#292941] p-4 rounded-2xl">
-            <h2 className="text-2xl text-white text-center ">Total Vested</h2>
-            <div className="flex justify-around xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>Vested</span>
-              <span>12 XYZ</span>
-            </div>
-            <div className="flex justify-around xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>Penalty</span>
-              <span>6%</span>
-            </div>
-            <div className="grid grid-cols-2 gap-2 mt-10 justify-items-center xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span className="font-bold">Amount</span>
-              <span className="font-bold">Exp.</span>
-              <span>12 XYZ</span>
-              <span>3 mnth</span>
-            </div>
-          </div>
-
-          {/* Container 3 (Identical to Container 2) */}
-          <div className="flex flex-col gap-2 bg-[#292941] p-4 rounded-2xl">
-            {/* Reuse the structure from Container 2 */}
-            <h2 className="text-2xl text-white text-center ">Total Locked</h2>
-            <div className="flex justify-around xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>Locked</span>
-              <span>12 XYZ</span>
-            </div>
-            <div className="flex justify-around xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>Penalty</span>
-              <span>6%</span>
-            </div>
-            <div className="grid grid-cols-2 gap-2 mt-10 justify-items-center xs:text-sm md:text-base xs6:text-base xs8:text-lg">
-              <span className="font-bold">Amount</span>
-              <span className="font-bold">Exp.</span>
-              <span>12 XYZ</span>
-              <span>3 mnth</span>
-            </div>
-          </div>
-
-          {/* Container 4 (Staking Rewards) */}
-          <div className="flex flex-col gap-2 bg-[#292941] p-4 rounded-2xl">
-            <span className="text-2xl text-center pb-4">Staking Rewards</span>
-            <div className="grid grid-cols-3 gap-2 xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>XYZ</span>
-              <span>100 XYZ</span>
-              <span>$300 USD</span>
-              {/* Add more rows as needed */}
-              <span>XYZ</span>
-              <span>100 XYZ</span>
-              <span>$300 USD</span>
-              <span>XYZ</span>
-              <span>100 XYZ</span>
-              <span>$300 USD</span>
-            </div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Claim
-            </button>
-          </div>
-
-          {/* Container 5 (Deposit / Debt) */}
-          <div className="flex flex-col gap-2 bg-[#292941] p-4 rounded-2xl">
-            <span className="text-center text-2xl pb-4">Deposit / Debt</span>
-            <div className="grid grid-cols-4 gap-2 justify-items-center xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <span>Asset</span>
-              <span>Balance</span>
-              <span>Deposited</span>
-              <span>Borrowed</span>
-              {/* Dummy row 1 */}
-              <span>XYZ</span>
-              <span>50 XYZ</span>
-              <span>20 XYZ</span>
-              <span>10 XYZ</span>
-              {/* Dummy row 2 */}
-              {/* Add more as needed */}
-              <span>XYZ</span>
-              <span>50 XYZ</span>
-              <span>20 XYZ</span>
-              <span>10 XYZ</span>
-              <span>XYZ</span>
-              <span>50 XYZ</span>
-              <span>20 XYZ</span>
-              <span>10 XYZ</span>
-            </div>
-          </div>
-
-          {/* Container 6 (Health) */}
-          <div className="flex flex-col gap-2 bg-[#292941] p-4 rounded-2xl">
-            <span className="text-2xl text-center pb-4">Account Health</span>
-            <div className="flex flex-col gap-2 xs:text-sm md:text-base xs6:text-base xs8:text-lg lg:text-lg">
-              <div className="flex justify-around pb-2 ">
-                <span>Health</span>
-                <span>1.24</span>
-              </div>
-              <div className="flex justify-around pb-2">
-                <span>LTV</span>
-                <span>75%</span>
-              </div>
-              <div className="flex justify-around pb-2">
-                <span>Threshold</span>
-                <span>80%</span>
-              </div>
-              <div className="flex justify-around pb-2">
-                <span>Collateral</span>
-                <span>$3.2k</span>
-              </div>
-              <div className="flex justify-around pb-2">
-                <span>Liquidity</span>
-                <span>$529.12</span>
-              </div>
-              <div className="flex justify-around pb-4">
-                <span>Debt</span>
-                <span>$3k</span>
-              </div>
-            </div>
+          {/* Withdraw input */}
+          <div className="flex items-center space-x-2">
+            <input
+              type="number"
+              placeholder="Number of shares to withdraw"
+              value={withdrawShares}
+              onChange={(e) => setWithdrawShares(e.target.value)}
+              className="text-black rounded px-2 py-1 w-64"
+            />
+            <Button onClick={handleWithdraw} className=" py-2 px-4 rounded">
+              Withdraw
+            </Button>
           </div>
         </div>
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer
+        position="top-right"
+        style={{ marginTop: "25%", transform: "translateY(-50%)" }}
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 }

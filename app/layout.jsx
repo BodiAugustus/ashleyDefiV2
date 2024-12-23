@@ -5,8 +5,12 @@ import "./globals.css";
 export const metadata = {
   title: "Ashley DeFi",
   description:
-    "A crypto wealth management and consulting company with the main objective of onboarding people into decentralized finance.",
+    "Welcome to Ashley DeFi. Professional decentralized finance consulting services specializing in the Fantom, Sonic, and Monero blockchains. Maximize your DeFi potential today.",
+  keywords:
+    "DeFi Consulting, Blockchain Consulting, Ashley DeFi, Fantom Blockchain, Sonic Blockchain, Monero Blockchain, Decentralized Finance",
 };
+
+export const viewport = "width=device-width, initial-scale=1";
 
 export default function RootLayout({ children }) {
   return (

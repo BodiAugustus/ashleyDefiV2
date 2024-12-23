@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
@@ -10,9 +9,13 @@ import {
   arbitrum,
   base,
   fantom,
-  fantomSonicTestnet,
 } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
+// 1) Import your custom Sonic chain with correct path
+import { sonicMainnet } from "../chains/SonicMainnet.js";
+// If your tsconfig or next.config is set so @ is an alias for /app/
+// Otherwise, use a relative path: import { sonicMainnet } from "../chains/sonicMainnet";
 
 import Footer from "../components/ui/layout/sections/footer/Footer";
 import Layout from "../pages/layout";
@@ -29,17 +32,9 @@ const queryClient = new QueryClient();
 
 const config = getDefaultConfig({
   appName: "Ashley DeFi",
-  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889", // Replace with your actual WalletConnect project ID
-  chains: [
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
-    fantom,
-    fantomSonicTestnet,
-  ],
-  ssr: true, // If your dApp uses server side rendering (SSR)
+  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889",
+  chains: [mainnet, polygon, optimism, arbitrum, base, fantom, sonicMainnet],
+  ssr: true,
 });
 
 export default function Page() {
@@ -49,25 +44,17 @@ export default function Page() {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
-          <Head>
-            <title>
-              DeFi Consulting Services | Fantom, Sonic, & Monero Experts |
-              Ashley DeFi
-            </title>
-            <meta
-              name="description"
-              content="Professional decentralized finance consulting services by Ashley DeFi. Specializing in Fantom, Sonic, and Monero blockchains. Maximize your DeFi potential today."
-            />
-            <meta
-              name="keywords"
-              content="DeFi Consulting, Blockchain Consulting, Fantom Blockchain, Sonic Blockchain, Monero Blockchain, Decentralized Finance"
-            />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
-            />
-          </Head>
+        <RainbowKitProvider
+          chains={[
+            mainnet,
+            polygon,
+            optimism,
+            arbitrum,
+            base,
+            fantom,
+            sonicMainnet,
+          ]}
+        >
           <main className="max-w-[2200px] overflow-hidden min-h-screen">
             <Layout />
             <Hero formRef={formRef} ashleyAdvRef={ashleyAdvRef} />

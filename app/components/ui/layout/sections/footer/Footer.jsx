@@ -32,15 +32,16 @@ const Footer = () => {
           <ul>
             <li>
               <Link
-                href="https://app.gitbook.com/o/1kCTyP86x3ppTwOIirwA/s/sGR40A0WJZIMWRlOulen/"
+                href="https://ashley-defi.gitbook.io/ashley-defi-docs/"
                 className="hover:text-gray-400 transition-colors duration-300"
+                target="_blank"
               >
                 Docs
               </Link>
             </li>
             <li>
               <Link
-                href="#contact"
+                href="https://t.me/+89dQjvU76cwxZGU9"
                 className="hover:text-gray-400 transition-colors duration-300"
               >
                 Contact Us

@@ -16,10 +16,10 @@ const Example = () => {
     const query = JSON.stringify({
       query: `
         query {
-          sftmxGetStakingData {
-            stakingApr
-          }
-        }
+          stsGetGqlStakedSonicData {
+          stakingApr
+              }
+            }
       `,
     });
 
@@ -61,7 +61,7 @@ const Example = () => {
             stack: skill.stack.map((item, index) => {
               if (index === 0) {
                 // Assuming you want to update the first item of the stack array
-                return `1) Stake FTM on Beethoven DEX to receive sFTMx at ${(
+                return `1) Stake FTM on Beethoven DEX to receive stS at ${(
                   parseFloat(stakingApr) * 100
                 ).toFixed(3)}% APR`;
               }

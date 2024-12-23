@@ -8,6 +8,7 @@ const CustomConnectButton = () => {
     10: "OPT", // Optimism
     42161: "ARB", // Arbitrum
     250: "FTM", // Fantom
+    146: "Sonic",
     // Add other chain mappings as needed
   };
 

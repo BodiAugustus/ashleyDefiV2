@@ -1,4 +1,3 @@
-// Components/Vaults.js or similar
 "use client";
 import {
   query,
@@ -13,143 +12,185 @@ import VaultModal from "./Modal";
 import { loadStripe } from "@stripe/stripe-js";
 import { db } from "../../../../../../firebase/firebaseConfig.js";
 import { useAccount } from "wagmi";
+import { useVault } from "../../../../../hooks/useVault.js"; // to call depositSonic
+import { ethers } from "ethers";
+import { Button } from "../../../common/Button.jsx";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
+// 1) Import Toastify
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// Sample liquidity pool data
 const liquidityPools = [
-  {
-    id: 1,
-    pair: "FTM/USDC",
-    depositAPR: "5.5%",
-    tvlTotal: "$2M",
-    tvlTokens: "1500 FTM / 450,000 USDC",
-    walletTotal: "0.5 FTM",
-    walletPair: "0.25 FTM / 75 USDC",
-    stakedPercentage: "30%",
-    stakedProportion: "0.3 FTM / 90 USDC",
-    borrowedAmount: "$600",
-    borrowedAPR: "7.0%",
-  },
-  {
-    id: 2,
-    pair: "FTM/USDC",
-    depositAPR: "5.5%",
-    tvlTotal: "$2M",
-    tvlTokens: "1500 FTM / 450,000 USDC",
-    walletTotal: "0.5 FTM",
-    walletPair: "0.25 FTM / 75 USDC",
-    stakedPercentage: "30%",
-    stakedProportion: "0.3 FTM / 90 USDC",
-    borrowedAmount: "$600",
-    borrowedAPR: "7.0%",
-  },
-  {
-    id: 3,
-    pair: "FTM/USDC",
-    depositAPR: "5.5%",
-    tvlTotal: "$2M",
-    tvlTokens: "1500 FTM / 450,000 USDC",
-    walletTotal: "0.5 FTM",
-    walletPair: "0.25 FTM / 75 USDC",
-    stakedPercentage: "30%",
-    stakedProportion: "0.3 FTM / 90 USDC",
-    borrowedAmount: "$600",
-    borrowedAPR: "7.0%",
-  },
-  // Add more pools as needed...
+  // ...
 ];
 
 export default function Vaults() {
+  // State for credit-card deposit flow
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedVault, setSelectedVault] = useState(null);
-  const [investmentAmount, setInvestmentAmount] = useState();
+  const [investmentAmount, setInvestmentAmount] = useState("");
+
+  // State for direct Sonic deposit
+  const [sonicDeposit, setSonicDeposit] = useState("");
+
+  // State for displaying existing deposits from Firestore
   const [deposits, setDeposits] = useState([]);
 
-  // Get the current connected user account
+  // Get the current connected user account from Wagmi
   const { address: userAddress } = useAccount();
 
+  // Use the Vault contract from your custom hook
+  const { contract, signer } = useVault();
+
+  // Stripe config (existing code)
   const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
   );
 
+  // Modal handling
   const handleRowClick = (pool) => {
     setSelectedVault(pool);
     setIsModalOpen(true);
   };
-
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedVault(null);
   };
 
+  // Handle investment for credit card deposit
   const handleInvestmentChange = (event) => {
     const amount = Number(event.target.value);
     if (amount >= 50 && amount <= 10000) {
       setInvestmentAmount(amount);
     } else {
-      console.error("Please enter an amount between $50 and $10,000.");
+      toast.error("Please enter an amount between $50 and $10,000.");
     }
   };
 
-  async function createDepositRecord(userId, amount) {
+  // Utility to create a deposit record in Firestore
+  async function createDepositRecord(data) {
     try {
       await addDoc(collection(db, "deposits"), {
-        userId: userId, // Use userId or any identifier to link this to the user
-        amount: amount,
-        status: "pending",
+        ...data,
         createdAt: serverTimestamp(),
       });
       console.log("Deposit record successfully created!");
     } catch (e) {
       console.error("Error adding deposit record: ", e);
+      toast.error("Failed to create deposit record.");
     }
   }
 
+  // Handle Stripe payment
   const handleStripePayment = async () => {
-    const stripe = await stripePromise;
+    if (!investmentAmount || Number(investmentAmount) < 50) {
+      toast.error("Please enter a valid amount (at least $50).");
+      return;
+    }
 
-    //Store the deposit record in Firebase
-    const userId = userAddress; //Uses wallet address as userID
-    await createDepositRecord(userId, investmentAmount);
+    try {
+      const stripe = await stripePromise;
 
-    //Initiate Stripe payment process
-    const response = await fetch("/api/create-checkout-session", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ amount: investmentAmount * 100 }), // Convert to cents
-    });
-    const session = await response.json();
+      // Store the deposit record in Firebase
+      const userId = userAddress || "unknown"; // fallback to "unknown" if no user
+      await createDepositRecord({
+        userId,
+        amount: investmentAmount,
+        status: "pending",
+        depositType: "creditCard",
+      });
 
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.sessionId,
-    });
+      // Initiate Stripe payment
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ amount: investmentAmount * 100 }), // Convert to cents
+      });
+      const session = await response.json();
 
-    if (result.error) {
-      alert(result.error.message);
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.sessionId,
+      });
+
+      if (result.error) {
+        toast.error(result.error.message);
+      }
+    } catch (err) {
+      console.error("Stripe payment failed:", err);
+      toast.error("Stripe payment failed. Check console for details.");
     }
   };
 
-  //fetches user deposites from Firestore
-  // useEffect(() => {
-  //   async function fetchUserDeposits() {
-  //     const userId = "user123"; // Replace this with actual user ID or identifier
-  //     const depositsRef = collection(db, "deposits");
-  //     const q = query(depositsRef, where("userId", "==", userId));
-  //     const querySnapshot = await getDocs(q);
+  // ==========================
+  // Handle direct Sonic deposit
+  // ==========================
+  async function handleSonicDeposit(event) {
+    event.preventDefault();
 
-  //     const fetchedDeposits = [];
-  //     querySnapshot.forEach((doc) => {
-  //       fetchedDeposits.push({ id: doc.id, ...doc.data() });
-  //     });
-  //     setDeposits(fetchedDeposits);
-  //   }
+    if (!contract || !signer || !userAddress) {
+      toast.error("Please connect your wallet on Sonic before depositing.");
+      return;
+    }
+    if (!sonicDeposit || Number(sonicDeposit) <= 0) {
+      toast.error("Please enter a valid Sonic deposit amount.");
+      return;
+    }
 
-  //   fetchUserDeposits();
-  // }, []);
-  useEffect(() => {
-    async function fetchUserDeposits() {
-      if (!userAddress) return; // Wait until the user is authenticated
+    try {
+      // 1) Call the depositSonic function on your Vault contract
+      const tx = await contract.depositSonic({
+        value: ethers.parseEther(sonicDeposit), // parse user input as Ether
+      });
+      const receipt = await tx.wait();
 
+      // 2) Create a deposit record in Firestore
+      await createDepositRecord({
+        userId: userAddress,
+        amount: sonicDeposit,
+        status: "completed",
+        depositType: "sonic",
+      });
+
+      // 3) Reset local state & re-fetch deposits
+      setSonicDeposit("");
+      fetchUserDeposits(); // refresh local deposits
+
+      // 4) Show success toast with transaction link
+      const blockExplorerLink = `https://sonicscan.org/tx/${receipt.transactionHash}`;
+
+      toast.success(
+        <div>
+          Successfully deposited {sonicDeposit} Sonic! <br />
+          <a
+            href={blockExplorerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#4aa3f0", textDecoration: "underline" }}
+          >
+            View on SonicScan
+          </a>
+        </div>
+      );
+      setTimeout(() => {
+        window.location.reload();
+      }, 5000); // wait 5 seconds
+    } catch (error) {
+      console.error("Sonic deposit failed:", error);
+      toast.error("Sonic deposit failed. Check console for details.");
+    }
+  }
+
+  // ================
+  // Fetch Deposits
+  // ================
+  async function fetchUserDeposits() {
+    if (!userAddress) return;
+
+    try {
       const depositsRef = collection(db, "deposits");
       const q = query(depositsRef, where("userId", "==", userAddress));
       const querySnapshot = await getDocs(q);
@@ -159,23 +200,78 @@ export default function Vaults() {
         fetchedDeposits.push({ id: doc.id, ...doc.data() });
       });
       setDeposits(fetchedDeposits);
+    } catch (err) {
+      console.error("Failed to fetch user deposits:", err);
+      toast.error("Failed to fetch user deposits. Check console for details.");
     }
+  }
 
+  // On component mount + whenever userAddress changes
+  useEffect(() => {
     fetchUserDeposits();
-  }, [userAddress]); // Add userAddress as a dependency to update when the user logs in
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userAddress]);
 
   return (
-    <div className="min-h-[20vh]] bg-midnight-blue xs:p-2 md:p-4 text-white">
+    <div className="min-h-[20vh] bg-midnight-blue xs:p-2 md:p-4 text-white">
       <div className="max-w-7xl mx-auto">
         <h1
-          className="text-2xl font-bold  md:mb-4 pt-4
+          className="text-2xl font-bold md:mb-4 pt-4
         xs4:text-3xl"
         >
-          High Yield Staking Vaults -{" "}
+          High Yield Staking Vault -{" "}
           <span className="font-sans font-thin xs:text-base xs8:text-lg md:text-xl ">
             Please read the docs before staking.
           </span>
         </h1>
+
+        {/********************************************************************
+         *  SECTION 1: ADD FUNDS VIA SONIC
+         *********************************************************************/}
+        <h2 className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2 xs4:text-3xl">
+          Add Funds Via Sonic
+        </h2>
+        <div className="bg-[#292941] xs:w-[95%] md:w-[80vw] lg:w-[50vw] mx-auto min-h-[20vh] rounded-2xl mb-16 pb-8">
+          <h3 className="text-white xs:text-xl xs4:text-2xl md:text-2xl font-bold text-center p-4">
+            Direct Deposit
+          </h3>
+          <form
+            onSubmit={handleSonicDeposit}
+            className="space-y-4 w-full mx-auto"
+          >
+            <div className="flex gap-5 p-2 items-center justify-center w-[95%] mx-auto">
+              <label>Deposit Amount (S):</label>
+              <input
+                type="number"
+                value={sonicDeposit}
+                onChange={(e) => setSonicDeposit(e.target.value)}
+                className="bg-white appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 w-[50%]"
+                placeholder="e.g. 10"
+              />
+            </div>
+            <p className="px-4 text-center">
+              Only Sonic Tokens ($S) can be successfully deposited.{" "}
+              <span className="font-bold">
+                All other token types will be lost.
+              </span>{" "}
+              To deposit Sonic tokens to the vault, you first must connect to
+              the Sonic Blockchain. Make sure to have enough Sonic remaining to
+              cover gas fees.
+            </p>
+            <div className="mx-auto text-center">
+              <Button
+                type="submit"
+                className="mx-auto font-bold py-2 px-3 rounded"
+              >
+                Deposit S Tokens
+              </Button>
+            </div>
+          </form>
+        </div>
+
+        {/********************************************************************
+         *  SECTION 2: ADD FUNDS VIA CARD
+         *********************************************************************/}
         <h2 className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2 xs4:text-3xl">
           Add Funds Via Card
         </h2>
@@ -185,13 +281,13 @@ export default function Vaults() {
           </h3>
           <form
             onSubmit={(e) => {
-              e.preventDefault(); // Prevent default form submission
-              handleStripePayment(); // Call your payment handler here
+              e.preventDefault();
+              handleStripePayment();
             }}
             className="space-y-4 w-full mx-auto"
           >
             <div className="flex gap-5 p-2 items-center justify-center w-[95%] mx-auto">
-              <label>Investment Amount:</label>
+              <label>Investment Amount (USD):</label>
               <input
                 type="number"
                 value={investmentAmount}
@@ -199,42 +295,41 @@ export default function Vaults() {
                 className="bg-white appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 w-[50%]"
                 min="50"
                 max="10000"
-                placeholder="Enter investment amount"
+                placeholder="e.g. 10000"
               />
             </div>
 
             <p className="px-4 text-center">
               Please note that your total staked amount will be equal to the
-              amount invested minus the fees taken by your credit card provider,
-              Stripe, and the centralized exchange that will convert your FIAT
-              into Sonic tokens, using the ticker $S. Funds added by credit card
-              may take as long as 7 days to appear in the vault when using this
-              method.
+              amount invested minus third-party fees. Your FIAT will be
+              converted into Sonic tokens, using the ticker $S. Funds added by
+              credit card may take as long as 7 days to appear in the vault.
             </p>
             <p className="px-4 text-center">
-              Depositing directly using an accepted Web3 wallet, like MetaMask,
-              transfers funds instantly. Due to anti-money laundering laws,
-              investments made by credit card are limited to $10,000 USD per
-              day. The minimum investment amount using this method is $50 USD.
+              Due to anti-money laundering laws, investments made by card are
+              limited to $10,000 USD per day. The minimum investment amount
+              using this method is $50 USD.
             </p>
             <div className="mx-auto text-center">
-              <button
-                type="submit" // Change button to submit the form
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded w-auto "
+              <Button
+                type="submit"
+                className="bg-green-500 hover:bg-green-700 shadow-green-500 text-white font-bold py-2 mx-auto px-3 rounded "
               >
                 Add Funds by Card
-              </button>
+              </Button>
             </div>
           </form>
         </div>
 
-        {/* Add Section for Displaying Deposits */}
+        {/********************************************************************
+         *  SECTION 3: YOUR DEPOSITS LIST
+         *********************************************************************/}
         <div className="my-8">
           <h3 className="text-white xs:text-2xl md:text-4xl font-bold text-center p-4">
             Your Deposits
           </h3>
           <div className="overflow-x-auto">
-            {/* Header Row for Deposits */}
+            {/* Header Row */}
             <div className="flex justify-between items-center bg-dark-blue xs:p-2 md:p-4 rounded-lg text-sm font-bold xs:text-xs md:text-base mb-2">
               <span className="flex-1 text-center xs:text-xs md:text-base">
                 Amount
@@ -243,106 +338,73 @@ export default function Vaults() {
                 Status
               </span>
               <span className="flex-1 text-center xs:text-xs md:text-base">
+                Type
+              </span>
+              <span className="flex-1 text-center xs:text-xs md:text-base">
                 Converted Amount
+              </span>
+              <span className="flex-1 text-center xs:text-xs md:text-base">
+                Date
               </span>
             </div>
 
             {/* Deposit Rows */}
-            {deposits.map((deposit) => (
-              <div
-                key={deposit.id}
-                className="flex justify-between items-center bg-[#292941] p-4 rounded-lg mb-2"
-              >
-                <span className="flex-1 text-center xs:text-xs md:text-base">
-                  ${deposit.amount}
-                </span>
-                <span className="flex-1 text-center xs:text-xs md:text-base">
-                  {deposit.status}
-                </span>
-                <span className="flex-1 text-center xs:text-xs md:text-base">
-                  {deposit.convertedAmount
-                    ? `$${deposit.convertedAmount}`
-                    : "Pending"}
-                </span>
-              </div>
-            ))}
+            {deposits.map((deposit) => {
+              let displayDate = "N/A";
+              if (deposit.createdAt) {
+                const dateObj = deposit.createdAt.toDate();
+                displayDate = dateObj.toLocaleString();
+              }
+              return (
+                <div
+                  key={deposit.id}
+                  className="flex justify-between items-center bg-[#292941] p-4 rounded-lg mb-2"
+                >
+                  <span className="flex-1 text-center xs:text-xs md:text-base">
+                    {deposit.amount}
+                    {deposit.depositType === "sonic" ? " S" : " USD"}
+                  </span>
+                  <span className="flex-1 text-center xs:text-xs md:text-base">
+                    {deposit.status}
+                  </span>
+                  <span className="flex-1 text-center xs:text-xs md:text-base">
+                    {deposit.depositType}
+                  </span>
+                  <span className="flex-1 text-center xs:text-xs md:text-base">
+                    {deposit.convertedAmount
+                      ? `$${deposit.convertedAmount}`
+                      : deposit.depositType === "sonic"
+                      ? "--"
+                      : "Pending"}
+                  </span>
+                  <span className="flex-1 text-center xs:text-xs md:text-base">
+                    {displayDate}
+                  </span>
+                </div>
+              );
+            })}
           </div>
-        </div>
-
-        {/* Liquidity Pools Section */}
-        <div className="overflow-x-auto my-8">
-          <h3 className="text-white xs:text-2xl md:text-4xl font-bold text-center p-4">
-            Liquidity Pools
-          </h3>
-          {/* Header Row for Liquidity Pools */}
-          <div className="flex justify-between items-center bg-dark-blue xs:p-2 md:p-4 rounded-lg text-sm font-bold xs:text-xs md:text-base mb-2">
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Pair
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              APR
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              TVL / Tokens
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Wallet / Pair
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Staked % / Proportion
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Borrowed
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Borrowed APR
-            </span>
-            <span className="flex-1 text-center xs:text-xs md:text-base">
-              Actions
-            </span>
-          </div>
-
-          {/* Liquidity Pool Rows */}
-          {liquidityPools.map((pool) => (
-            <div
-              key={pool.id}
-              onClick={() => handleRowClick(pool)}
-              className="flex justify-between items-center bg-[#292941] p-4 rounded-lg mb-2"
-            >
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.pair}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.depositAPR}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.tvlTotal} / {pool.tvlTokens}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.walletTotal} / {pool.walletPair}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.stakedPercentage} / {pool.stakedProportion}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.borrowedAmount}
-              </span>
-              <span className="flex-1 text-center xs:text-xs md:text-base">
-                {pool.borrowedAPR}
-              </span>
-              <span className="flex-1 text-center">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded text-xs md:text-lg lg:text-xl">
-                  Deposit
-                </button>
-              </span>
-            </div>
-          ))}
         </div>
       </div>
+
+      {/* Modal for pool details (existing) */}
       <VaultModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         pool={selectedVault || {}}
+      />
+
+      {/* 2) ToastContainer - Right side middle */}
+      <ToastContainer
+        position="top-right"
+        style={{ marginTop: "25%", transform: "translateY(-50%)" }}
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        draggable
+        pauseOnHover
+        theme="dark"
       />
     </div>
   );

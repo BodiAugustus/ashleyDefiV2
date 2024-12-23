@@ -1,6 +1,7 @@
 import { Button } from "../../../common/Button";
 import CryptoTickerTable from "../../../common/Ticker";
 import { lato, playfair } from "../../../fonts/font";
+import Link from "next/link";
 export default function Hero() {
   return (
     <div className="w-[100vw] h-[88vh] mx-auto   relative max-w-[2200px] xs:p-2 md:p-4 flex flex-col justify-center items-center bg-[url(/garden.webp)]  bg-center bg-no-repeat bg-cover ">
@@ -13,7 +14,7 @@ export default function Hero() {
         
          md:pt-0`}
       >
-        The Vaults of Ashley
+        The Vault of Ashley
       </h1>
       {/* custom-xs-448-mobile-vaults-hero-title
         custom-xs-640-mobile-vaults-hero-title
@@ -31,16 +32,20 @@ export default function Hero() {
         custom-xs-850-mobile-vaults-hero
         custom-xs-860-mobile-vaults-hero  */}
           <h3 className="text-white font-thin font-sans xs:text-xl xs5:text-2xl md:text-2xl xs:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[47%] text-center custom-xs-410810-mobile-vaults-hero-text">
-            High-yielding, permisionless, auto-compounding vaults.
+            High-yielding, permisionless, auto-compounding vault.
           </h3>
-          <div className=" flex  md:gap-5 w-[100%] items-center justify-center ">
+          <Link
+            className=" flex  md:gap-5 w-[100%] items-center justify-center "
+            href="https://ashley-defi.gitbook.io/ashley-defi-docs/"
+            target="_blank"
+          >
             <Button
               variant="white"
               className="flex justify-center xs:mt-[37%] md:mt-0 xs5:text-xl"
             >
               Read the Docs
             </Button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

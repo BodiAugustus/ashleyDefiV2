@@ -11,40 +11,21 @@ import ServicesItem from "./ServicesItem"; // Adjust the import path as necessar
 const Services = ({ formRef }) => {
   const faqs = [
     {
-      title: "Technology Asessment Reports",
-      description:
-        "Our Technology Assessment Reports are crucial tools provided as part of our consulting services. These reports are meticulously crafted by our team of experts, who conduct thorough due diligence with founders and project teams in navigating the complex landscape of DeFi technology. The focus areas of our reports include, but are not limited to:",
-      insideheader1: "Implementation Strategy - Initial Due Dilligence",
-      insideDescription1:
-        "The initial phase of our consulting process involves evaluating the technical feasibility and optimal approaches for deploying new DeFi technologies. Key activities include: Developer interviews, technical reviews, regulatory considerations, risk assessment and market-related risks and analysis.",
-      insideheader2: "Infrastructure Analysis - Scaleability",
-      insideDescription2:
-        "In this critical component of our Technology Assessment Reports, we conduct an in-depth analysis of the underlying blockchain infrastructure to ensure it meets high standards of scalability, along with interoperability and security. This analysis involves several key aspects such as capacity evaluation, network expansion readiness, resource optimization and tokennomics, interoperability assessments, security protocol reviews and future-proofing strategies.",
-      insideheader3: "Market Strategy - Profitability",
-      insideDescription3:
-        "In the Market Strategy component of our Technology Assessment Reports, we focus on developing comprehensive strategies aimed at maximizing profitability while aligning with current market trends and anticipating future growth opportunities. This involves several detailed steps: Market analysis, trend forecasting, revenue modeling, risk mitigation, sustainability practices and performance metrics and KPIs.",
-      insideheader4: "Risk Profile - Overall Strategy",
-      insideDescription4:
-        "In the Risk Profile component of our Technology Assessment Reports, we synthesize comprehensive research and data into a coherent and accessible summary that outlines the investment landscape over short, mid, and long-term horizons. This detailed process involves several key steps: Data aggregation, risk assessment, investment outlook, strategic recommendations, and actionable insights.",
-      header: "Deep Dives",
-      icon: <TbReportSearch className="text-8xl" />,
-    },
-    {
       title: "Portfolio Management",
       description:
         "Our Portfolio Management service is crafted to assist clients in navigating the volatile crypto markets while achieving balanced and diversified investment portfolios. By applying advanced analysis and strategic asset allocation, we aim to optimize returns and minimize risks for our clients, ensuring their investments are well-positioned for both stability and growth.",
       insideheader1: "Asset Allocation Strategy",
       insideDescription1:
-        "We develop a customized asset allocation strategy for each client based on their individual risk tolerance, investment goals, and market conditions. This strategy involves the selection of a mix of cryptocurrencies, tokens, and possibly other blockchain-based assets to provide a balanced approach that mitigates risk while aiming for optimal returns.",
+        "We develop a customized asset allocation strategy for each client based on their individual risk tolerance, investment goals, and market conditions. This strategy involves the selection of a mix of protocols, tokens, and strategies to provide a balanced approach that mitigates risk while aiming for sustainable double digit returns.",
       insideheader2: "Risk Management Techniques",
       insideDescription2:
-        "Effective risk management is central to successful portfolio management. We implement a variety of techniques such as stop-loss orders, position sizing, and diversification across different types of crypto assets and sectors. These practices are designed to protect the portfolio against significant losses and ensure long-term stability.",
+        "Effective risk management is central to successful portfolio management. We implement a variety of techniques such as position sizing, the use of stable coins during corrections, and diversification across different protocols. These practices are designed to protect the portfolio against significant losses and ensure long-term stability.",
       insideheader3: "Regular Portfolio Reviews and Rebalancing",
       insideDescription3:
         "Our service includes regular review sessions with our clients to assess the performance of their portfolio and make adjustments as needed. Rebalancing is done to realign the portfolio with the client’s strategic goals and to adapt to changes in market dynamics or in the client's personal circumstances.",
       insideheader4: "Advanced Analytics and Reporting",
       insideDescription4:
-        "We provide detailed analytics and reports that track the performance of the portfolio against established benchmarks and goals. These reports offer insightful data on asset performance, sector trends, and potential opportunities for further diversification or consolidation.",
+        "We provide instantaneous analytics that track the performance of individual client assets on the user dashboard.  ",
       header: "Wealth Fund",
       icon: <AiFillPieChart className="text-8xl" />,
     },
@@ -87,6 +68,25 @@ const Services = ({ formRef }) => {
         "In the event of a security breach, we provide immediate incident response support to minimize losses and restore security. This includes helping clients recover access to their assets when possible, navigating the steps to mitigate the damage, and implementing preventative measures to avoid future incidents.",
       header: "Asset Protection",
       icon: <RiShieldKeyholeFill className="text-8xl" />,
+    },
+    {
+      title: "Technology Asessment Reports",
+      description:
+        "Our Technology Assessment Reports are crucial tools provided as part of our consulting services. These reports are meticulously crafted by our team of experts, who conduct thorough due diligence with founders and project teams in navigating the complex landscape of DeFi technology. The focus areas of our reports include, but are not limited to:",
+      insideheader1: "Implementation Strategy - Initial Due Dilligence",
+      insideDescription1:
+        "The initial phase of our consulting process involves evaluating the technical feasibility and optimal approaches for deploying new DeFi technologies. Key activities include: Developer interviews, technical reviews, regulatory considerations, risk assessment and market-related risks and analysis.",
+      insideheader2: "Infrastructure Analysis - Scaleability",
+      insideDescription2:
+        "In this critical component of our Technology Assessment Reports, we conduct an in-depth analysis of the underlying blockchain infrastructure to ensure it meets high standards of scalability, along with interoperability and security. This analysis involves several key aspects such as capacity evaluation, network expansion readiness, resource optimization and tokennomics, interoperability assessments, security protocol reviews and future-proofing strategies.",
+      insideheader3: "Market Strategy - Profitability",
+      insideDescription3:
+        "In the Market Strategy component of our Technology Assessment Reports, we focus on developing comprehensive strategies aimed at maximizing profitability while aligning with current market trends and anticipating future growth opportunities. This involves several detailed steps: Market analysis, trend forecasting, revenue modeling, risk mitigation, sustainability practices and performance metrics and KPIs.",
+      insideheader4: "Risk Profile - Overall Strategy",
+      insideDescription4:
+        "In the Risk Profile component of our Technology Assessment Reports, we synthesize comprehensive research and data into a coherent and accessible summary that outlines the investment landscape over short, mid, and long-term horizons. This detailed process involves several key steps: Data aggregation, risk assessment, investment outlook, strategic recommendations, and actionable insights.",
+      header: "Deep Dives",
+      icon: <TbReportSearch className="text-8xl" />,
     },
     {
       title: "Education and Training",

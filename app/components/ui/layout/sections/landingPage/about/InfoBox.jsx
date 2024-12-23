@@ -52,19 +52,19 @@ const Info = () => {
               <p className="pb-1 xs:pt-0">
                 Ashley Capital & DeFi was founded to professionally onboard
                 individuals into Decentralized Finance, the future of money. We
-                achieve this through our client-based consulting services and
-                high-yield, permissionless staking vaults, which offer
+                achieve this through our client-based consulting services and a
+                high-yield, permissionless staking vault, which offers
                 consistent APRs well above the traditional finance industry
                 average.
               </p>
               <p className="pb-4">
                 Whether you're seeking a temporary learning resource on your
-                path to becoming a DeFi master, looking for long-term crypto
-                advisement, or interested in staking within our vaults to earn
-                yields, we've got you covered! Our consultants are professional
-                DeFi investors, coders, and blockchain engineers who use and
-                build upon DeFi protocols daily, leveraging the most advanced
-                technologies and analytics, including AI.
+                path to becoming a DeFi master, or interested in staking within
+                our vault to earn high yields, we've got you covered! Our
+                consultants are professional DeFi investors, coders, and
+                blockchain developers who use, build, and maintain DeFi
+                protocols daily, leveraging the most advanced technologies and
+                analytics, including AI.
               </p>
               <p>
                 We spend countless hours sifting through forums, posts, and data

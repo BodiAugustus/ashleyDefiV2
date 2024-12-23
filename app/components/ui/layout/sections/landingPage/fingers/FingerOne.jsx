@@ -30,7 +30,7 @@ export default function FingerOne() {
         xs3:text-base
         xs6:text-lg
         md:indent-0 
-        md:text-xl lg:w-[98%] text-[#B0C7EF] lg:pb-1 lg:indent-4"
+        md:text-xl lg:w-[98%] text-[#B0C7EF] lg:pb-1 "
         >
           Every Ashley DeFi consultant provides concise, data-driven insights
           derived from extensive research on market catalysts, DeFi narratives,

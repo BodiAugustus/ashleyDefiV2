@@ -24,9 +24,8 @@ export default function AshleyAdv({}) {
      
       "
       >
-        Partnering with Ashley Capital & DeFi means integrating us into your
-        team. It means our consultants will dedicate themselves fully to helping
-        you achieve your financial goals
+        Partnering with Ashley Capital & DeFi means our consultants will
+        dedicate themselves fully to helping you achieve your financial goals
       </p>
       <div className="flex flex-col gap-5">
         <div>

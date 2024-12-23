@@ -28,10 +28,14 @@ export default function FingerThree() {
           Join our growing community and connect directly with builders,
           investors, enthusiasts, and analysts from around the globe. Our
           Telegram server provides valuable, in-depth conversations and advanced
-          insights into the latest news. Plus, we host an annual members-only
-          party in exciting locations around the world!
+          insights into all the latest news.
         </p>
-        <Link href="https://t.me/+89dQjvU76cwxZGU9" passHref>
+        <Link
+          href="https://t.me/+89dQjvU76cwxZGU9"
+          passHref
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <Button variant="white" className="xs:mx-auto xs:mb-2 " size="lg">
             Join Today &#8594;
           </Button>

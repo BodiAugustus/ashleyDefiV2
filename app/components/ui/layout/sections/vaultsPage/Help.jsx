@@ -1,4 +1,5 @@
 import { Button } from "../../../common/Button";
+import Link from "next/link";
 
 function ContactCTA() {
   return (
@@ -13,7 +14,17 @@ function ContactCTA() {
         If you're feeling confused or have any questions about our staking
         vaults, our consultants are here to help.
       </p>
-      <Button className="mx-auto xs5:text-xl">Contact a Consultant</Button>
+
+      <Link
+        href="https://t.me/+89dQjvU76cwxZGU9"
+        target="_blank"
+        passHref
+        rel="noopener noreferrer"
+      >
+        <Button className="mx-auto xs5:text-xl mt-6">
+          Contact a Consultant
+        </Button>
+      </Link>
     </div>
   );
 }

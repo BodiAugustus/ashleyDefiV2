@@ -51,7 +51,6 @@ const CryptoTickerTable = () => {
     { address: "0xE992bEAb6659BFF447893641A378FbbF031C5bD6", symbol: "WIGO" },
     { address: "0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e", symbol: "BEETS" },
     { address: "0x85dec8c4B2680793661bCA91a8F129607571863d", symbol: "BRUSH" },
-    { address: "0x5c725631FD299703D0A74C23F89a55c6B9A0C52F", symbol: "POLTER" },
     { address: "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE", symbol: "BOO" },
     { address: "0x1e2Ea3f3209D66647f959CF00627107e079B870d", symbol: "fBUX" },
     { address: "0xb7C2ddB1EBAc1056231ef22c1b0A13988537a274", symbol: "TAROT" },
@@ -60,6 +59,12 @@ const CryptoTickerTable = () => {
     { address: "0x5Cc61A78F164885776AA610fb0FE1257df78E59B", symbol: "SPIRIT" },
     { address: "0xd7028092c830b5C8FcE061Af2E593413EbbC1fc1", symbol: "sFTMx" },
     { address: "0x39551b1c26ce03714E4661833B0FA730174bd7e9", symbol: "PLUS" },
+    { address: "0xD702993613686Ab0f706Ef07883870a97D36fdcf", symbol: "SNS" },
+
+    { address: "0x43F9a13675e352154f745d6402E853FECC388aA5", symbol: "sGOAT" },
+    { address: "0x662B3d319e693aA578EDd4BD8a5c9395BC49e9F4", symbol: "GOGLZ" },
+    { address: "0x479673391b3818f5e3ED2fa69A58e13d685BEcf6", symbol: "THC" },
+    { address: "0x5DeB27e51dbeEF691Ba1175A2E563870499c2AcB", symbol: "MCLB" },
     { address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8", symbol: "ETH" },
   ];
 

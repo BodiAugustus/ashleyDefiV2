@@ -89,13 +89,13 @@ export default function Plans() {
               Staking Vault{" "}
             </h3>
             <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:indent-5 md:indent-0  text-[#B0C7EF]">
-              We provide fully-custodial and permissionless staking vaults on
-              the revolutionary Sonic blockchain. Users can seemlessly deposit
-              their sonic tokens ($S) into one of our vaults to earn variable
-              APR's well above traditional financial averages. Rewards are
-              accrued and paid out in sonic tokens on a per-second basis,
-              maximizing your staking returns with industry leading,
-              cutting-edge technology.
+              We provide a permissionless staking vault running on the new,
+              revolutionary Sonic blockchain. Users can seamlessly deposit their
+              Sonic tokens ($S) into our vault to earn annualized percentage
+              rates well above traditional financial averages. Rewards are
+              automatically compounded and can be withdrawn at any time,
+              maximizing your ability to generate returns without sacrificing
+              accessibility.
             </p>
             <Link
               href="/vaults"
