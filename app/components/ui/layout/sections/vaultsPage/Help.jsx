@@ -21,7 +21,7 @@ function ContactCTA() {
         passHref
         rel="noopener noreferrer"
       >
-        <Button className="mx-auto xs5:text-xl mt-6">
+        <Button className="mx-auto xs5:text-xl mt-6 text-white">
           Contact a Consultant
         </Button>
       </Link>

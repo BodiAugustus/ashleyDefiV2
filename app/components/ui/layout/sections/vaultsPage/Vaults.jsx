@@ -228,7 +228,7 @@ export default function Vaults() {
         {/********************************************************************
          *  SECTION 1: ADD FUNDS VIA SONIC
          *********************************************************************/}
-        <h2 className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4 xs:-mt-8 md:mt-0 lg:-mb-2 xs4:text-3xl">
+        <h2 className="text-white xs:text-2xl xs:-mb-3 md:mb-0 md:text-4xl font-bold text-center p-4  md:mt-0 lg:-mb-2 xs4:text-3xl">
           Add Funds Via Sonic
         </h2>
         <div className="bg-[#292941] xs:w-[95%] md:w-[80vw] lg:w-[50vw] mx-auto min-h-[20vh] rounded-2xl mb-16 pb-8">

@@ -11,7 +11,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/consulting"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
               >
                 Consulting
               </Link>
@@ -19,7 +19,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/vaults"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
               >
                 Staking Vault
               </Link>
@@ -28,12 +28,14 @@ const Footer = () => {
         </div>
         {/* Column 2 */}
         <div>
-          <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Support</h5>
+          <h5 className="font-bold text-lg md:mb-4 xs6:text-xl text-white">
+            Support
+          </h5>
           <ul>
             <li>
               <Link
                 href="https://ashley-defi.gitbook.io/ashley-defi-docs/"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
                 target="_blank"
               >
                 Docs
@@ -42,7 +44,7 @@ const Footer = () => {
             <li>
               <Link
                 href="https://t.me/+89dQjvU76cwxZGU9"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
                 target="_blank"
               >
                 Contact Us
@@ -55,22 +57,22 @@ const Footer = () => {
           <h5 className="font-bold text-lg md:mb-4 xs6:text-xl">Social</h5>
           <ul>
             <li>
-              <a
+              <Link
                 href="https://x.com/AshleyDeFi"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
                 target="_blank"
               >
                 Twitter
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://t.me/+89dQjvU76cwxZGU9"
-                className="hover:text-gray-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300 text-white"
                 target="_blank"
               >
                 Telegram
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
