@@ -47,7 +47,7 @@ const CryptoTickerTable = () => {
   const tokenAddresses = [
     // Define token addresses and symbols here
     { address: "0xAD29AbB318791D579433D831ed122aFeAf29dcfe", symbol: "FTM" },
-    { address: "0x3Fd3A0c85B70754eFc07aC9Ac0cbBDCe664865A6", symbol: "EQUAL" },
+    { address: "0xddF26B42C1d903De8962d3F79a74a501420d5F19", symbol: "EQUAL" },
     { address: "0xE992bEAb6659BFF447893641A378FbbF031C5bD6", symbol: "WIGO" },
     { address: "0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e", symbol: "BEETS" },
     { address: "0x85dec8c4B2680793661bCA91a8F129607571863d", symbol: "BRUSH" },
