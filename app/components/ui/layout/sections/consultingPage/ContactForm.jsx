@@ -128,6 +128,7 @@ const ContactForm = forwardRef((props, ref) => {
             <option value="growth">Market Entry and Growth Strategies</option>
             <option value="security">Security and Wallet Management</option>
             <option value="training">Education and Training</option>
+            <option value="general">General Consulting</option>
           </select>
           {errors.consultingType && (
             <p className="text-red-500 text-sm">{errors.consultingType}</p>
