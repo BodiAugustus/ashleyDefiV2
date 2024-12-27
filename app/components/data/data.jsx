@@ -24,6 +24,28 @@ export const links = [
     url: "/subscribe",
   },
 ];
+export const links9000 = [
+  {
+    id: "home",
+    name: "Home",
+    url: "/",
+  },
+  {
+    id: "services",
+    name: "Services",
+    url: "/services",
+  },
+  {
+    id: "contact",
+    name: "Contact",
+    url: "/contact",
+  },
+  {
+    id: "Sign-Up",
+    name: "sign up",
+    url: "/subscribe",
+  },
+];
 
 export const socials = [
   {
