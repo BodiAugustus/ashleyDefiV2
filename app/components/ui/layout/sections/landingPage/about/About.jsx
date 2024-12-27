@@ -1,6 +1,6 @@
 import AboutBox from "./AboutBox";
 import Info from "./InfoBox";
-import { playfair, lato } from "../../../../fonts/font.js";
+import { lato } from "../../../../fonts/font.js";
 
 export default function About() {
   return (

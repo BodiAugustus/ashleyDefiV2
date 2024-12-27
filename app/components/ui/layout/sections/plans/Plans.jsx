@@ -8,13 +8,6 @@ export default function Plans() {
       xs:h-auto
       max-w-[2200px] flex flex-col items-center md:gap-y-5 text-white lg:w-[90vw] mx-auto xs:mb-10"
     >
-      {/* custom-xs-448-plans
-    custom-xs-640-plans
-    custom-xs-660-plans 
-    custom-xs-850-plans
-    custom-xs-390780-plans
-    custom-xs-410675-plans 
-    custom-xs-410810-plans  */}
       <div
         className="text-center  font-bold xs:text-2xl xs:mb-1
       xs4:text-3xl md:pt-5 md:text-5xl md:-mb-3 lg:text-4xl"
@@ -26,12 +19,6 @@ export default function Plans() {
           className="xs:w-[95%] xs:h-auto lg:w-[40vw] 
         rounded-xl white-glassmorphism shadow-xl shadow-indigo-700 xs:mx-auto"
         >
-          {/* custom-xs-448-plans-box
-         custom-xs-640-plans-box
-         custom-xs-660-plans-box
-         custom-xs-850-plans-box
-         custom-xs-410675-plans-box
-         custom-xs-410810-plans-box */}
           <div className="h-[35vh] relative">
             <Image
               src="/cnslt.jpg"
@@ -70,12 +57,6 @@ export default function Plans() {
           className="xs:w-[95%] xs:h-auto lg:w-[40vw]
         mx-auto rounded-xl white-glassmorphism shadow-xl shadow-indigo-700"
         >
-          {/* custom-xs-448-plans-box
-        custom-xs-640-plans-box 
-        custom-xs-660-plans-box
-        custom-xs-850-plans-box
-        custom-xs-410675-plans-box
-        custom-xs-410810-plans-box */}
           <div className="h-[35vh] relative">
             <Image
               src="/vault1.jpg"

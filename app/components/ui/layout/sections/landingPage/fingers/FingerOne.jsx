@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "../../../../common/Button";
 import Link from "next/link";
 const vid = "consulting.mp4"; // No need to import, just provi
@@ -57,13 +56,7 @@ export default function FingerOne() {
           </Button>
         </Link>
       </div>
-      {/* <Image
-        src="/Ashley-capital-logo.png"
-        width={350}
-        height={350}
-        className="hidden md:block "
-        alt="Screenshots of the dashboard project showing desktop version"
-      /> */}
+
       <div className="xs:hidden lg:block lg:w-[50%] lg:h-full lg:relative">
         <video
           src={vid}

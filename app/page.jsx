@@ -27,9 +27,9 @@ const queryClient = new QueryClient();
 
 const config = getDefaultConfig({
   appName: "Ashley DeFi",
-  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889", // Replace with your actual WalletConnect project ID
+  projectId: "ad4c70fe9eed9f1622487e0e2c7a7889", // WalletConnect project ID
   chains: [mainnet, polygon, optimism, arbitrum, base, fantom, sonicMainnet],
-  ssr: true, // If your dApp uses server side rendering (SSR)
+  ssr: true, // server side rendering (SSR)
 });
 
 export default function Home({ component, pageProps }) {

@@ -5,18 +5,12 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import header2 from "./../../../../../../../public/ashley-defi-header-2.jpg";
 import header4 from "./../../../../../../../public/ashley-defi-pic-4.jpg";
 import header3 from "./../../../../../../../public/ashley-defi-pic-5.jpg";
-
 import header1 from "./../../../../../../../public/ashley-defi-pic-1.jpg";
 import header6 from "./../../../../../../../public/ashley-defi-pic-3.jpg";
 
 const About = () => {
   return (
-    <div
-      className=" text-white text-center max-w-[800px] xs:mb-3 md:mb-0
-      
-       
-        "
-    >
+    <div className=" text-white text-center max-w-[800px] xs:mb-3 md:mb-0">
       <h2
         className="text-4xl pt-4 mb-2 font-bold
         xs:text-2xl xs:mb-1
@@ -220,7 +214,6 @@ const About = () => {
                     custom-xs-660-aboutbox-6
                     custom-xs-850-aboutbox-6
                     custom-xs-860-aboutbox-6 
-
                     custom-xs-390-650-aboutbox-6 
                     custom-xs-390780-aboutbox-6 xs6:text-xl
                     custom-xs-410810-aboutbox-6 

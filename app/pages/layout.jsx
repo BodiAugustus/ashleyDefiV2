@@ -6,9 +6,6 @@ import Image from "next/image";
 import { playfair, lato } from "./../components/ui/fonts/font.js";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { Button } from "../components/ui/common/Button.jsx";
-// import { ConnectButton } from "@rainbow-me/rainbowkit";
-import ConnectButtonFr from "../components/ui/web3/ConnectButtonFr";
 import CustomConnectButton from "../components/ui/web3/CustomConnectButton.jsx";
 import Logo from "../../public/Ashley-capital-logo.png";
 
@@ -42,21 +39,17 @@ export default function Layout({ children }) {
               src="/android-chrome-192x1922.png"
               width={60}
               height={60}
-              className="opacity-90 rounded-lg xs:hidden xs2:inline
-
-              "
+              className="opacity-90 rounded-lg xs:hidden xs2:inline"
               alt="logo"
             />
           </Link>
           <div className="md:hidden rounded-xl">
-            {/* <ConnectButtonFr /> */}
             <CustomConnectButton />
           </div>
           <button
             className="md:hidden xs:text-4xl xs2:text-5xl hover:scale-105 active:scale-100 transition-transform duration-300"
             onClick={openMenu}
           >
-            {/* Icon or button to open menu */}
             <GiHamburgerMenu />
           </button>
         </div>

@@ -69,7 +69,7 @@ const CryptoTickerTable = () => {
   ];
 
   const [viewportWidth, setViewportWidth] = useState(0);
-
+  // Adjust ticker width/speed for diff screen sizes
   useEffect(() => {
     const updateWidth = () => {
       setViewportWidth(window.innerWidth);

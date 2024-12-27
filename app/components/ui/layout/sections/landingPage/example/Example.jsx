@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-
 import { skillsk } from "../../../../../data/data";
 import { FiChevronsRight } from "react-icons/fi";
 import { FaVoteYea, FaHandshake } from "react-icons/fa";
@@ -35,9 +34,9 @@ const Example = () => {
       }
 
       const result = await response.json();
-      if (result.data && result.data.sftmxGetStakingData) {
+      if (result.data && result.data.stsGetGqlStakedSonicData) {
         // Set the staking APR from the response into the component's state
-        setStakingApr(result.data.sftmxGetStakingData.stakingApr);
+        setStakingApr(result.data.stsGetGqlStakedSonicData.stakingApr);
       } else {
         console.log("No data returned from the query");
       }
@@ -82,12 +81,7 @@ const Example = () => {
     <section
       className=" mx-auto w-[100vw] h-[70vh] max-w-[1800px] pt-4
       xs:h-auto
-    xs6:mb-4 xl:mb-10 xl:pt-8
-    
-  
-    
- 
-    
+    xs6:mb-4 xl:mb-10 xl:pt-8 
     "
     >
       <h2

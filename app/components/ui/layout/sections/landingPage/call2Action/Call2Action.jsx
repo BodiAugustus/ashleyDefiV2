@@ -9,14 +9,6 @@ export default function Call2Action() {
      
         mx-auto text-white xs:p-2 md:p-4 max-w-[1400px] shadow-xl shadow-indigo-700 xs6:mb-10  xs8:mb-0"
       >
-        {/* custom-xs-448-call2
-      custom-xs-640-call2
-      custom-xs-660-call2
-      custom-xs-670-call2 
-      custom-xs-850-call2
-      custom-xs-860-call2
-      custom-xs-410675-call2
-      custom-xs-410810-call2 */}
         <div className="bg-[url(/haad.jpg)] bg-cover bg-center rounded-2xl relative">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
           <div

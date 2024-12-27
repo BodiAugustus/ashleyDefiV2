@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "../../../../common/Button";
 import Link from "next/link";
 const vid = "community.mp4"; // No need to import, just provi
