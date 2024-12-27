@@ -360,7 +360,7 @@ export default function Layout({ children }) {
                 <Link href="/consulting">Consulting</Link>
               </li>
               <li>
-                <Link href="/vaults">Vaults</Link>
+                <Link href="/vaults">Vault</Link>
               </li>
               <li>
                 <Link href="/manage">Manage</Link>
