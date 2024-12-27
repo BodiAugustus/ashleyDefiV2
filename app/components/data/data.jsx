@@ -24,7 +24,7 @@ export const links = [
     url: "/subscribe",
   },
 ];
-export const links9000 = [
+export const links90000 = [
   {
     id: "home",
     name: "Home",
