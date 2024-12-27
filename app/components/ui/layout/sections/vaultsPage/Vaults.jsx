@@ -760,11 +760,14 @@ export default function Vaults() {
             </div>
             <p className="px-4 text-center">
               Please note that your total staked amount will be equal to the
-              amount invested minus third-party fees...
+              amount invested minus third-party fees. It can take up to 7 days
+              depending on the financial institution for deposits to show up in
+              the vault when using this investment method. Please read the docs
+              or ask a consultant for more information.
             </p>
             <p className="px-4 text-center">
-              Due to AML laws, investments by card are limited to $10k/day. The
-              minimum is $50.
+              Due to anti money laundering laws, investments by card are limited
+              to $10,000 USD per day. The minimum is $50.
             </p>
             <div className="mx-auto text-center">
               <Button
