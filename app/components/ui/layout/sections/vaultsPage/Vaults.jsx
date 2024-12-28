@@ -479,12 +479,7 @@ export default function Vaults() {
 
   // Handle investment for credit card deposit
   const handleInvestmentChange = (event) => {
-    const amount = Number(event.target.value);
-    if (amount >= 50 && amount <= 10000) {
-      setInvestmentAmount(amount);
-    } else {
-      toast.error("Please enter an amount between $50 and $10,000.");
-    }
+    setInvestmentAmount(event.target.value);
   };
 
   // Utility to create a deposit record in Firestore
@@ -503,8 +498,9 @@ export default function Vaults() {
 
   // Handle Stripe payment
   const handleStripePayment = async () => {
-    if (!investmentAmount || Number(investmentAmount) < 50) {
-      toast.error("Please enter a valid amount (at least $50).");
+    const amount = Number(investmentAmount);
+    if (!investmentAmount || isNaN(amount) || amount < 50 || amount > 10000) {
+      toast.error("Please enter an amount between $50 and $10,000.");
       return;
     }
     try {
