@@ -9,21 +9,24 @@ if (!uri) {
 }
 
 if (process.env.NODE_ENV === "development") {
+  // In development mode, use a global variable so we don't create
+  // multiple instances of MongoClient every time hot-reloading occurs
   if (!global._mongoClientPromise) {
     client = new MongoClient(uri);
     global._mongoClientPromise = client.connect();
   }
   clientPromise = global._mongoClientPromise;
 } else {
+  // In production mode, it's best to not use a global variable
   client = new MongoClient(uri);
   clientPromise = client.connect();
 }
 
-const handler = async (req, res) => {
+export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
       const client = await clientPromise;
-      const db = client.db("contactDB"); // Replace with your actual database name
+      const db = client.db("contactDB"); // Make sure this is correct
       const collection = db.collection("contacts");
 
       const contact = {
@@ -35,13 +38,13 @@ const handler = async (req, res) => {
       };
 
       await collection.insertOne(contact);
-      res.status(201).json({ message: "Contact saved successfully" });
+
+      return res.status(201).json({ message: "Contact saved successfully" });
     } catch (error) {
-      res.status(500).json({ error: "Failed to save contact" });
+      console.error("Error saving contact:", error);
+      return res.status(500).json({ error: "Failed to save contact" });
     }
   } else {
-    res.status(405).json({ error: "Method not allowed" });
+    return res.status(405).json({ error: "Method not allowed" });
   }
-};
-
-export default handler;
+}

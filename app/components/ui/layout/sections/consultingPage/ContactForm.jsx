@@ -2,6 +2,8 @@
 
 import { useState, forwardRef, useRef, useImperativeHandle } from "react";
 import { Button } from "../../../common/Button";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
@@ -59,7 +61,9 @@ const ContactForm = forwardRef((props, ref) => {
         });
 
         if (response.ok) {
+          toast.success("Your message was sent successfully!");
           console.log("Contact saved successfully");
+          //Reset form
           setFormData({
             name: "",
             contactInfo: "",
@@ -69,10 +73,12 @@ const ContactForm = forwardRef((props, ref) => {
           });
           setErrors({});
         } else {
+          toast.error("Something went wrong. Plese try again!");
           console.error("Failed to save contact");
         }
       } catch (error) {
         console.error("Failed to save contact", error);
+        toast.error("Something went wrong. Pease try again!");
       }
     }
   };
