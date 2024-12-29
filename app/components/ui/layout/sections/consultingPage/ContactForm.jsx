@@ -175,6 +175,18 @@ const ContactForm = forwardRef((props, ref) => {
           </Button>
         </form>
       </div>
+      {/* Toast Container */}
+      <ToastContainer
+        position="top-right"
+        style={{ marginTop: "25%", transform: "translateY(-50%)" }}
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 });
