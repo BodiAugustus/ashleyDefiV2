@@ -1,4 +1,5 @@
 import { Button } from "../../../../common/Button";
+import Link from "next/link";
 
 export default function Call2Action() {
   return (
@@ -20,9 +21,11 @@ export default function Call2Action() {
                 where whales are born.
               </span>
             </p>
-            <Button className="shadow-xl font-thin font-sans">
-              Become a Member
-            </Button>
+            <Link href="https://buy.stripe.com/9AQcPh2hh8kvd5CdQV" passHref>
+              <Button className="shadow-xl font-thin font-sans xs5:text-xl xs:mb-2">
+                Become a Member
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -100,9 +100,9 @@ export default function CnsltPlans() {
             </div>
           </div>
           <h4 className="mb-5 text-center">
-            Monthly Membership Fee: <span className="font-bold">$99.99</span>
+            Monthly Membership Fee: <span className="font-bold">$350</span>
           </h4>
-          <Link href="https://buy.stripe.com/5kA4iL4ppeITc1ydQQ" passHref>
+          <Link href="https://buy.stripe.com/9AQcPh2hh8kvd5CdQV" passHref>
             <Button className="mx-auto">Buy Now</Button>
           </Link>
           {/* You can add more detailed sections here as needed */}
@@ -139,15 +139,15 @@ export default function CnsltPlans() {
                 <h4> Pay to access technology reports</h4>
               </div>
               <p className="font-thin font-sans">
-                Non-members must pay $9.99 to access any of Ashley DeFi's
+                Non-members must pay $29.99 to access any of Ashley DeFi's
                 technology or protocol reports.
               </p>
             </div>
           </div>
           <h4 className="mb-5 mt-5 text-center">
-            Hourly Consulting Fee: <span className="font-bold">$60.00</span>
+            Hourly Consulting Fee: <span className="font-bold">$200.00</span>
           </h4>
-          <Link href="https://buy.stripe.com/6oEaH9g8730b3v2001" passHref>
+          <Link href="https://buy.stripe.com/14k7uX9JJ1W76He9AE" passHref>
             <Button className="mx-auto">Buy Now</Button>
           </Link>
           {/* You can add more detailed sections here as needed */}
