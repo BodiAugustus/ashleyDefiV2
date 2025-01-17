@@ -925,24 +925,30 @@ export default function Manage() {
         </div>
 
         {/* Right Column: vault info */}
+
         <div className="bg-[#292941] p-4 rounded-2xl">
           <h3 className="text-xl mb-4">Vault Overview</h3>
-
-          <div className="mb-2">
-            <strong>Price Per Share (S):</strong>{" "}
-            {Number(pricePerShare).toFixed(4)}
-          </div>
-          <div className="mb-2">
-            <strong>Price Per Share (USD):</strong> {pricePerShareUsd}
-          </div>
-          <div className="mb-2">
-            <strong>Total Vault Assets (S):</strong>{" "}
-            {Number(totalVaultAssets).toFixed(4)}
-          </div>
-          <div className="mb-4">
-            <strong>Total Invested Assets (S):</strong>{" "}
-            {Number(investedAssets).toFixed(4)}
-          </div>
+          {userAddress ? (
+            <div>
+              <div className="mb-2">
+                <strong>Price Per Share (S):</strong>{" "}
+                {Number(pricePerShare).toFixed(4)}
+              </div>
+              <div className="mb-2">
+                <strong>Price Per Share (USD):</strong> {pricePerShareUsd}
+              </div>
+              <div className="mb-2">
+                <strong>Total Vault Assets (S):</strong>{" "}
+                {Number(totalVaultAssets).toFixed(4)}
+              </div>
+              <div className="mb-4">
+                <strong>Total Invested Assets (S):</strong>{" "}
+                {Number(investedAssets).toFixed(4)}
+              </div>
+            </div>
+          ) : (
+            <p className="mb-4">No wallet connected</p>
+          )}
 
           {/* Withdraw input */}
           <div className="flex items-center space-x-2">
