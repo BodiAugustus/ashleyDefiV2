@@ -883,10 +883,10 @@ export default function Manage() {
   return (
     <div className="max-w-5xl mx-auto p-4 text-white">
       {/* TOP: Always Show Global Vault Value (USD) */}
-      <div className="text-center mb-8 md:pt-10">
+      {/* <div className="text-center mb-8 md:pt-10">
         <h2 className="text-3xl font-bold">Total Vault Value (USD)</h2>
         <div className="text-4xl font-bold mt-2">${globalVaultValueUsd}</div>
-      </div>
+      </div> */}
 
       {/* The "Your Vault Data" heading, etc. */}
       <h2 className="text-3xl font-bold text-center mb-6">Your Vault Data:</h2>
