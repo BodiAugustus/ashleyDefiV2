@@ -898,30 +898,32 @@ export default function Manage() {
         <div className="bg-[#292941] p-4 rounded-2xl">
           <h3 className="text-xl mb-4">User Dashboard</h3>
           {userAddress ? (
-            <p className="mb-4">Connected as: {userAddress}</p>
+            <div>
+              <p className="mb-4">Connected as: {userAddress}</p>
+              <div className="mb-2">
+                <strong>Your Shares:</strong> {userShares}
+              </div>
+              <div className="mb-2">
+                <strong>Your S Balance:</strong>{" "}
+                {Number(userBalance).toFixed(4)}
+              </div>
+              <div className="mb-2">
+                <strong>Your USD Balance (approx):</strong> ${userBalanceUsd}
+              </div>
+              <div className="mb-2">
+                <strong>Pending Withdrawals (S):</strong>{" "}
+                {Number(pendingWithdrawals).toFixed(4)}
+              </div>
+              <div className="mb-2">
+                <strong>Rate of Return:</strong> {rateOfReturn}%
+              </div>
+              <div className="mb-2">
+                <strong>APR:</strong> {apr}%
+              </div>
+            </div>
           ) : (
             <p className="mb-4">No wallet connected</p>
           )}
-
-          <div className="mb-2">
-            <strong>Your Shares:</strong> {userShares}
-          </div>
-          <div className="mb-2">
-            <strong>Your S Balance:</strong> {Number(userBalance).toFixed(4)}
-          </div>
-          <div className="mb-2">
-            <strong>Your USD Balance (approx):</strong> ${userBalanceUsd}
-          </div>
-          <div className="mb-2">
-            <strong>Pending Withdrawals (S):</strong>{" "}
-            {Number(pendingWithdrawals).toFixed(4)}
-          </div>
-          <div className="mb-2">
-            <strong>Rate of Return:</strong> {rateOfReturn}%
-          </div>
-          <div className="mb-2">
-            <strong>APR:</strong> {apr}%
-          </div>
         </div>
 
         {/* Right Column: vault info */}
