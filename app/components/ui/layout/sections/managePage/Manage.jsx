@@ -889,7 +889,9 @@ export default function Manage() {
       </div> */}
 
       {/* The "Your Vault Data" heading, etc. */}
-      <h2 className="text-3xl font-bold text-center mb-6">Your Vault Data:</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 md:pt-10">
+        Your Vault Data:
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Column: user info */}
