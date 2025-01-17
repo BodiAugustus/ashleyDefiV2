@@ -1,4 +1,4 @@
-export const VAULT_ADDRESS = "0x6099892c21C473435e2486398991aDEb61e07A31"; // Sonic Blaze deployed address
+export const VAULT_ADDRESS = "0x436b696d03894a4E0AB71Ef4330354f71a7A5a81"; // Sonic Blaze deployed address
 export const VAULT_ABI = [
   {
     inputs: [],
