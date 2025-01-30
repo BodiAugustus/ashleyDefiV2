@@ -231,6 +231,19 @@ const VAULT_ABI = [
   },
   {
     inputs: [],
+    name: "REFERRER_WALLET",
+    outputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "approveWithdrawals",
     outputs: [],
     stateMutability: "nonpayable",
@@ -284,6 +297,19 @@ const VAULT_ABI = [
   {
     inputs: [],
     name: "depositSonic",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "bool",
+        name: "_isReferred",
+        type: "bool",
+      },
+    ],
+    name: "depositSonicRef",
     outputs: [],
     stateMutability: "payable",
     type: "function",
@@ -594,6 +620,11 @@ const VAULT_ABI = [
         name: "avgCostPerShare",
         type: "uint256",
       },
+      {
+        internalType: "bool",
+        name: "referred",
+        type: "bool",
+      },
     ],
     stateMutability: "view",
     type: "function",
@@ -644,7 +675,9 @@ const VAULT_ABI = [
     type: "function",
   },
 ];
-const VAULT_ADDRESS = "0x436b696d03894a4E0AB71Ef4330354f71a7A5a81"; // Must match your deployed vault
+
+const VAULT_ADDRESS =
+  "0x436b60x06620beb0CCDD46f9fc388190060836e0f5189D496d03894a4E0AB71Ef4330354f71a7A5a81"; // Must match your deployed vault
 
 export default function Manage() {
   const { contract, signer, userAddress } = useVault();
