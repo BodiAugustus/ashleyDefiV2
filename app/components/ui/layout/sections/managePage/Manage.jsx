@@ -676,8 +676,7 @@ const VAULT_ABI = [
   },
 ];
 
-const VAULT_ADDRESS =
-  "0x436b60x06620beb0CCDD46f9fc388190060836e0f5189D496d03894a4E0AB71Ef4330354f71a7A5a81"; // Must match your deployed vault
+const VAULT_ADDRESS = "0x06620beb0CCDD46f9fc388190060836e0f5189D4"; // Must match your deployed vault
 
 export default function Manage() {
   const { contract, signer, userAddress } = useVault();
