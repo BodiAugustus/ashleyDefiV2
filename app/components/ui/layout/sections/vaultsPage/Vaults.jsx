@@ -171,7 +171,7 @@ export default function Vaults() {
       fetchUserDeposits(true); // reset to page 1
 
       // 4) Show success toast with transaction link
-      const blockExplorerLink = `https://sonicscan.org/tx/${receipt.transactionHash}`;
+      const blockExplorerLink = `https://sonicscan.org/${receipt.transactionHash}`;
       toast.success(
         <div>
           Successfully deposited {sonicDeposit} Sonic! <br />
