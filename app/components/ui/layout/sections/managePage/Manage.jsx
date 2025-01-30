@@ -886,7 +886,7 @@ export default function Manage() {
 
       setWithdrawShares("");
 
-      const explorerLink = `https://sonicscan.org/${receipt.transactionHash}`;
+      const explorerLink = `https://sonicscan.org/tx/${receipt.transactionHash}`;
       toast.success(
         <div>
           Withdrawal requested for {withdrawShares} shares! <br />
