@@ -1,4 +1,4 @@
-export const VAULT_ADDRESS = "0x436b696d03894a4E0AB71Ef4330354f71a7A5a81"; // Sonic Blaze deployed address
+export const VAULT_ADDRESS = "0x06620beb0CCDD46f9fc388190060836e0f5189D4"; // Sonic Blaze deployed address
 export const VAULT_ABI = [
   {
     inputs: [],
@@ -223,6 +223,19 @@ export const VAULT_ABI = [
   },
   {
     inputs: [],
+    name: "REFERRER_WALLET",
+    outputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "approveWithdrawals",
     outputs: [],
     stateMutability: "nonpayable",
@@ -276,6 +289,19 @@ export const VAULT_ABI = [
   {
     inputs: [],
     name: "depositSonic",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "bool",
+        name: "_isReferred",
+        type: "bool",
+      },
+    ],
+    name: "depositSonicRef",
     outputs: [],
     stateMutability: "payable",
     type: "function",
@@ -585,6 +611,11 @@ export const VAULT_ABI = [
         internalType: "uint256",
         name: "avgCostPerShare",
         type: "uint256",
+      },
+      {
+        internalType: "bool",
+        name: "referred",
+        type: "bool",
       },
     ],
     stateMutability: "view",
