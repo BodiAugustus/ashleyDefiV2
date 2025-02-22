@@ -29,7 +29,7 @@ const FAQsSection = () => {
     {
       question: "Do I have to be a member to utilize the vaults?",
       answer:
-        "No, our auto-compounding vaults are permissionless and open to anyone at anytime.",
+        "No, our auto-compounding vaults are permissionless and open to anyone at any time. Permissionless means that anyone, anywhere in the world, can deposit and withdraw their own funds from the vault without needing permission, signing up for an account, or going through any KYC procedures. You can simply click the Deposit button to have your funds professionally managed. Whenever you're ready to withdraw some or all of your funds, you just click the Withdraw button and the amount you wish to withdraw, and your funds will be back in your wallet instantly. There are no minimum or maximum deposit or withdrawal limits, no restricted hours, and no holidays when your funds are unavailable. Permissionless access ensures you have complete control over your funds 24/7/365—that is what permissionless means in decentralized finance.",
     },
     {
       question: "How long does a member subscription last?",

@@ -38,7 +38,7 @@ export default function FingerTwo() {
           className=" xs:text-sm
         xs3:text-base xs6:text-lg md:text-xl w-[100%] xs:indent-5 xs:mb-1 xl:indent-0 xs:px-2 text-[#B0C7EF]"
         >
-          Our high-APY vault operates as a hedge fund, maximizing yield
+          Our high-APY vault operates like a hedge fund, maximizing yield
           potential through various DeFi strategies and protocols. Our service
           is designed to help investors achieve safe and stable returns on their
           crypto investments, significantly exceeding traditional financial

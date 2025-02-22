@@ -100,9 +100,9 @@ export default function CnsltPlans() {
             </div>
           </div>
           <h4 className="mb-5 text-center">
-            Monthly Membership Fee: <span className="font-bold">$350</span>
+            Monthly Membership Fee: <span className="font-bold">$99.99</span>
           </h4>
-          <Link href="https://buy.stripe.com/9AQcPh2hh8kvd5CdQV" passHref>
+          <Link href="https://buy.stripe.com/6oEaH9g8730b3v2001" passHref>
             <Button className="mx-auto">Buy Now</Button>
           </Link>
           {/* You can add more detailed sections here as needed */}
@@ -129,7 +129,7 @@ export default function CnsltPlans() {
                 <h4>One hour of direct, 1-on-1 consultation</h4>
               </div>
               <p className="font-thin font-sans">
-                Consulting sessions are done over ZOOM
+                Consulting sessions are done over ZOOM or Google Meets.
               </p>
             </div>
 
@@ -145,9 +145,9 @@ export default function CnsltPlans() {
             </div>
           </div>
           <h4 className="mb-5 mt-5 text-center">
-            Hourly Consulting Fee: <span className="font-bold">$200.00</span>
+            Hourly Consulting Fee: <span className="font-bold">$60.00</span>
           </h4>
-          <Link href="https://buy.stripe.com/14k7uX9JJ1W76He9AE" passHref>
+          <Link href="https://buy.stripe.com/6oEaH9g8730b3v2001" passHref>
             <Button className="mx-auto">Buy Now</Button>
           </Link>
           {/* You can add more detailed sections here as needed */}

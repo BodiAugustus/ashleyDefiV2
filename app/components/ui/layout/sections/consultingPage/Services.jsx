@@ -65,7 +65,7 @@ const Services = ({ formRef }) => {
         "To ensure that security measures remain effective, we conduct regular audits of our clients’ security setups. These audits help identify vulnerabilities and ensure compliance with the latest security standards. Recommendations for improvements and updates to security protocols are provided as part of this service.",
       insideheader4: "Incident Response and Recovery",
       insideDescription4:
-        "In the event of a security breach, we provide immediate incident response support to minimize losses and restore security. This includes helping clients recover access to their assets when possible, navigating the steps to mitigate the damage, and implementing preventative measures to avoid future incidents.",
+        "In the event of any client suffering a security breach while managing their own funds, we provide immediate incident response support to minimize losses and restore security. This includes helping clients recover access to their assets when possible, navigating the steps to mitigate the damage, and implementing preventative measures to avoid future incidents. It should be noted that depositing to the Ashley Vault, instead of opting for self-management of funds, mitigates this risk.",
       header: "Asset Protection",
       icon: <RiShieldKeyholeFill className="text-8xl" />,
     },
@@ -91,19 +91,19 @@ const Services = ({ formRef }) => {
     {
       title: "Education and Training",
       description:
-        "Our Education and Training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive curriculum covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
+        "Our Education and Training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive consulting, and other educational material, such as YouTube videos, covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
       insideheader1: "Cryptocurrency Basics",
       insideDescription1:
-        "This foundational module offers clients a comprehensive introduction to the world of cryptocurrencies. It covers the history and evolution of major digital currencies, fundamental concepts such as blockchain technology and mining, and insights into market dynamics. Clients will gain a solid understanding of these topics through a variety of educational approaches, ensuring they are well-equipped to navigate and engage with the cryptocurrency landscape effectively..",
+        "This foundational support offers clients a comprehensive introduction to the world of cryptocurrencies. It covers the history and evolution of major digital currencies, fundamental concepts such as blockchain technology and mining, and insights into market dynamics. Clients will gain a solid understanding of these topics to navigate and engage with the cryptocurrency landscape effectively.",
       insideheader2: "Blockchain Technology",
       insideDescription2:
-        "This module provides an in-depth exploration of blockchain technology, including its architecture, transaction recording processes, and underlying security mechanisms. Clients will gain practical insights into how blockchain operates through various educational methods, enhancing their understanding of concepts such as blocks, hashing, and the proof-of-work system.",
+        "We provide an in-depth exploration of blockchain technology, including its architecture, transaction recording processes, and underlying security mechanisms. Clients will gain practical insights into how blockchain operates through various methods, enhancing their understanding of concepts such as blocks, hashing, and the proof-of-stake system.",
       insideheader3: "Investing in Crypto",
       insideDescription3:
-        "This segment focuses on the intricacies of investing in cryptocurrencies and DeFi. It covers various investment strategies, how to analyze cryptocurrencies, understanding risk management, and portfolio diversification. Our experts provide market insights, trend analysis, and tools to track and manage investments effectively.",
+        "We teach the intricacies of investing in cryptocurrencies and DeFi by covering various investment strategies, such as: how to analyze cryptocurrencies, understanding risk management, and portfolio diversification. Our experts provide market insights, trend analysis, and tools to track and manage investments effectively.",
       insideheader4: "Security and Wallet Management",
       insideDescription4:
-        "This module emphasizes essential practices for safeguarding cryptocurrencies. Topics include selecting appropriate wallets, utilizing hardware wallets, and implementing robust security measures like two-factor authentication and multi-signature addresses. Clients will engage with educational demonstrations and scenario-based analyses to understand the critical importance of securing digital assets effectively.",
+        "This support emphasizes essential practices for safeguarding cryptocurrencies. Topics include selecting appropriate wallets, utilizing hardware wallets, and implementing robust security measures like two-factor authentication, PGP encryption, and multi-signature addresses. Clients will understand the critical importance of securing digital assets and how to do so effectively.",
       header: "Mastering DeFi",
       icon: <FaChalkboardTeacher className="text-8xl" />,
     },

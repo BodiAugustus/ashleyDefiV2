@@ -60,7 +60,7 @@ const Example = () => {
             stack: skill.stack.map((item, index) => {
               if (index === 0) {
                 // Assuming you want to update the first item of the stack array
-                return `1) Stake FTM on Beethoven DEX to receive stS at ${(
+                return `1) Stake S on Beethoven DEX to receive stS at ${(
                   parseFloat(stakingApr) * 100
                 ).toFixed(3)}% APR`;
               }
