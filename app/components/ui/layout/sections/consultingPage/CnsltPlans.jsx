@@ -102,7 +102,7 @@ export default function CnsltPlans() {
           <h4 className="mb-5 text-center">
             Monthly Membership Fee: <span className="font-bold">$99.99</span>
           </h4>
-          <Link href="https://buy.stripe.com/6oEaH9g8730b3v2001" passHref>
+          <Link href="https://buy.stripe.com/5kA4iL4ppeITc1ydQQ" passHref>
             <Button className="mx-auto">Buy Now</Button>
           </Link>
           {/* You can add more detailed sections here as needed */}
