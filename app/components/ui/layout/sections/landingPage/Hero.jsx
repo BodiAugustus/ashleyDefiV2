@@ -26,11 +26,11 @@ export default function Hero() {
             <div>
               <h1
                 className="
-            xs:text-3xl 
+            xs:text-3xl xs:mb-[4%]
             xs4:text-4xl
             xs6:text-5xl 
             md:text-7xl
-            lg:text-8xl  lg:mb-[3%]
+            lg:text-8xl  md: mb-[3%]
             "
               >
                 Ashley Capital & DeFi
@@ -39,7 +39,7 @@ export default function Hero() {
                 className="
              text-[#23b2ee] font-bold
             xs:text-2xl
-            xs2:mb-4
+           
             md:text-3xl md:pt-1
             lg:text-5xl lg:mb-1 "
               >
