@@ -13,7 +13,7 @@ const Services = ({ formRef }) => {
     {
       title: "Portfolio Management",
       description:
-        "Our Portfolio Management service is crafted to assist clients in navigating the volatile crypto markets while achieving balanced and diversified investment portfolios. By applying advanced analysis and strategic asset allocation, we aim to optimize returns and minimize risks for our clients, ensuring their investments are well-positioned for both stability and growth.",
+        "Our Jacksonville based portfolio management service is crafted to assist clients in navigating the volatile crypto markets while achieving balanced and diversified investment portfolios. By applying advanced analysis and strategic asset allocation, we aim to optimize returns and minimize risks for our clients, ensuring their investments are well-positioned for both stability and growth.",
       insideheader1: "Asset Allocation Strategy",
       insideDescription1:
         "We develop a customized asset allocation strategy for each client based on their individual risk tolerance, investment goals, and market conditions. This strategy involves the selection of a mix of protocols, tokens, and strategies to provide a balanced approach that mitigates risk while aiming for sustainable double digit returns.",
@@ -22,7 +22,7 @@ const Services = ({ formRef }) => {
         "Effective risk management is central to successful portfolio management. We implement a variety of techniques such as position sizing, the use of stable coins during corrections, and diversification across different protocols. These practices are designed to protect the portfolio against significant losses and ensure long-term stability.",
       insideheader3: "Regular Portfolio Reviews and Rebalancing",
       insideDescription3:
-        "Our service includes regular review sessions with our clients to assess the performance of their portfolio and make adjustments as needed. Rebalancing is done to realign the portfolio with the client’s strategic goals and to adapt to changes in market dynamics or in the client's personal circumstances.",
+        "Our service includes regular review sessions, either online or around Jacksonville, with our clients to assess the performance of their portfolio and make adjustments as needed. Rebalancing is done to realign the portfolio with the client's strategic goals and to adapt to changes in market dynamics or in the client's personal circumstances.",
       insideheader4: "Advanced Analytics and Reporting",
       insideDescription4:
         "We provide instantaneous analytics that track the performance of individual client assets on the user dashboard.  ",
@@ -91,7 +91,7 @@ const Services = ({ formRef }) => {
     {
       title: "Education and Training",
       description:
-        "Our Education and Training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive consulting, and other educational material, such as YouTube videos, covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
+        "Our Jacksonville, Florida based education and training program is designed to help newcomers navigate the often complex world of cryptocurrencies and decentralized finance (DeFi). Tailored to individual learning curves, our comprehensive consulting, and other educational material, such as YouTube videos, covers everything from the basics of blockchain technology to advanced DeFi applications. Our aim is to empower our clients with the knowledge they need to make informed decisions and confidently participate in the crypto space.",
       insideheader1: "Cryptocurrency Basics",
       insideDescription1:
         "This foundational support offers clients a comprehensive introduction to the world of cryptocurrencies. It covers the history and evolution of major digital currencies, fundamental concepts such as blockchain technology and mining, and insights into market dynamics. Clients will gain a solid understanding of these topics to navigate and engage with the cryptocurrency landscape effectively.",

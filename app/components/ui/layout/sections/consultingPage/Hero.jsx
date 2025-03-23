@@ -36,9 +36,9 @@ export default function Hero({ formRef, ashleyAdvRef }) {
           Ashley Consulting: Your Partners in DeFi
         </h1>
         <h3 className="text-[#d3dcf0] xs:text-base md:text-2xl xs:px-2 xs5:px-4 xs5:text-lg lg:w-[70%] xl:w-[50%] text-center xs8:text-xl lg:text-xl">
-          Our advisory covers the Fantom, Sonic, and Monero blockchains,
-          including protocol assessments, trading strategies, tokenomics,
-          education, and investing services.
+          Our advisory covers the Sonic and Monero blockchains, including
+          protocol assessments, trading strategies, tokenomics, education, and
+          investing services.
         </h3>
         <div className="flex gap-5 w-[100%] items-center justify-center xs:pt-5 md:pt-0 ">
           <Button
@@ -57,7 +57,7 @@ export default function Hero({ formRef, ashleyAdvRef }) {
           </Button>
         </div>
         <h4 className="xs:mt-4 md:mt-16 uppercase text-[#d3dcf0] font-bold xs:text-sm md:text-xl xs8:text-base">
-          Helping increase people&apos;s wealth since 2019
+          Serving Jacksonville since 2025
         </h4>
       </div>
       <div className="text-white">

@@ -30,24 +30,35 @@ export default function Hero() {
             xs4:text-4xl
             xs6:text-5xl 
             md:text-7xl
-            lg:text-8xl  lg:mb-4
+            lg:text-8xl  lg:mb-[3%]
             "
               >
                 Ashley Capital & DeFi
               </h1>
-
               <h2
                 className="
+             text-[#23b2ee] font-bold
             xs:text-2xl
             xs2:mb-4
             md:text-3xl md:pt-1
-            lg:text-4xl lg:mb-4 "
+            lg:text-5xl lg:mb-1 "
+              >
+                Jacksonville Florida's Premier
+              </h2>
+
+              <h2
+                className="
+            text-sky-400 font-bold
+            xs:text-2xl xs:pb-[25%]
+            xs2:mb-4
+            md:text-3xl md:pt-1
+            lg:text-5xl lg:mb-4 lg:pb-[3%]"
               >
                 Crypto Consulting and Wealth Management
               </h2>
             </div>
 
-            <h4
+            {/* <h4
               className={`
               xs:text-lg xs:justify-start xs:pb-[25%]
               xs3:text-xl
@@ -59,7 +70,7 @@ export default function Hero() {
               `}
             >
               Where whales are born.
-            </h4>
+            </h4> */}
 
             {/* Starts cards */}
             <div className="text-white mt-3 xs:px-1 md:px-0 ">

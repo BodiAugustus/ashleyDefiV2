@@ -139,7 +139,7 @@ export default function CnsltPlans() {
                 <h4> Pay to access technology reports</h4>
               </div>
               <p className="font-thin font-sans">
-                Non-members must pay $29.99 to access any of Ashley DeFi's
+                Non-members must pay $9.99 to access any of Ashley DeFi's
                 technology or protocol reports.
               </p>
             </div>

@@ -27,12 +27,12 @@ const MemberBenefits = () => {
         <div className="h-[70vh] bg-[#2b2b2b] mx-auto bg-transparent grid grid-rows-6 transition-all font-economica bg-[url(/android-chrome-512x512.png)] bg-cover bg-center rounded-2xl relative  lg:w-auto">
           <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-70"></div>
 
-          <BenefitItem>Daily Updates and Individual Responses</BenefitItem>
+          <BenefitItem>Daily Updates & Individualized Responses</BenefitItem>
           <BenefitItem>2 Hours of Monthly Consultations</BenefitItem>
-          <BenefitItem>Members-Only Telegram Chat</BenefitItem>
-          <BenefitItem>In-Depth Project Technology Reports</BenefitItem>
-          <BenefitItem>Direct Learning Resources</BenefitItem>
-          <BenefitItem>Individualized Portfolio Management</BenefitItem>
+          <BenefitItem>Members-Only Telegram Channel</BenefitItem>
+          <BenefitItem>In-Depth Protocol Walkthroughs</BenefitItem>
+          <BenefitItem>Local Meetups Around Jacksonville</BenefitItem>
+          <BenefitItem>Custom Portfolio Management</BenefitItem>
         </div>
       </div>
     </div>

@@ -79,8 +79,8 @@ export const skillsk = [
     experience: "Farm Yields",
     stack: [
       "1) Stake S on Beets DEX to receive stS",
-      "2) Deposit stS into Fantom Money Market & earn an auto-compounded APR + fBUX",
-      "3) Borrow against your stS and then pay off the loan using fBUX emissions",
+      "2) Deposit stS into Silo & earn an auto-compounded APR + SILO",
+      "3) Borrow against your stS and then pay off the loan using SILO emissions",
       ,
       ,
     ],
@@ -92,8 +92,8 @@ export const skillsk = [
     title: "Voting ",
     experience: "Earn Rewards",
     stack: [
-      "1) Acquire EQUAL tokens via liquidity staking, voting, or market buying",
-      "2) Create a max-locked veNFT on Equalizer DEX's governance tab",
+      "1) Acquire SHADOW tokens via liquidity staking, voting, or market buying",
+      "2) Create a max-locked veNFT on SHADOW DEX's governance tab",
       "3) Vote weekly on LP pool's to earn a portion of that pools total fees and bribes",
     ],
     label: "veNFT's",
@@ -104,7 +104,7 @@ export const skillsk = [
     title: "Loans",
     experience: "Increase Capital",
     stack: [
-      "1) Take out a low interest S/USDCe loan on Debita Finance",
+      "1) Take out a low interest S/USDCe loan using AAVE on Sonic",
       "2) Use the newly acquired USDCe to buy more S tokens",
       "3) When S price increases, sell back a portion to unlock your original collateral",
     ],

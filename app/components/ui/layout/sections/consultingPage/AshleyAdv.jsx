@@ -82,12 +82,11 @@ export default function AshleyAdv({}) {
             xs6:text-lg
             md:text-lg"
             >
-              Ashley Capital & DeFi consultants uphold the highest standards of
-              honesty and ethical behavior. In the context of DeFi, where trust
-              and security are paramount, integrity means providing reliable and
-              truthful information always while simultaneously advocating for
-              the best interest of the client, especially in times of
-              volatility.
+              Our consultants uphold the highest standards of honesty and
+              ethical behavior. In the context of DeFi, where trust and security
+              are paramount, integrity means providing reliable and truthful
+              information always while simultaneously advocating for the best
+              interest of the client, especially in times of volatility.
             </p>
           </div>
         </div>

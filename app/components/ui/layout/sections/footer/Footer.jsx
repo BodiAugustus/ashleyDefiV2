@@ -78,9 +78,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-gray-400 xs:pt-10 xs:leading-4 xs:text-sm xs6:text-base xs6:leading-4 md:pt-20">
-        <p>
-          &copy; {new Date().getFullYear()} Ashley Capital & DeFi.
-          <br /> Where whales are born.
+        <p className="p-2">
+          &copy; {new Date().getFullYear()} Ashley Capital & DeFi
+          <br /> Fruit Cove, Jacksonville, Florida
+          <br /> <span className="text-sky-400">Where whales are born.</span>
         </p>
       </div>
     </footer>

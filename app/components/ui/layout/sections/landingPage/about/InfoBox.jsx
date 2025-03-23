@@ -51,11 +51,11 @@ const Info = () => {
             <div className="abstract text-white z-50 indent-3 first-letter:text-2xl xs:text-sm xs3:text-base xs6:text-lg md:text-xl lg:text-lg h-full overflow-y-scroll relative">
               <p className="pb-1 xs:pt-0">
                 Ashley Capital & DeFi was founded to professionally onboard
-                individuals into Decentralized Finance, the future of money. We
-                achieve this through our client-based consulting services and a
-                high-yield, permissionless staking vault, which offers
-                consistent APRs well above the traditional finance industry
-                average.
+                individuals around Jacksonville, Florida into Decentralized
+                Finance, the future of money. We achieve this through our
+                client-based consulting services and a high-yield,
+                permissionless staking vault, which offers consistent APRs well
+                above the traditional finance industry average.
               </p>
               <p className="pb-4">
                 Whether you're seeking a temporary learning resource on your

@@ -46,25 +46,25 @@ const Ticker = ({ tokenAddress, symbol }) => {
 const CryptoTickerTable = () => {
   const tokenAddresses = [
     // Define token addresses and symbols here
-    { address: "0xAD29AbB318791D579433D831ed122aFeAf29dcfe", symbol: "FTM" },
+    { address: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38", symbol: "S" },
     { address: "0xddF26B42C1d903De8962d3F79a74a501420d5F19", symbol: "EQUAL" },
-    { address: "0xE992bEAb6659BFF447893641A378FbbF031C5bD6", symbol: "WIGO" },
+    { address: "0x3333b97138D4b086720b5aE8A7844b1345a33333", symbol: "SHADOW" },
     { address: "0xF24Bcf4d1e507740041C9cFd2DddB29585aDCe1e", symbol: "BEETS" },
     { address: "0x85dec8c4B2680793661bCA91a8F129607571863d", symbol: "BRUSH" },
-    { address: "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE", symbol: "BOO" },
-    { address: "0x1e2Ea3f3209D66647f959CF00627107e079B870d", symbol: "fBUX" },
-    { address: "0xb7C2ddB1EBAc1056231ef22c1b0A13988537a274", symbol: "TAROT" },
-    { address: "0xc60D7067dfBc6f2caf30523a064f416A5Af52963", symbol: "TREEB" },
-    { address: "0x01e77288b38b416F972428d562454fb329350bAc", symbol: "MMY" },
-    { address: "0x5Cc61A78F164885776AA610fb0FE1257df78E59B", symbol: "SPIRIT" },
-    { address: "0xd7028092c830b5C8FcE061Af2E593413EbbC1fc1", symbol: "sFTMx" },
+    { address: "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C", symbol: "ANON" },
+    { address: "0x71E99522EaD5E21CF57F1f542Dc4ad2E841F7321", symbol: "METRO" },
+    { address: "0x6881B80ea7C858E4aEEf63893e18a8A36f3682f3", symbol: "NAVI" },
+    { address: "0xA04BC7140c26fc9BB1F36B1A604C7A5a88fb0E70", symbol: "SWPx" },
+    { address: "0x9fDbC3f8Abc05Fa8f3Ad3C17D2F806c1230c4564", symbol: "GOGLZ" },
+    { address: "0x0e0Ce4D450c705F8a0B6Dd9d5123e3df2787D16B", symbol: "WAGMI" },
+    { address: "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955", symbol: "stS" },
     { address: "0x39551b1c26ce03714E4661833B0FA730174bd7e9", symbol: "PLUS" },
-    { address: "0xD702993613686Ab0f706Ef07883870a97D36fdcf", symbol: "SNS" },
+    { address: "0x005851f943ee2957B1748957F26319e4f9EdeBC1", symbol: "AG" },
 
-    { address: "0x43F9a13675e352154f745d6402E853FECC388aA5", symbol: "sGOAT" },
-    { address: "0x662B3d319e693aA578EDd4BD8a5c9395BC49e9F4", symbol: "GOGLZ" },
+    { address: "0xe920d1DA9A4D59126dC35996Ea242d60EFca1304", symbol: "DERP" },
+
     { address: "0x479673391b3818f5e3ED2fa69A58e13d685BEcf6", symbol: "THC" },
-    { address: "0x5DeB27e51dbeEF691Ba1175A2E563870499c2AcB", symbol: "MCLB" },
+
     { address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8", symbol: "ETH" },
   ];
 
