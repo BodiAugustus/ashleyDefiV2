@@ -35,7 +35,7 @@ export default function Hero() {
               >
                 Ashley Capital & DeFi
               </h1>
-              <h2
+              {/* <h2
                 className="
              text-[#23b2ee] font-bold
             xs:text-2xl
@@ -44,7 +44,7 @@ export default function Hero() {
             lg:text-5xl lg:mb-1 "
               >
                 Jacksonville Florida's Premier
-              </h2>
+              </h2> */}
 
               <h2
                 className="

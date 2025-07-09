@@ -40,9 +40,9 @@ export default function Plans() {
               support you with all aspects of decentralized finance. Whether you
               have questions about technical details, need protocol
               explanations, require walkthroughs, or seek insights into
-              individual project tokenomics, our Jacksonville based experts are
-              here to provide you with the information you need to make
-              well-informed investment decisions.
+              individual project tokenomics, our DeFi experts are here to
+              provide you with the information you need to make well-informed
+              investment decisions.
             </p>
             <Link
               href="/consulting"

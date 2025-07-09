@@ -31,7 +31,7 @@ const MemberBenefits = () => {
           <BenefitItem>2 Hours of Monthly Consultations</BenefitItem>
           <BenefitItem>Members-Only Telegram Channel</BenefitItem>
           <BenefitItem>In-Depth Protocol Walkthroughs</BenefitItem>
-          <BenefitItem>Local Meetups Around Jacksonville</BenefitItem>
+          <BenefitItem>New and Updated DeFi Strategies</BenefitItem>
           <BenefitItem>Custom Portfolio Management</BenefitItem>
         </div>
       </div>

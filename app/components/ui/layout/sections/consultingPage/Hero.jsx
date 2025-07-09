@@ -57,7 +57,7 @@ export default function Hero({ formRef, ashleyAdvRef }) {
           </Button>
         </div>
         <h4 className="xs:mt-4 md:mt-16 uppercase text-[#d3dcf0] font-bold xs:text-sm md:text-xl xs8:text-base">
-          Serving Jacksonville since 2025
+          Serving Clients since 2025
         </h4>
       </div>
       <div className="text-white">

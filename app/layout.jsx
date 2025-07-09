@@ -5,9 +5,9 @@ import "./globals.css";
 export const metadata = {
   title: "Ashley DeFi",
   description:
-    "Welcome to Ashley DeFi! A Jacksonville, Florida based crypto consulting and wealth management service specializing in the Sonic, and Monero blockchains. Maximize your earnings today!",
+    "Welcome to Ashley DeFi! A crypto consulting and wealth management service specializing in the Sonic, and Monero blockchains. Maximize your earnings today!",
   keywords:
-    "Jacksonville, FL, Florida, Fruit Cove, Financial Consulting, Consultant, Cryptocurrency, Crypto, DeFi Consulting, Blockchain Consulting, Ashley DeFi, Fantom Blockchain, Sonic Blockchain, Monero Blockchain, Decentralized Finance, Sonic Token",
+    "FL, Florida, Financial Consulting, Consultant, Cryptocurrency, Crypto, DeFi Consulting, Blockchain Consulting, Ashley DeFi, Fantom Blockchain, Sonic Blockchain, Monero Blockchain, Decentralized Finance, Sonic Token, Stablecoins, Staking",
 };
 
 export const viewport = "width=device-width, initial-scale=1";

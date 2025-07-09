@@ -24,10 +24,10 @@ export default function FingerThree() {
           />
         </div>
         <p className="xs:text-sm xs3:text-base xs6:text-lg md:text-xl xs:px-2 xs:indent-5 lg:indent-0 ] xs:mb-1 text-[#B0C7EF]">
-          Join our growing Jacksonville, Florida based community and connect
-          directly with builders, investors, enthusiasts, and analysts from
-          around the state. Our Telegram server provides valuable, in-depth
-          conversations and advanced insights into all the latest news.
+          Join our growing online based community and connect directly with
+          builders, investors, enthusiasts, and analysts from around the state.
+          Our Telegram server provides valuable, in-depth conversations and
+          advanced insights into all the latest news.
         </p>
         <Link
           href="https://t.me/+89dQjvU76cwxZGU9"

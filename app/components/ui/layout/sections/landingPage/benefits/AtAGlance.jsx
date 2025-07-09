@@ -18,8 +18,8 @@ const AtAGlance = () => {
   // Content for the hoverable sections
   const sectionsContent = [
     "Individualized portfolio strategies customized to your own desired levels of risk and exposure.",
-    "Direct crypto and DeFi consulting services with regular client meetings and updates around the Jacksonville area.",
-    "Timely feedback from an actual, Jacksonville-based DeFi consultant, not a remote customer service representative.",
+    "Direct crypto and DeFi consulting services with regular client meetings and updates.",
+    "Timely feedback from an actual, DeFi consultant, not a remote customer service representative.",
     "Self-custodial, fully-permissionless, high-yields savings vaults based within the Sonic ecosystem.",
     "Advanced technical expertise and insights from real world blockchain developers.",
     "Two-hours of direct, individual DeFi consultations conducted via ZOOM every month.",

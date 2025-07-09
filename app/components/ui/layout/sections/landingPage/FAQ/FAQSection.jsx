@@ -23,7 +23,7 @@ const FAQsSection = () => {
     {
       question: "Why should I use Ashley DeFi?",
       answer:
-        "As a local, Jacksonville, FL based firm, we go beyond the spot holdings of most investors and dive deep into the blockchain ecosystem, where hundreds of tokenized and non-tokenized decentralized applications exist with much smaller market caps that can be utilized to vastly increase the typical returns experienced through trading or holding spot. We put our clients' funds to work by providing liquidity to LPs, staking as collateral for low-interest loans to increase holdings, locking for voting rewards and emissions, utilizing liquid staking, and much more to fully unlock the potential and profits that exist within decentralized finance. We understand how to navigate the complex landscape to bring home the largest and most sustainable profits for the long-term.",
+        "We go beyond the spot holdings of most investors and dive deep into the blockchain ecosystem, where hundreds of tokenized and non-tokenized decentralized applications exist with much smaller market caps that can be utilized to vastly increase the typical returns experienced through trading or holding spot. We put our clients' funds to work by providing liquidity to LPs, staking as collateral for low-interest loans to increase holdings, locking for voting rewards and emissions, utilizing liquid staking, and much more to fully unlock the potential and profits that exist within decentralized finance. We understand how to navigate the complex landscape to bring home the largest and most sustainable profits for the long-term.",
     },
 
     {
