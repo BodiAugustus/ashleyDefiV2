@@ -30,7 +30,7 @@ export default function Hero() {
             xs4:text-4xl
             xs6:text-5xl 
             md:text-7xl
-            lg:text-8xl  md: mb-[3%]
+            lg:text-8xl  md: mb-[4%]
             "
               >
                 Ashley Capital & DeFi
